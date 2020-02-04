@@ -1,0 +1,48 @@
+@font-face {
+font-family:'Antonym-Regular';
+src: url('fonts/Antonym-Regular.otf');
+}
+
+@font-face {
+font-family:'Antonym-Light';
+src: url('fonts/Antonym-Light.otf');
+}
+
+@font-face {
+font-family:'formular-regular';
+src: url('fonts/formular-regular.otf');
+}
+
+@font-face {
+font-family:'formular-light';
+src: url('fonts/formular-light.otf');
+}
+
+@font-face {
+font-family:'formular-bold';
+src: url('fonts/formular-bold.otf');
+}
+
+body {
+  background-color: #FFF5E6;
+}
+
+h1 {
+  font-family:'Antonym-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 75px;
+  color: #3F546C;
+  padding-top: 50px;
+}
+
+p {
+  font-family:'formular-light';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #3F546C;
+  padding-top: 70px;
+}
