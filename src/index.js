@@ -23,7 +23,7 @@ d3.csv(csvFile).then(function(data) {
   var xAxis = d3.axisBottom().scale(xScale);
   var yAxis = d3.axisLeft().scale(yScale);
 
-  var svg = d3.select("viz-container")
+  var svg = d3.select(".viz-container")
     .append("svg")
     .attr("width", w)
     .attr("height", h);
