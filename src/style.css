@@ -1,48 +1,58 @@
 @font-face {
-font-family:'Antonym-Regular';
-src: url('fonts/Antonym-Regular.otf');
+  font-family: "Antonym-Regular";
+  src: url("fonts/Antonym-Regular.otf");
 }
 
 @font-face {
-font-family:'Antonym-Light';
-src: url('fonts/Antonym-Light.otf');
+  font-family: "Antonym-Light";
+  src: url("fonts/Antonym-Light.otf");
 }
 
 @font-face {
-font-family:'formular-regular';
-src: url('fonts/formular-regular.otf');
+  font-family: "formular-regular";
+  src: url("fonts/formular-regular.otf");
 }
 
 @font-face {
-font-family:'formular-light';
-src: url('fonts/formular-light.otf');
+  font-family: "formular-light";
+  src: url("fonts/formular-light.otf");
 }
 
 @font-face {
-font-family:'formular-bold';
-src: url('fonts/formular-bold.otf');
+  font-family: "formular-bold";
+  src: url("fonts/formular-bold.otf");
 }
 
 body {
-  background-color: #FFF5E6;
+  background-color: #fff5e6;
 }
 
 h1 {
-  font-family:'Antonym-Regular';
+  font-family: "Antonym-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
   line-height: 75px;
-  color: #3F546C;
+  color: #3f546c;
   padding-top: 50px;
 }
 
 p {
-  font-family:'formular-light';
+  font-family: "formular-light";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 23px;
-  color: #3F546C;
+  color: #3f546c;
   padding-top: 70px;
+}
+
+.viz-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: center;
 }
