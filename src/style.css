@@ -27,14 +27,24 @@ body {
   background-color: #fff5e6;
 }
 
+/*Typography*/
 h1 {
   font-family: "Antonym-Regular";
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
+  font-size: 56px;
   line-height: 75px;
   color: #3f546c;
   padding-top: 50px;
+}
+
+h3 {
+  font-family: "formular-bold"
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #206AAC;
 }
 
 p {
@@ -42,9 +52,38 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 25px;
   color: #3f546c;
   padding-top: 70px;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+
+.wrapper > * {
+  /*padding: 0px 200px 100px 200px;*/
+  flex: 1 100%;
+}
+
+.aside {
+  padding: 0 200px 100px 25px;
+}
+
+.main {
+  text-align: left;
+  padding: 0 25px 25px 200px;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .aside-1 { order: 3; }
+  .main    { flex: 1 0px; }
 }
 
 .viz-container {
@@ -57,6 +96,63 @@ p {
   text-align: center;
 }
 
+#selectors-container{
+  font-family: "formular-regular";
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3F546C;
+}
+
+/*Components*/
+.drink-size-selector{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 2.5px solid #3F546C;
+  width: 100px;
+  height: 34px;
+  margin-right: 20px;
+  padding: 0px 24px;
+  background-position: 80px 12px;
+}
+
+
+
+.shots-selector{
+  outline: 2.5px solid #3F546C;
+  width: 100px;
+  height: 34px;
+  margin-right: 20px;
+  padding: 0px 24px;
+  background-position: 80px 12px;
+}
+
+.milk-type-selector{
+  outline: 2.5px solid #3F546C;
+  width: 200px;
+  height: 34px;
+  margin-right: 20px;
+  padding: 0px 24px;
+  background-position: 180px 12px;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0 !important;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+  background: url('icons/arrow.svg')  no-repeat;
+}
+
+
 .chart {
   display: inline-block;
 }
@@ -66,5 +162,5 @@ p {
 }
 
 .selector {
-  padding: 10px;
+  padding-left: 100px 100px 0px 100px;
 }

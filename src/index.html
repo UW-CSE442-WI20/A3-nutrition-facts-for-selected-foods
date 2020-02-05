@@ -18,84 +18,85 @@
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <h1>Nutritional facts</h1>
-        </div>
-        <div class="col-sm">
-          <p>
-            Mollit fugiat Lorem non do quis eiusmod excepteur laborum pariatur.
-            Nulla nostrud aute id aute non enim sit tempor dolor sunt.
-          </p>
-        </div>
-      </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+    type="text/css" >
+    <div class="wrapper">
+      <aside class="aside aside-1">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
+          tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+          mi vitae est. Mauris placerat eleifend leo.</p>
+      </aside>
+      <article class="main">
+        <h1>Nutritional content</h1>
+      </article>
     </div>
+
     <div id="selectors-container">
       <div class="selector A" id="selector-A">
-        <select
-          class="drink-size-selector A"
-          id="drink-size-selector-A"
-          name="Drink Size"
-        >
-        </select>
+        <h3>Drink 1</h3>
+        <label for="drink-size-selector-A">Drink size</label>
+          <select
+            class="drink-size-selector A"
+            id="drink-size-selector-A"
+            name="Drink Size"
+          >
+          </select>
+        <label for="shots-selector-A">Espresso shots</label>
         <select
           class="shots-selector A"
           id="shots-selector-A"
           name="Number of Shots"
         >
         </select>
+
+        <label for="shots-selector-A">Milk type</label>
         <select
           class="milk-type-selector A"
           id="milk-type-selector-A"
           name="Milk"
         >
         </select>
-        <label>
+        <input
+          type="checkbox"
+          class="whipped-cream-input A"
+          id="whipped-cream-input-A"
+        />
+        <label for="whipped-cream-input-A">
           Whipped Cream?
-          <input
-            type="checkbox"
-            class="whipped-cream-input A"
-            id="whipped-cream-input-A"
-          />
         </label>
       </div>
+
       <div class="selector B" id="selector-B">
+        <h3 style="color:#E1AA28">Drink 2</h3>
+        <label for="drink-size-selector-B">Drink size</label>
         <select
           class="drink-size-selector B"
           id="drink-size-selector-B"
           name="Drink Size"
         >
         </select>
+        <label for="shots-selector-B">Espresso shots</label>
         <select
           class="shots-selector B"
           id="shots-selector-B"
           name="Number of Shots"
         >
         </select>
+        <label for="shots-selector-A">Milk type</label>
         <select
           class="milk-type-selector B"
           id="milk-type-selector-B"
           name="Milk"
         >
         </select>
+        <input
+          type="checkbox"
+          class="whipped-cream-input B"
+          id="whipped-cream-input-B"
+        />
         <label>
           Whipped Cream?
-          <input
-            type="checkbox"
-            class="whipped-cream-input B"
-            id="whipped-cream-input-B"
-          />
         </label>
       </div>
     </div>
