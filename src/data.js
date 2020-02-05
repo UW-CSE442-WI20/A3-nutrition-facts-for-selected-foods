@@ -13,8 +13,7 @@ const milkTypes = {
   5: "Half & Half",
   6: "Heavy Cream",
   7: "Almond Milk",
-  8: "Soy Milk",
-  9: "Almond Milk"
+  8: "Soy Milk"
 };
 
 const shotRange = { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7 };
