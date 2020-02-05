@@ -12,6 +12,7 @@ Object.byString = function(o, s) {
   }
   return o;
 };
+
 const ELEMENTS = [
   "calories",
   "fat",
@@ -23,6 +24,24 @@ const ELEMENTS = [
   "protein",
   "caffeine"
 ];
+
+const yAxisNames = [
+  "Calories",
+  "Fat (grams)",
+  "Cholesterol (milligrams)",
+  "Sodium (milligrams)",
+  "Carbohydrates (grams)",
+  "Fiber (grams)",
+  "Sugar (grams)",
+  "Protein (grams)",
+  "Caffeine (milligrams)"
+];
+
+// clear the charts, which are to be replaced by new charts
+for (let i = 0; i < ELEMENTS.length; i++) {
+  document.getElementById(ELEMENTS[i]).innerHTML = "";
+}
+
 for (let i = 0; i < ELEMENTS.length; i++) {
   const content = ELEMENTS[i];
   document.getElementById(content).style.width = "30%";
@@ -63,14 +82,14 @@ for (let i = 0; i < ELEMENTS.length; i++) {
     ]
   };
 
-  var xScaleCalories = d3
+  var xScale = d3
     .scaleBand()
     .domain([drinkOne.drink, drinkTwo.drink])
     .range([padding, w - padding])
     .paddingInner(0.2)
     .paddingOuter(0.2);
 
-  var yScaleCalories = d3
+  var yScale = d3
     .scaleLinear()
     .domain([
       0,
@@ -81,53 +100,59 @@ for (let i = 0; i < ELEMENTS.length; i++) {
     ])
     .range([h - padding, padding]);
 
-  var xAxisCalories = d3.axisBottom().scale(xScaleCalories);
-  var yAxisCalories = d3.axisLeft().scale(yScaleCalories);
+  var xAxis = d3.axisBottom().scale(xScale);
+  var yAxis = d3.axisLeft().scale(yScale);
 
-  var svgCalories = d3
+  var svg = d3
     .select("#" + content)
     .append("svg")
     .attr("width", w)
     .attr("height", h);
 
-  svgCalories
+  svg
     .selectAll("rect")
     .data([drinkOne, drinkTwo])
     .enter()
     .append("rect")
     .attr("x", function(d) {
-      return xScaleCalories(d.drink) + xScaleCalories.bandwidth() / 4;
+      return xScale(d.drink) + xScale.bandwidth() / 4;
     })
     .attr("y", function(d) {
-      return yScaleCalories(Object.byString(d.nutritions[i], content));
+      return yScale(Object.byString(d.nutritions[i], content));
     })
     .attr("height", function(d) {
       return (
-        yScaleCalories(0) -
-        yScaleCalories(Object.byString(d.nutritions[i], content))
+        yScale(0) -
+        yScale(Object.byString(d.nutritions[i], content))
       );
     })
-    .attr("width", xScaleCalories.bandwidth() / 2)
-    .attr("fill", "blue");
+    .attr("width", xScale.bandwidth() / 2)
+    .attr("fill", function(d, i) {
+      if (i == 0) {
+        return "#1a75ff";
+      } else {
+        return "#00cc44";
+      }
+    });
 
-  svgCalories
+  svg
     .append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0," + (h - padding) + ")")
-    .call(xAxisCalories);
+    .call(xAxis);
 
-  svgCalories
+  svg
     .append("g")
     .attr("class", "y axis")
     .attr("transform", "translate(" + padding + ",0)")
-    .call(yAxisCalories);
+    .call(yAxis);
 
-  svgCalories
+  svg
     .append("text")
     .attr("x", w / 2)
     .attr("y", 15)
     .attr("text-anchor", "middle")
-    .style("font-size", "20px")
+    .style("font-size", "1.1em")
     .style("text-decoration", "underline")
-    .text(content);
+    .text(yAxisNames[i]);
 }
