@@ -56,3 +56,11 @@ p {
   padding: 15px;
   text-align: center;
 }
+
+.chart {
+  display: inline-block;
+}
+
+#chart-container {
+  text-align: center;
+}

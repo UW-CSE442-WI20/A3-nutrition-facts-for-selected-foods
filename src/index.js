@@ -1,67 +1,55 @@
-var w = 600;
-var h = 300;
-var padding = 40;
+document.getElementById("calories").style.width = "30%";
+document.getElementById("calories").style.height = "20rem";
+var w = window.getComputedStyle(document.getElementById("calories")).width;
+var h = window.getComputedStyle(document.getElementById("calories")).height;
 
-var xScale = d3.scaleBand()
-  .domain(["Sodium", "Cholesterol"])
+w = w.substring(0, w.length - 2);
+h = h.substring(0, h.length - 2);
+var padding = w * 0.1;
+
+var drinkOne = { drink: "Coffee", calories: 30 };
+var drinkTwo = { drink: "Latte", calories: 90 };
+
+var xScaleCalories = d3.scaleBand()
+  .domain([drinkOne.drink, drinkTwo.drink])
   .range([padding, w - padding])
-  .paddingInner(0.1);
+  .paddingInner(0.2)
+  .paddingOuter(0.2);
 
-var yScale = d3.scaleLinear();
+var yScaleCalories = d3.scaleLinear()
+  .domain([0, Math.max(drinkOne.calories, drinkTwo.calories)])
+  .range([h-padding, padding]);
 
-const csvFile = require('./data.csv');
+var xAxisCalories = d3.axisBottom().scale(xScaleCalories);
+var yAxisCalories = d3.axisLeft().scale(yScaleCalories);
 
-d3.csv(csvFile).then(function(data) {
+var svgCalories = d3.select("#calories")
+  .append("svg")
+  .attr("width", w)
+  .attr("height", h);
 
-  var nutritionValues = data.columns.slice(1);
+svgCalories.selectAll("rect")
+  .data([drinkOne, drinkTwo])
+  .enter()
+  .append("rect")
+  .attr("x", function(d) {
+    return xScaleCalories(d.drink) + (xScaleCalories.bandwidth() / 4);
+  })
+  .attr("y", function(d) {
+    return yScaleCalories(d.calories);
+  })
+  .attr("height", function(d) {
+    return (yScaleCalories(0) - yScaleCalories(d.calories));
+  })
+  .attr("width", xScaleCalories.bandwidth() / 2)
+  .attr("fill", "blue");
 
-  yScale.domain([0, d3.max(data, function(d) {
-      return d3.max(nutritionValues, function(val) { return d[val]; });
-  })])
-    .range([h-padding, 0]);
+svgCalories.append("g")
+  .attr("class", "axis")
+  .attr("transform", "translate(0," + (h - padding) + ")")
+  .call(xAxisCalories);
 
-  var xAxis = d3.axisBottom().scale(xScale);
-  var yAxis = d3.axisLeft().scale(yScale);
-
-  var svg = d3.select(".viz-container")
-    .append("svg")
-    .attr("width", w)
-    .attr("height", h);
-
-  for (var i = 0; i < nutritionValues.length; i++) {
-    svg.selectAll("rect")
-      .data(data)
-      .enter()
-      .append("rect")
-      .attr("x", function(d) {
-        return xScale(nutritionValues[i]);
-      })
-      .attr("y", function(d) {
-        if (nutritionValues[i] == "Sodium") {
-          return yScale(d.Sodium);
-        } else {
-          return yScale(d.Cholesterol);
-        }
-      })
-    .attr("height", function(d) {
-      if (nutritionValues[i] == "Sodium") {
-        return (yScale(0) - yScale(d.Sodium));
-      } else {
-        return (yScale(0) - yScale(d.Cholesterol));
-      }
-    })
-    .attr("width", 50)
-    .attr("fill", "blue");
-  }
-
-  svg.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(0," + (h - padding) + ")")
-    .call(xAxis);
-
-  svg.append("g")
-    .attr("class", "y axis")
-    .attr("transform", "translate(" + padding + ",0)")
-    .call(yAxis);
-
-});
+svgCalories.append("g")
+  .attr("class", "y axis")
+  .attr("transform", "translate(" + padding + ",0)")
+  .call(yAxisCalories);
