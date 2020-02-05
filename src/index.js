@@ -28,6 +28,7 @@ var svgCalories = d3.select("#calories")
   .attr("width", w)
   .attr("height", h);
 
+
 svgCalories.selectAll("rect")
   .data([drinkOne, drinkTwo])
   .enter()
@@ -53,3 +54,11 @@ svgCalories.append("g")
   .attr("class", "y axis")
   .attr("transform", "translate(" + padding + ",0)")
   .call(yAxisCalories);
+
+svgCalories.append("text")
+  .attr("x", (w / 2))
+  .attr("y", 15)
+  .attr("text-anchor", "middle")
+  .style("font-size", "20px")
+  .style("text-decoration", "underline")
+  .text("Calories");
