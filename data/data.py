@@ -41,6 +41,22 @@ The goal is to facilitate fast lookup by category and name
 
 """
 
+
+def get_size_name(s, row):
+    if s == "8.0":
+        return "Short (8 fl. oz.)"
+    if s == "12.0":
+        return "Tall (12 fl. oz.)"
+    if s == "16.0":
+        return "Grande (16 fl. oz.)"
+    if s == "20.0":
+        return "Venti (20 fl. oz.)"
+    if s == "24.0":
+        return "Venti Iced (24 fl. oz.)"
+    if s == "30.0":
+        return "Trenta (30 fl. oz.)"
+    return s  # Bottled drinks have weird sizes
+
 res = {}
 
 with open("drinks.csv", newline="") as f:
@@ -48,7 +64,7 @@ with open("drinks.csv", newline="") as f:
     for row in reader:
         category = row["Category"]
         name = row["Name"]
-        portion = row["Portion(fl oz)"]
+        portion = get_size_name(row["Portion(fl oz)"], row)
         milk = row["Milk"] or "N/A"
         whip = row["Whipped Cream"] or "N/A"
 
@@ -67,3 +83,5 @@ with open("drinks.json", "w+") as f:
     json.dump(res, f, separators=(',', ':'))
 
 print("Done!")
+
+

@@ -1,11 +1,13 @@
-import raw_data from "./drinks.csv";
+import csv_data from "../data/drinks.csv";
+import json_data from "../data/drinks.json";
 import { handleOnLoad } from "./selector.js";
 
 const drinkSizes = {
-  8: "Short (8 oz.)",
-  12: "Tall (12 oz.)",
-  16: "Grande (16 oz.)",
-  20: "Venti (20 oz.)"
+  8: "Short (8 fl. oz.)",
+  12: "Tall (12 fl. oz.)",
+  16: "Grande (16 fl. oz.)",
+  20: "Venti (20 fl. oz.)",
+  30: "Trenta (30 fl. oz.)"
 };
 
 const milkTypes = [
@@ -27,15 +29,18 @@ var drinkCategoryOptions = [];
 
 var drinkOptions = {}; // Mapping Category -> list of options
 
+var index = {};
+
 var data;
 document.addEventListener(
   "DOMContentLoaded",
   function() {
-    d3.csv(raw_data).then(function(d) {
+    d3.csv(csv_data).then(function(d) {
       data = d;
       parseData();
       handleOnLoad();
     });
+    index = json_data;
   },
   false
 );
@@ -63,32 +68,42 @@ function parseData() {
 /*
  * Selector Options
  */
-export function getDrinkOptions(category) {
-  return drinkOptions[category];
+export function getDrinkCategoryOptions(selection) {
+  return Object.keys(index);
 }
 
-export function getDrinkCategoryOptions() {
-  return drinkCategoryOptions;
+export function getDrinkOptions(selection) {
+  return Object.keys(index[selection["Category"]]);
 }
 
-export function getDrinkSizeOptions() {
-  return drinkSizes;
+export function getDrinkSizeOptions(selection) {
+  console.log(selection);
+  console.log(index[selection["Category"]][selection["Name"]]);
+  return Object.keys(index[selection["Category"]][selection["Name"]]);
 }
 
-export function getMilkTypeOptions() {
-  return milkTypes;
+export function getMilkTypeOptions(selection) {
+  return Object.keys(
+    index[selection["Category"]][selection["Name"]][selection["Size"]]
+  );
 }
 
-export function getNumShotsOptions() {
+export function getWhippedCreamOptions(selection) {
+  return Object.keys(
+    index[selection["Category"]][selection["Name"]][selection["Size"]][
+      selection["Milk Type"]
+    ]
+  );
+}
+
+export function getNumShotsOptions(selection) {
   return shotRange;
-}
-
-export function getWhippedCreamOptions() {
-  return whippedCreamOptions;
 }
 
 // Given a set of drink selection parameters, returns a JSON
 // object containing the nutrition information for the selection
 export function getNutritionData(selection) {
-  // TODO - This is where I'm going to actually query our dataset
+  return index[selection["Category"]][selection["Name"]][selection["Size"]][
+    selection["Milk Type"]
+  ][selection["Whipped Cream"]];
 }
