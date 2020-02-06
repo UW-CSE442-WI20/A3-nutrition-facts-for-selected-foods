@@ -28,11 +28,17 @@ var drinkCategoryOptions = [];
 var drinkOptions = {}; // Mapping Category -> list of options
 
 var data;
-d3.csv(raw_data).then(function(d) {
-  data = d;
-  parseData();
-  handleOnLoad();
-});
+document.addEventListener(
+  "DOMContentLoaded",
+  function() {
+    d3.csv(raw_data).then(function(d) {
+      data = d;
+      parseData();
+      handleOnLoad();
+    });
+  },
+  false
+);
 
 function parseData() {
   // Dedupe categories and drinks with sets
@@ -46,7 +52,7 @@ function parseData() {
     }
     drinkOptionsSets[row["Category"]].add(row["Name"]);
   }
-  console.log(drinkOptionsSets);
+
   // Save to globals
   for (let c in drinkOptionsSets) {
     drinkOptions[c] = [...drinkOptionsSets[c]];
