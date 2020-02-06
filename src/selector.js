@@ -4,8 +4,8 @@ import {
   getDrinkSizeOptions,
   getMilkTypeOptions,
   getNumShotsOptions,
-  getNutritionData,
-  getWhippedCreamOptions
+  getWhippedCreamOptions,
+  getNutritionData
 } from "./data.js";
 
 const init_params = {
