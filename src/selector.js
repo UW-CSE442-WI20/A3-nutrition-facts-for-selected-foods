@@ -1,52 +1,69 @@
 import {
-  getDrinkSizes,
-  getMilkTypes,
-  getShotRange,
-  getNutritionData
+  getDrinkCategoryOptions,
+  getDrinkOptions,
+  getDrinkSizeOptions,
+  getMilkTypeOptions,
+  getNumShotsOptions,
+  getNutritionData,
+  getWhippedCreamOptions
 } from "./data.js";
-window.onload = e => {
-  handleOnLoad();
-};
 
-var selectors = []; // Register all selectors here on init.
+var selectors = new Set(); // Register all selectors here on init.
 
 /*
  *  Selector initialization
  */
 
-function handleOnLoad() {
+export function handleOnLoad() {
   initSelectors();
   for (let i = 0; i < selectors.length; i++) {
     selectors[i].addEventListener("change", handleUpdate);
   }
+  return;
 }
 
 // TODO: Fully construct the selectors in js so we don't
 // have to copy paste the selector html?
 function initSelectors() {
+  initDrinkCategorySelectors();
+  initDrinkOptions();
   initSizeSelectors();
   initShotSelectors();
   initMilkSelectors();
-  initWhippedCreamSelector();
+  initWhippedCreamSelectors();
+}
+
+function initDrinkCategorySelectors() {
+  assignOptions("drink-category-selector", getDrinkCategoryOptions());
+  registerSelectors(document.getElementsByClassName("drink-category-selector"));
+}
+
+function initDrinkOptions() {
+  assignOptions(
+    "drink-selector",
+    getDrinkOptions(document.getElementById("drink-category-selector-A").value)
+  );
+  registerSelectors(document.getElementsByClassName("drink-selector"));
 }
 
 function initSizeSelectors() {
-  assignOptions("drink-size-selector", getDrinkSizes());
+  assignOptions("drink-size-selector", getDrinkSizeOptions());
   registerSelectors(document.getElementsByClassName("drink-size-selector"));
 }
 
 function initShotSelectors() {
-  assignOptions("shots-selector", getShotRange());
+  assignOptions("shots-selector", getNumShotsOptions());
   registerSelectors(document.getElementsByClassName("shots-selector"));
 }
 
 function initMilkSelectors() {
-  assignOptions("milk-type-selector", getMilkTypes());
+  assignOptions("milk-type-selector", getMilkTypeOptions());
   registerSelectors(document.getElementsByClassName("milk-type-selector"));
 }
 
-function initWhippedCreamSelector() {
-  registerSelectors(document.getElementsByClassName("whipped-cream-input"));
+function initWhippedCreamSelectors() {
+  assignOptions("whipped-cream-selector", getWhippedCreamOptions());
+  registerSelectors(document.getElementsByClassName("whipped-cream-selector"));
 }
 
 /*
@@ -85,7 +102,6 @@ function assignOptions(selectorClass, options) {
     let s = selectors_[i];
     for (let val in options) {
       let option = document.createElement("option");
-      option.value = val;
       option.innerHTML = options[val];
       s.appendChild(option);
     }
@@ -94,6 +110,6 @@ function assignOptions(selectorClass, options) {
 
 function registerSelectors(collection) {
   for (let i = 0; i < collection.length; i++) {
-    selectors.push(collection[i]);
+    selectors.add(collection[i]);
   }
 }

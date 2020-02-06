@@ -1,3 +1,6 @@
+import raw_data from "./drinks.csv";
+import { handleOnLoad } from "./selector.js";
+
 const drinkSizes = {
   8: "Short (8 oz.)",
   12: "Tall (12 oz.)",
@@ -5,33 +8,77 @@ const drinkSizes = {
   20: "Venti (20 oz.)"
 };
 
-const milkTypes = {
-  1: "Nonfat Milk",
-  2: "1% Milk",
-  3: "2% Milk",
-  4: "Whole Milk",
-  5: "Half & Half",
-  6: "Heavy Cream",
-  7: "Almond Milk",
-  8: "Soy Milk"
-};
+const milkTypes = [
+  "Nonfat Milk",
+  "1% Milk",
+  "2% Milk",
+  "Whole Milk",
+  "Half & Half",
+  "Heavy Cream",
+  "Almond Milk",
+  "Soy Milk"
+];
 
-const shotRange = { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7 };
+const shotRange = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const whippedCreamOptions = ["No Whipped Cream", "Unsweetened", "Sweetened"];
+
+var drinkCategoryOptions = [];
+
+var drinkOptions = {}; // Mapping Category -> list of options
+
+var data;
+d3.csv(raw_data).then(function(d) {
+  data = d;
+  parseData();
+  handleOnLoad();
+});
+
+function parseData() {
+  // Dedupe categories and drinks with sets
+  let drinkCategorySet = new Set();
+  let drinkOptionsSets = {};
+  for (let i in data) {
+    let row = data[i];
+    drinkCategorySet.add(row["Category"]);
+    if (!(row["Category"] in drinkOptionsSets)) {
+      drinkOptionsSets[row["Category"]] = new Set();
+    }
+    drinkOptionsSets[row["Category"]].add(row["Name"]);
+  }
+  console.log(drinkOptionsSets);
+  // Save to globals
+  for (let c in drinkOptionsSets) {
+    drinkOptions[c] = [...drinkOptionsSets[c]];
+  }
+  drinkCategoryOptions = [...drinkCategorySet];
+}
 
 /*
  * Selector Options
  */
+export function getDrinkOptions(category) {
+  return drinkOptions[category];
+}
 
-export function getDrinkSizes() {
+export function getDrinkCategoryOptions() {
+  return drinkCategoryOptions;
+}
+
+export function getDrinkSizeOptions() {
   return drinkSizes;
 }
 
-export function getMilkTypes() {
+export function getMilkTypeOptions() {
   return milkTypes;
 }
 
-export function getShotRange() {
+export function getNumShotsOptions() {
   return shotRange;
+}
+
+export function getWhippedCreamOptions() {
+  return whippedCreamOptions;
 }
 
 // Given a set of drink selection parameters, returns a JSON

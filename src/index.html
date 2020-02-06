@@ -18,14 +18,20 @@
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-    type="text/css" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+      type="text/css"
+    />
     <div class="wrapper">
       <aside class="aside aside-1">
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
-          tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-          mi vitae est. Mauris placerat eleifend leo.</p>
+        <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+          ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+          egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+          eleifend leo.
+        </p>
       </aside>
       <article class="main">
         <h1>Nutritional content</h1>
@@ -35,36 +41,43 @@
     <div id="selectors-container">
       <div class="selector A" id="selector-A">
         <h3>Drink 1</h3>
+        <select
+          class="drink-category-selector selector A"
+          id="drink-category-selector-A"
+          name="Drink Category"
+        ></select>
+        <select
+          class="drink-selector selector A"
+          id="drink-selector-A"
+          name="Drink"
+        ></select>
+
         <label for="drink-size-selector-A">Drink size</label>
-          <select
-            class="drink-size-selector A"
-            id="drink-size-selector-A"
-            name="Drink Size"
-          >
-          </select>
+        <select
+          class="drink-size-selector selector A"
+          id="drink-size-selector-A"
+          name="Drink Size"
+        >
+        </select>
         <label for="shots-selector-A">Espresso shots</label>
         <select
-          class="shots-selector A"
+          class="shots-selector selector A"
           id="shots-selector-A"
           name="Number of Shots"
         >
         </select>
-
         <label for="shots-selector-A">Milk type</label>
         <select
-          class="milk-type-selector A"
+          class="milk-type-selector selector A"
           id="milk-type-selector-A"
           name="Milk"
         >
         </select>
-        <input
-          type="checkbox"
-          class="whipped-cream-input A"
-          id="whipped-cream-input-A"
-        />
-        <label for="whipped-cream-input-A">
-          Whipped Cream?
-        </label>
+        <select
+          class="whipped-cream-selector selector A"
+          id="whipped-cream-selector-A"
+          name="Whipped Cream"
+        ></select>
       </div>
 
       <div class="selector B" id="selector-B">
@@ -90,14 +103,11 @@
           name="Milk"
         >
         </select>
-        <input
-          type="checkbox"
-          class="whipped-cream-input B"
-          id="whipped-cream-input-B"
-        />
-        <label>
-          Whipped Cream?
-        </label>
+        <select
+          class="whipped-cream-selector A"
+          id="whipped-cream-selector-A"
+          name="Whipped Cream"
+        ></select>
       </div>
     </div>
 
