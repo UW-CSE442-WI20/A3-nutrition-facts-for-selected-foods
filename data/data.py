@@ -41,6 +41,9 @@ The goal is to facilitate fast lookup by category and name
 
 """
 
+def get_category_name(s):
+    return s.replace("-", " ").title()
+    
 
 def get_size_name(s, row):
     if s == "8.0":
@@ -62,7 +65,7 @@ res = {}
 with open("drinks.csv", newline="") as f:
     reader = csv.DictReader(f)
     for row in reader:
-        category = row["Category"]
+        category = get_category_name(row["Category"])
         name = row["Name"]
         portion = get_size_name(row["Portion(fl oz)"], row)
         milk = row["Milk"] or "N/A"
