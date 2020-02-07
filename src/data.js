@@ -48,7 +48,66 @@ export function getNumShotsOptions(selection) {
 // Given a set of drink selection parameters, returns a JSON
 // object containing the nutrition information for the selection
 export function getNutritionData(selection) {
-  return index[selection["Category"]][selection["Name"]][selection["Size"]][
-    selection["Milk Type"]
-  ][selection["Whipped Cream"]];
+  return transformNutritionData(
+    index[selection["Category"]][selection["Name"]][selection["Size"]][
+      selection["Milk Type"]
+    ][selection["Whipped Cream"]]
+  );
+}
+
+/*
+
+INPUT:
+{
+    Calories: "5"
+    Whipped Cream: ""
+    Protein(g): "0"
+    Cholesterol(mg): "0"
+    Sugars(g): "0"
+    Category: "brewed-coffee"
+    Portion(fl oz): "8.0"
+    Total Fat(g): "0.0"
+    Calories from fat: "0"
+    Size: "Short"
+    Milk: ""
+    Dietary Fiber(g): "0"
+    Total Carbohydrate(g): "0"
+    Trans fat(g): "0.0"
+    Caffeine(mg): "130"
+    Saturated fat(g): "0.0"
+    Name: "Featured Dark Roast"
+    Sodium(mg): "5"
+}
+
+OUTPUT:
+
+ drink: "brewed-coffee",
+  nutritions: [
+    { calories: 30 },
+    { fat: 30 },
+    { cholesterol: 30 },
+    { sodium: 30 },
+    { carbs: 30 },
+    { fiber: 15 },
+    { sugar: 30 },
+    { protein: 30 },
+    { caffeine: 30 }
+  ]
+
+*/
+function transformNutritionData(d) {
+  return {
+    drink: d["Name"],
+    nutritions: [
+      { calories: parseFloat(d["Calories"]) },
+      { fat: parseFloat(d["Total Fat(g)"]) },
+      { cholesterol: parseFloat(d["Cholesterol(mg)"]) },
+      { sodium: parseFloat(d["Sodium(mg)"]) },
+      { carbs: parseFloat(d["Total Carbohydrate(g)"]) },
+      { fiber: parseFloat(d["Dietary Fiber(g)"]) },
+      { sugar: parseFloat(d["Sugars(g)"]) },
+      { protein: parseFloat(d["Protein(g)"]) },
+      { caffeine: parseFloat(d["Caffeine(mg)"]) }
+    ]
+  };
 }

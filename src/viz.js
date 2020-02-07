@@ -1,6 +1,6 @@
 import _ from "lodash";
 
-Object.byString = function (o, s) {
+Object.byString = function(o, s) {
   s = s.replace(/\[(\w+)\]/g, ".$1"); // convert indexes to properties
   s = s.replace(/^\./, ""); // strip a leading dot
   var a = s.split(".");
@@ -88,25 +88,26 @@ var drinkThree = {
   ]
 };
 const drinks = [drinkOne, drinkTwo, drinkThree];
-setInterval(function () {
-  drawCharts(_.sample(drinks), _.sample(drinks))
-  // drawCharts(drinks[Math.floor(Math.random() * drinks.length)], drinks[Math.floor(Math.random() * drinks.length)]) 
-}, 3000);
+// setInterval(function () {
+//   drawCharts(_.sample(drinks), _.sample(drinks))
+//   // drawCharts(drinks[Math.floor(Math.random() * drinks.length)], drinks[Math.floor(Math.random() * drinks.length)])
+// }, 3000);
 
 export function update(drinkOne, drinkTwo) {
+  console.log(drinkOne, drinkTwo);
   drawCharts(drinkOne, drinkTwo);
 }
 
 function drawCharts(drinkOne, drinkTwo) {
   if (drinkOne == drinkTwo) {
-    return ;
+    return;
   }
 
   for (let i = 0; i < ELEMENTS.length; i++) {
     const content = ELEMENTS[i];
     document.getElementById(content).style.width = "30%";
     document.getElementById(content).style.height = "20rem";
-    document.getElementById(content).innerHTML = ""
+    document.getElementById(content).innerHTML = "";
     var w = window.getComputedStyle(document.getElementById(content)).width;
     var h = window.getComputedStyle(document.getElementById(content)).height;
 
@@ -128,10 +129,12 @@ function drawCharts(drinkOne, drinkTwo) {
         Math.max(
           Object.byString(drinkOne.nutritions[i], content),
           Object.byString(drinkTwo.nutritions[i], content)
-        ) + Math.max(
-          Object.byString(drinkOne.nutritions[i], content),
-          Object.byString(drinkTwo.nutritions[i], content)
-        ) * 0.2
+        ) +
+          Math.max(
+            Object.byString(drinkOne.nutritions[i], content),
+            Object.byString(drinkTwo.nutritions[i], content)
+          ) *
+            0.2
       ])
       .range([h - padding, padding]);
 
@@ -149,20 +152,17 @@ function drawCharts(drinkOne, drinkTwo) {
       .data([drinkOne, drinkTwo])
       .enter()
       .append("rect")
-      .attr("x", function (d) {
+      .attr("x", function(d) {
         return xScale(d.drink) + xScale.bandwidth() / 4;
       })
-      .attr("y", function (d) {
+      .attr("y", function(d) {
         return yScale(Object.byString(d.nutritions[i], content));
       })
-      .attr("height", function (d) {
-        return (
-          yScale(0) -
-          yScale(Object.byString(d.nutritions[i], content))
-        );
+      .attr("height", function(d) {
+        return yScale(0) - yScale(Object.byString(d.nutritions[i], content));
       })
       .attr("width", xScale.bandwidth() / 2)
-      .attr("fill", function (d, i) {
+      .attr("fill", function(d, i) {
         if (i == 0) {
           return "#1a75ff";
         } else {

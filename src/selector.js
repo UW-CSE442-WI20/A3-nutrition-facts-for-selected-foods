@@ -8,6 +8,8 @@ import {
   getNutritionData
 } from "./data.js";
 
+import { update } from "./viz.js";
+
 const init_params = {
   A: {
     Category: "espresso",
@@ -54,15 +56,11 @@ export function handleOnLoad() {
 }
 
 function handleOnChange(nodes, i, updateFirst = false) {
-  console.log(i, nodes);
-  console.log(nodes[i]);
   let drinkLetter = getDrinkLetter(nodes[i]);
   if (!updateFirst) {
     i++;
   }
   while (i < nodes.length && getDrinkLetter(nodes[i]) === drinkLetter) {
-    console.log(drinkLetter);
-    console.log(getParameters());
     setSelectionOptions(nodes[i], getParameters()[drinkLetter]);
     i++;
   }
@@ -85,15 +83,10 @@ function setSelection(parameters) {
     assignOptions(document.getElementById("whipped-cream-selector-" + i), [
       parameters[i]["Whipped Cream"]
     ]);
-    assignOptions(document.getElementById("shots-selector-" + i), [0]);
   }
 }
 
-// TODO: Fix selection bugs. First element is always selected for some reason. Probably because we are resetting the options on each update.
-// Solution: only update the options we need to for each change (ie, if category change, then update all but category, if drinks then update all but category and drink)
-// Alternative solution: update all, but check to see if there is a difference in the options before updating
 function setSelectionOptions(element, parameters) {
-  console.log("setSelectionOptions", element, parameters);
   if (element.id.startsWith("drink-category-selector-")) {
     assignOptions(element, getDrinkCategoryOptions(parameters));
   } else if (element.id.startsWith("drink-selector-")) {
@@ -104,8 +97,6 @@ function setSelectionOptions(element, parameters) {
     assignOptions(element, getMilkTypeOptions(parameters));
   } else if (element.id.startsWith("whipped-cream-selector-")) {
     assignOptions(element, getWhippedCreamOptions(parameters));
-  } else if (element.id.startsWith("shots-selector-")) {
-    assignOptions(element, getNumShotsOptions(parameters));
   } else {
     console.log("setSelectionOptions - no match");
   }
@@ -120,8 +111,7 @@ function sendUpdate(parameters) {
   if (parameters === null || parameters === undefined) {
     parameters = getParameters();
   }
-  let nutritionData1 = getNutritionData(parameters["A"]); // Query the dataset (data.js);
-  // update(nutritionData);  // Send data to the graphs
+  update(getNutritionData(parameters["A"]), getNutritionData(parameters["B"])); // Send data to the graphs
 }
 
 // Returns an object containing the parameters for the current selection
