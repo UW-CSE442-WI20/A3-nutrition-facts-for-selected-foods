@@ -24,8 +24,6 @@ export function getDrinkOptions(selection) {
 }
 
 export function getDrinkSizeOptions(selection) {
-  console.log(selection);
-  console.log(index[selection["Category"]][selection["Name"]]);
   return Object.keys(index[selection["Category"]][selection["Name"]]);
 }
 

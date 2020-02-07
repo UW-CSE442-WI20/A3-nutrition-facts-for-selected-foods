@@ -29,9 +29,43 @@ const init_params = {
  *  Selector initialization
  */
 export function handleOnLoad() {
-  d3.selectAll(".selector").on("change", () => handleUpdate());
+  d3.selectAll(".selector").on("change", function(d, i, nodes) {
+    handleOnChange(nodes, i);
+    sendUpdate();
+  });
   setSelection(init_params);
-  handleUpdate();
+  handleOnChange(
+    d3
+      .selectAll(".selector")
+      .filter(".A")
+      .nodes(),
+    0,
+    true
+  );
+  handleOnChange(
+    d3
+      .selectAll(".selector")
+      .filter(".B")
+      .nodes(),
+    0,
+    true
+  );
+  sendUpdate();
+}
+
+function handleOnChange(nodes, i, updateFirst = false) {
+  console.log(i, nodes);
+  console.log(nodes[i]);
+  let drinkLetter = getDrinkLetter(nodes[i]);
+  if (!updateFirst) {
+    i++;
+  }
+  while (i < nodes.length && getDrinkLetter(nodes[i]) === drinkLetter) {
+    console.log(drinkLetter);
+    console.log(getParameters());
+    setSelectionOptions(nodes[i], getParameters()[drinkLetter]);
+    i++;
+  }
 }
 
 function setSelection(parameters) {
@@ -58,32 +92,22 @@ function setSelection(parameters) {
 // TODO: Fix selection bugs. First element is always selected for some reason. Probably because we are resetting the options on each update.
 // Solution: only update the options we need to for each change (ie, if category change, then update all but category, if drinks then update all but category and drink)
 // Alternative solution: update all, but check to see if there is a difference in the options before updating
-function setSelectionOptions(parameters) {
-  for (const i of ["A", "B"]) {
-    assignOptions(
-      document.getElementById("drink-category-selector-" + i),
-      getDrinkCategoryOptions(parameters[i])
-    );
-    assignOptions(
-      document.getElementById("drink-selector-" + i),
-      getDrinkOptions(parameters[i])
-    );
-    assignOptions(
-      document.getElementById("drink-size-selector-" + i),
-      getDrinkSizeOptions(parameters[i])
-    );
-    assignOptions(
-      document.getElementById("milk-type-selector-" + i),
-      getMilkTypeOptions(parameters[i])
-    );
-    assignOptions(
-      document.getElementById("whipped-cream-selector-" + i),
-      getWhippedCreamOptions(parameters[i])
-    );
-    assignOptions(
-      document.getElementById("shots-selector-" + i),
-      getNumShotsOptions(parameters[i])
-    );
+function setSelectionOptions(element, parameters) {
+  console.log("setSelectionOptions", element, parameters);
+  if (element.id.startsWith("drink-category-selector-")) {
+    assignOptions(element, getDrinkCategoryOptions(parameters));
+  } else if (element.id.startsWith("drink-selector-")) {
+    assignOptions(element, getDrinkOptions(parameters));
+  } else if (element.id.startsWith("drink-size-selector-")) {
+    assignOptions(element, getDrinkSizeOptions(parameters));
+  } else if (element.id.startsWith("milk-type-selector-")) {
+    assignOptions(element, getMilkTypeOptions(parameters));
+  } else if (element.id.startsWith("whipped-cream-selector-")) {
+    assignOptions(element, getWhippedCreamOptions(parameters));
+  } else if (element.id.startsWith("shots-selector-")) {
+    assignOptions(element, getNumShotsOptions(parameters));
+  } else {
+    console.log("setSelectionOptions - no match");
   }
 }
 
@@ -92,12 +116,10 @@ function setSelectionOptions(parameters) {
  */
 
 // Called whenever there is an update to the selectors
-function handleUpdate(parameters) {
+function sendUpdate(parameters) {
   if (parameters === null || parameters === undefined) {
     parameters = getParameters();
   }
-  console.log(parameters);
-  setSelectionOptions(parameters);
   let nutritionData1 = getNutritionData(parameters["A"]); // Query the dataset (data.js);
   // update(nutritionData);  // Send data to the graphs
 }
@@ -131,7 +153,6 @@ function getParameters() {
 
 function assignOptions(s, options) {
   if (JSON.stringify(options) == JSON.stringify(getOptions(s))) {
-    console.log("arrays equal");
     return;
   }
   clearOptions(s);
@@ -154,4 +175,8 @@ function clearOptions(s) {
   while (s.firstChild) {
     s.removeChild(s.firstChild);
   }
+}
+
+function getDrinkLetter(node) {
+  return node.id.substring(node.id.lastIndexOf("-") + 1);
 }
