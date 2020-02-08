@@ -197,7 +197,7 @@ function drawCharts(drinkOne, drinkTwo) {
           } else if (j < 4) {
             return yScale(0) - yScale(Object.byString(d.nutritions[10], "transFat"));
           } else {
-            return yScale(0) - yScale(Object.byString(d.nutritions[11], "satFat"));
+            return yScale(Object.byString(d.nutritions[10], "transFat")) - yScale(Object.byString(d.nutritions[11], "satFat"));
           }
         })
         .attr("width", xScale.bandwidth() / 2)
