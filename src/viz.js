@@ -27,6 +27,18 @@ const ELEMENTS = [
   "caffeine"
 ];
 
+const units = [
+  "calories",
+  "g",
+  "mg",
+  "mg",
+  "g",
+  "g",
+  "g",
+  "g",
+  "mg"
+];
+
 const yAxisNames = [
   "Calories",
   "Fat (grams)",
@@ -174,6 +186,10 @@ function drawCharts(drinkOne, drinkTwo) {
         } else {
           return "#00cc44";
         }
+      })
+      .append("title")
+      .text(function(d) {
+        return Object.byString(d.nutritions[i], content) + " " + units[i];
       });
 
     svg
