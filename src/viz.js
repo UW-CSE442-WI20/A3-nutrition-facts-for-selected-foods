@@ -99,6 +99,8 @@ export function update(drinkOne, drinkTwo) {
 }
 
 function drawCharts(drinkOne, drinkTwo) {
+
+  // what should the behavior be if drinkOne == drinkTwo?
   if (drinkOne == drinkTwo) {
     return;
   }
@@ -117,7 +119,7 @@ function drawCharts(drinkOne, drinkTwo) {
 
     var xScale = d3
       .scaleBand()
-      .domain([drinkOne.drink, drinkTwo.drink])
+      .domain(["Drink 1", "Drink 2"])
       .range([padding, w - padding])
       .paddingInner(0.2)
       .paddingOuter(0.2);
@@ -152,8 +154,12 @@ function drawCharts(drinkOne, drinkTwo) {
       .data([drinkOne, drinkTwo])
       .enter()
       .append("rect")
-      .attr("x", function(d) {
-        return xScale(d.drink) + xScale.bandwidth() / 4;
+      .attr("x", function(d, j) {
+        if (j == 0) {
+          return xScale("Drink 1") + xScale.bandwidth() / 4;
+        } else {
+          return xScale("Drink 2") + xScale.bandwidth() / 4;
+        }
       })
       .attr("y", function(d) {
         return yScale(Object.byString(d.nutritions[i], content));
