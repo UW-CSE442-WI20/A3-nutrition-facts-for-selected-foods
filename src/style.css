@@ -157,6 +157,7 @@ select {
 
 .chart {
   display: inline-block;
+  margin: 1%;
 }
 
 #chart-container {

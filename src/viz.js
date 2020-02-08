@@ -56,50 +56,6 @@ for (let i = 0; i < ELEMENTS.length; i++) {
   document.getElementById(ELEMENTS[i]).innerHTML = "";
 }
 
-var drinkOne = {
-  drink: "Coffee",
-  nutritions: [
-    { calories: 30 },
-    { fat: 30 },
-    { cholesterol: 30 },
-    { sodium: 30 },
-    { carbs: 30 },
-    { fiber: 15 },
-    { sugar: 30 },
-    { protein: 30 },
-    { caffeine: 30 }
-  ]
-};
-var drinkTwo = {
-  drink: "Latte",
-  nutritions: [
-    { calories: 90 },
-    { fat: 90 },
-    { cholesterol: 90 },
-    { sodium: 90 },
-    { carbs: 90 },
-    { fiber: 90 },
-    { sugar: 90 },
-    { protein: 90 },
-    { caffeine: 90 }
-  ]
-};
-
-var drinkThree = {
-  drink: "Food",
-  nutritions: [
-    { calories: 90 },
-    { fat: 40 },
-    { cholesterol: 20 },
-    { sodium: 30 },
-    { carbs: 100 },
-    { fiber: 55 },
-    { sugar: 20 },
-    { protein: 20 },
-    { caffeine: 5 }
-  ]
-};
-const drinks = [drinkOne, drinkTwo, drinkThree];
 // setInterval(function () {
 //   drawCharts(_.sample(drinks), _.sample(drinks))
 //   // drawCharts(drinks[Math.floor(Math.random() * drinks.length)], drinks[Math.floor(Math.random() * drinks.length)])
