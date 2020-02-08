@@ -161,36 +161,142 @@ function drawCharts(drinkOne, drinkTwo) {
       .attr("width", w)
       .attr("height", h);
 
-    svg
-      .selectAll("rect")
-      .data([drinkOne, drinkTwo])
-      .enter()
-      .append("rect")
-      .attr("x", function(d, j) {
-        if (j == 0) {
-          return xScale("Drink 1") + xScale.bandwidth() / 4;
-        } else {
-          return xScale("Drink 2") + xScale.bandwidth() / 4;
-        }
-      })
-      .attr("y", function(d) {
-        return yScale(Object.byString(d.nutritions[i], content));
-      })
-      .attr("height", function(d) {
-        return yScale(0) - yScale(Object.byString(d.nutritions[i], content));
-      })
-      .attr("width", xScale.bandwidth() / 2)
-      .attr("fill", function(d, i) {
-        if (i == 0) {
-          return "#1a75ff";
-        } else {
-          return "#00cc44";
-        }
-      })
-      .append("title")
-      .text(function(d) {
-        return Object.byString(d.nutritions[i], content) + " " + units[i];
-      });
+    if (content == "calories") {
+      svg
+        .selectAll("rect")
+        .data([drinkOne, drinkTwo, drinkOne, drinkTwo])
+        .enter()
+        .append("rect")
+        .attr("x", function(d, j) {
+          if (j == 0 || j == 2) {
+            return xScale("Drink 1") + xScale.bandwidth() / 4;
+          } else {
+            return xScale("Drink 2") + xScale.bandwidth() / 4;
+          }
+        })
+        .attr("y", function(d, j) {
+          if (j < 2) {
+            return yScale(Object.byString(d.nutritions[i], content));
+          } else {
+            return yScale(Object.byString(d.nutritions[9], "fatCalories"));
+          }
+        })
+        .attr("height", function(d, j) {
+          if (j < 2) {
+            return yScale(0) - yScale(Object.byString(d.nutritions[i], content));
+          } else {
+            return yScale(0) - yScale(Object.byString(d.nutritions[9], "fatCalories"));
+          }
+        })
+        .attr("width", xScale.bandwidth() / 2)
+        .attr("fill", function(d, j) {
+          if (j == 0) {
+            return "#1a75ff";
+          } else if (j == 1) {
+            return "#00cc44";
+          } else if (j == 2) {
+            return "#003380";
+          } else {
+            return "#006622";
+          }
+        })
+        .append("title")
+        .text(function(d, j) {
+          if (j < 2) {
+            return Object.byString(d.nutritions[i], content) + " " + units[i] + " total";
+          } else {
+            return Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat";
+          }
+        });
+    } else if (content == "fat") {
+      svg
+        .selectAll("rect")
+        .data([drinkOne, drinkTwo, drinkOne, drinkTwo, drinkOne, drinkTwo])
+        .enter()
+        .append("rect")
+        .attr("x", function(d, j) {
+          if (j == 0 || j == 2 || j == 4) {
+            return xScale("Drink 1") + xScale.bandwidth() / 4;
+          } else {
+            return xScale("Drink 2") + xScale.bandwidth() / 4;
+          }
+        })
+        .attr("y", function(d, j) {
+          if (j < 2) {
+            return yScale(Object.byString(d.nutritions[i], content));
+          } else if (j < 4) {
+            return yScale(Object.byString(d.nutritions[10], "transFat"));
+          } else {
+            return yScale(Object.byString(d.nutritions[11], "satFat"));
+          }
+        })
+        .attr("height", function(d, j) {
+          if (j < 2) {
+            return yScale(0) - yScale(Object.byString(d.nutritions[i], content));
+          } else if (j < 4) {
+            return yScale(0) - yScale(Object.byString(d.nutritions[10], "transFat"));
+          } else {
+            return yScale(0) - yScale(Object.byString(d.nutritions[11], "satFat"));
+          }
+        })
+        .attr("width", xScale.bandwidth() / 2)
+        .attr("fill", function(d, j) {
+          if (j == 0) {
+            return "#1a75ff";
+          } else if (j == 1) {
+            return "#00cc44";
+          } else if (j == 2) {
+            return "#001433";
+          } else if (j == 3) {
+            return "#003311";
+          } else if (j == 4) {
+            return "#003380";
+          } else {
+            return "#006622";
+          }
+        })
+        .append("title")
+        .text(function(d, j) {
+          if (j < 2) {
+            return Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total";
+          } else if (j < 4) {
+            return Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat";
+          } else {
+            return Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat";
+          }
+        });
+    } else {
+      svg
+        .selectAll("rect")
+        .data([drinkOne, drinkTwo])
+        .enter()
+        .append("rect")
+        .attr("x", function(d, j) {
+          if (j == 0) {
+            return xScale("Drink 1") + xScale.bandwidth() / 4;
+          } else {
+            return xScale("Drink 2") + xScale.bandwidth() / 4;
+          }
+        })
+        .attr("y", function(d) {
+          return yScale(Object.byString(d.nutritions[i], content));
+        })
+        .attr("height", function(d) {
+          return yScale(0) - yScale(Object.byString(d.nutritions[i], content));
+        })
+        .attr("width", xScale.bandwidth() / 2)
+        .attr("fill", function(d, j) {
+          if (j == 0) {
+            return "#1a75ff";
+          } else {
+            return "#00cc44";
+          }
+        })
+        .append("title")
+        .text(function(d) {
+          return Object.byString(d.nutritions[i], content) + " " + units[i];
+        });
+    }
 
     svg
       .append("g")

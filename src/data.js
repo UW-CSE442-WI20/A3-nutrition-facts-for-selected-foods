@@ -107,7 +107,10 @@ function transformNutritionData(d) {
       { fiber: parseFloat(d["Dietary Fiber(g)"]) },
       { sugar: parseFloat(d["Sugars(g)"]) },
       { protein: parseFloat(d["Protein(g)"]) },
-      { caffeine: parseFloat(d["Caffeine(mg)"]) }
+      { caffeine: parseFloat(d["Caffeine(mg)"]) },
+      { fatCalories: parseFloat(d["Calories from fat"]) },
+      { transFat: parseFloat(d["Trans fat(g)"]) },
+      { satFat: parseFloat(d["Saturated fat(g)"]) }
     ]
   };
 }
