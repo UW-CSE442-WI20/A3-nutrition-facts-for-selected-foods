@@ -1,6 +1,6 @@
 import _ from "lodash";
 
-Object.byString = function(o, s) {
+Object.byString = function (o, s) {
   s = s.replace(/\[(\w+)\]/g, ".$1"); // convert indexes to properties
   s = s.replace(/^\./, ""); // strip a leading dot
   var a = s.split(".");
@@ -100,11 +100,11 @@ function drawCharts(drinkOne, drinkTwo) {
           Object.byString(drinkOne.nutritions[i], content),
           Object.byString(drinkTwo.nutritions[i], content)
         ) +
-          Math.max(
-            Object.byString(drinkOne.nutritions[i], content),
-            Object.byString(drinkTwo.nutritions[i], content)
-          ) *
-            0.2
+        Math.max(
+          Object.byString(drinkOne.nutritions[i], content),
+          Object.byString(drinkTwo.nutritions[i], content)
+        ) *
+        0.2
       ])
       .range([h - padding, padding]);
 
@@ -116,6 +116,11 @@ function drawCharts(drinkOne, drinkTwo) {
       .append("svg")
       .attr("width", w)
       .attr("height", h);
+    var tooltip = d3.select("body")
+      .append("div")
+      .style("position", "absolute")
+      .style("z-index", "10")
+      .style("visibility", "hidden")
 
     if (content == "calories") {
       svg
@@ -123,21 +128,21 @@ function drawCharts(drinkOne, drinkTwo) {
         .data([drinkOne, drinkTwo, drinkOne, drinkTwo])
         .enter()
         .append("rect")
-        .attr("x", function(d, j) {
+        .attr("x", function (d, j) {
           if (j == 0 || j == 2) {
             return xScale("Drink 1") + xScale.bandwidth() / 4;
           } else {
             return xScale("Drink 2") + xScale.bandwidth() / 4;
           }
         })
-        .attr("y", function(d, j) {
+        .attr("y", function (d, j) {
           if (j < 2) {
             return yScale(Object.byString(d.nutritions[i], content));
           } else {
             return yScale(Object.byString(d.nutritions[9], "fatCalories"));
           }
         })
-        .attr("height", function(d, j) {
+        .attr("height", function (d, j) {
           if (j < 2) {
             return yScale(0) - yScale(Object.byString(d.nutritions[i], content));
           } else {
@@ -145,7 +150,7 @@ function drawCharts(drinkOne, drinkTwo) {
           }
         })
         .attr("width", xScale.bandwidth() / 2)
-        .attr("fill", function(d, j) {
+        .attr("fill", function (d, j) {
           if (j == 0) {
             return "#1a75ff";
           } else if (j == 1) {
@@ -157,7 +162,7 @@ function drawCharts(drinkOne, drinkTwo) {
           }
         })
         .append("title")
-        .text(function(d, j) {
+        .text(function (d, j) {
           if (j < 2) {
             return Object.byString(d.nutritions[i], content) + " " + units[i] + " total";
           } else {
@@ -170,14 +175,14 @@ function drawCharts(drinkOne, drinkTwo) {
         .data([drinkOne, drinkTwo, drinkOne, drinkTwo, drinkOne, drinkTwo])
         .enter()
         .append("rect")
-        .attr("x", function(d, j) {
+        .attr("x", function (d, j) {
           if (j == 0 || j == 2 || j == 4) {
             return xScale("Drink 1") + xScale.bandwidth() / 4;
           } else {
             return xScale("Drink 2") + xScale.bandwidth() / 4;
           }
         })
-        .attr("y", function(d, j) {
+        .attr("y", function (d, j) {
           if (j < 2) {
             return yScale(Object.byString(d.nutritions[i], content));
           } else if (j < 4) {
@@ -186,7 +191,7 @@ function drawCharts(drinkOne, drinkTwo) {
             return yScale(Object.byString(d.nutritions[11], "satFat"));
           }
         })
-        .attr("height", function(d, j) {
+        .attr("height", function (d, j) {
           if (j < 2) {
             return yScale(0) - yScale(Object.byString(d.nutritions[i], content));
           } else if (j < 4) {
@@ -196,7 +201,7 @@ function drawCharts(drinkOne, drinkTwo) {
           }
         })
         .attr("width", xScale.bandwidth() / 2)
-        .attr("fill", function(d, j) {
+        .attr("fill", function (d, j) {
           if (j == 0) {
             return "#1a75ff";
           } else if (j == 1) {
@@ -212,7 +217,7 @@ function drawCharts(drinkOne, drinkTwo) {
           }
         })
         .append("title")
-        .text(function(d, j) {
+        .text(function (d, j) {
           if (j < 2) {
             return Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total";
           } else if (j < 4) {
@@ -227,30 +232,35 @@ function drawCharts(drinkOne, drinkTwo) {
         .data([drinkOne, drinkTwo])
         .enter()
         .append("rect")
-        .attr("x", function(d, j) {
+        .attr("x", function (d, j) {
           if (j == 0) {
             return xScale("Drink 1") + xScale.bandwidth() / 4;
           } else {
             return xScale("Drink 2") + xScale.bandwidth() / 4;
           }
         })
-        .attr("y", function(d) {
+        .attr("y", function (d) {
           return yScale(Object.byString(d.nutritions[i], content));
         })
-        .attr("height", function(d) {
+        .attr("height", function (d) {
           return yScale(0) - yScale(Object.byString(d.nutritions[i], content));
         })
         .attr("width", xScale.bandwidth() / 2)
-        .attr("fill", function(d, j) {
+        .attr("fill", function (d, j) {
           if (j == 0) {
             return "#1a75ff";
           } else {
             return "#00cc44";
           }
         })
-        .append("title")
-        .text(function(d) {
-          return Object.byString(d.nutritions[i], content) + " " + units[i];
+        .on("mouseover", function (d) { 
+          return tooltip.style("visibility", "visible").text(Object.byString(d.nutritions[i], content) + " " + units[i])
+        })
+        .on("mousemove", function () { 
+          return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px"); 
+        })
+        .on("mouseout", function () { 
+          return tooltip.style("visibility", "hidden"); 
         });
     }
 
