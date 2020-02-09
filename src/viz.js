@@ -52,7 +52,6 @@ const yAxisNames = [
 ];
 
 export function update(drinkOne, drinkTwo) {
-  console.log(drinkOne, drinkTwo);
   drawCharts(drinkOne, drinkTwo);
 }
 
@@ -73,16 +72,16 @@ function drawCharts(drinkOne, drinkTwo) {
 
     w = w.substring(0, w.length - 2);
     h = h.substring(0, h.length - 2);
-    var padding = w * 0.1;
+    const padding = w * 0.1;
 
-    var xScale = d3
+    const xScale = d3
       .scaleBand()
       .domain(["Drink 1", "Drink 2"])
       .range([padding, w - padding])
       .paddingInner(0.2)
       .paddingOuter(0.2);
 
-    var yScale = d3
+    const yScale = d3
       .scaleLinear()
       .domain([
         0,
@@ -98,15 +97,15 @@ function drawCharts(drinkOne, drinkTwo) {
       ])
       .range([h - padding, padding]);
 
-    var xAxis = d3.axisBottom().scale(xScale);
-    var yAxis = d3.axisLeft().scale(yScale);
+    const xAxis = d3.axisBottom().scale(xScale);
+    const yAxis = d3.axisLeft().scale(yScale);
 
-    var svg = d3
+    const svg = d3
       .select("#" + content)
       .append("svg")
       .attr("width", w)
       .attr("height", h);
-    var tooltip = d3.select("body")
+    const tooltip = d3.select("body")
       .append("div")
       .style("position", "absolute")
       .style("z-index", "10")
