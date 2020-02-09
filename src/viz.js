@@ -57,11 +57,6 @@ export function update(drinkOne, drinkTwo) {
 
 function drawCharts(drinkOne, drinkTwo) {
 
-  // what should the behavior be if drinkOne == drinkTwo?
-  if (drinkOne == drinkTwo) {
-    return;
-  }
-
   for (let i = 0; i < ELEMENTS.length; i++) {
     const content = ELEMENTS[i];
     document.getElementById(content).style.width = "30%";
@@ -72,7 +67,7 @@ function drawCharts(drinkOne, drinkTwo) {
 
     w = w.substring(0, w.length - 2);
     h = h.substring(0, h.length - 2);
-    const padding = w * 0.1;
+    const padding = w * 0.11;
 
     const xScale = d3
       .scaleBand()
@@ -83,8 +78,9 @@ function drawCharts(drinkOne, drinkTwo) {
 
     const yScale = d3
       .scaleLinear()
-      .domain([
-        0,
+      .domain(
+      [
+        0, Math.max(
         Math.max(
           Object.byString(drinkOne.nutritions[i], content),
           Object.byString(drinkTwo.nutritions[i], content)
@@ -93,12 +89,13 @@ function drawCharts(drinkOne, drinkTwo) {
           Object.byString(drinkOne.nutritions[i], content),
           Object.byString(drinkTwo.nutritions[i], content)
         ) *
-        0.2
+        0.2,
+        1)
       ])
       .range([h - padding, padding]);
 
     const xAxis = d3.axisBottom().scale(xScale).tickSizeOuter(0);
-    const yAxis = d3.axisLeft().scale(yScale).tickSizeOuter(0).ticks(5);
+    const yAxis = d3.axisLeft().scale(yScale).tickSizeOuter(0).ticks(6);
 
     const svg = d3
       .select("#" + content)
@@ -277,7 +274,7 @@ function drawCharts(drinkOne, drinkTwo) {
           d3.select(this).transition()
             .duration('50')
             .attr('opacity', '.85');
-          const text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of " + yAxisNames[i];
+          const text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of " + ELEMENTS[i];
           return tooltip.style("visibility", "visible").text(text)
         })
         .on("mousemove", function () {
