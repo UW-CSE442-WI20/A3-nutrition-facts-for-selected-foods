@@ -161,13 +161,29 @@ function drawCharts(drinkOne, drinkTwo) {
             return "#006622";
           }
         })
-        .append("title")
-        .text(function (d, j) {
+        .on("mouseover", function (d, j) {
+          let text = ""
           if (j < 2) {
-            return Object.byString(d.nutritions[i], content) + " " + units[i] + " total";
+            text = Object.byString(d.nutritions[i], content) + " " + units[i] + " total";
           } else {
-            return Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat";
+            text = Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat";
           }
+          d3.select(this).transition()
+            .duration('50')
+            .attr('opacity', '.85');
+          tooltip.style("background-color", "aqua")
+          tooltip.style("padding", "12px 20px")
+          return tooltip.style("visibility", "visible").text(text)
+        })
+        .on("mousemove", function () {
+          return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function () {
+          d3.select(this).transition()
+            .duration('50')
+            .attr('opacity', '1');
+
+          return tooltip.style("visibility", "hidden");
         });
     } else if (content == "fat") {
       svg
@@ -216,15 +232,32 @@ function drawCharts(drinkOne, drinkTwo) {
             return "#006622";
           }
         })
-        .append("title")
-        .text(function (d, j) {
+        .on("mouseover", function (d, j) {
+          let text = ""
           if (j < 2) {
-            return Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total";
+            text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total";
           } else if (j < 4) {
-            return Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat";
+            text = Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat";
           } else {
-            return Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat";
+            text = Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat";
           }
+          d3.select(this).transition()
+            .duration('50')
+            .attr('opacity', '.85');
+          tooltip.style("background-color", "aqua")
+          tooltip.style("padding", "12px 20px")
+
+          return tooltip.style("visibility", "visible").text(text)
+        })
+        .on("mousemove", function () {
+          return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
+        })
+        .on("mouseout", function () {
+          d3.select(this).transition()
+            .duration('50')
+            .attr('opacity', '1');
+
+          return tooltip.style("visibility", "hidden");
         });
     } else {
       svg
@@ -254,12 +287,22 @@ function drawCharts(drinkOne, drinkTwo) {
           }
         })
         .on("mouseover", function (d) {
-          return tooltip.style("visibility", "visible").text(Object.byString(d.nutritions[i], content) + " " + units[i])
+          tooltip.style("background-color", "aqua")
+          tooltip.style("padding", "12px 20px")
+          d3.select(this).transition()
+            .duration('50')
+            .attr('opacity', '.85');
+          const text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of " + yAxisNames[i];
+          return tooltip.style("visibility", "visible").text(text)
         })
         .on("mousemove", function () {
           return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
         })
         .on("mouseout", function () {
+          d3.select(this).transition()
+            .duration('50')
+            .attr('opacity', '1');
+
           return tooltip.style("visibility", "hidden");
         });
     }
