@@ -98,7 +98,7 @@ function drawCharts(drinkOne, drinkTwo) {
       .range([h - padding, padding]);
 
     const xAxis = d3.axisBottom().scale(xScale).tickSizeOuter(0);
-    const yAxis = d3.axisLeft().scale(yScale).tickSizeOuter(0);
+    const yAxis = d3.axisLeft().scale(yScale).tickSizeOuter(0).ticks(5);
 
     const svg = d3
       .select("#" + content)
