@@ -294,13 +294,13 @@ function drawCharts(drinkOne, drinkTwo) {
 
     svg
       .append("g")
-      .attr("class", "axis")
+      .attr("class", "x-axis")
       .attr("transform", "translate(0," + (h - padding) + ")")
       .call(xAxis);
 
     svg
       .append("g")
-      .attr("class", "y axis")
+      .attr("class", "y-axis")
       .attr("transform", "translate(" + padding + ",0)")
       .call(yAxis);
 
