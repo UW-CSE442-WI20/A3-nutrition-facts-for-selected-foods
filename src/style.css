@@ -32,8 +32,8 @@ h1 {
   font-family: "Antonym-Regular";
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 45px;
+  line-height: 60px;
   color: #3f546c;
 }
 
@@ -70,37 +70,44 @@ body {
 
 .wrapper-body{
   display: flex;
+  flex-wrap: wrap;
   flex-flow: row wrap;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
   padding: 50px 56px 56px 56px;
 }
+.title-div{
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 60%;
+  padding: auto 0px auto 0px;
+}
 
-.main{
+.p-div{
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: auto 0px auto 0px;
+}
+
+.div-60{
   display: flex;
   flex-flow: row wrap;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-left: 100px;
-  padding-bottom: 56px;
-}
-
-.div-5{
-  width: 600px;
+  width: 60%;
   margin: auto 0px auto 0px;
-  flex-flow: row wrap;
-  flex-direction: row;
 }
 
-.div-3{
-  width: 400px;
+.div-40{
+  width: 30%;
   margin: 0px 0px auto 0px;
 }
 
-.chart{
-  width: 150px;
-  margin: 0px;
-  padding: 0px;
+.chart {
+  width: 9rem;
+  height: 15rem;
+  margin: 0px 20px 30px 0px;
 }
