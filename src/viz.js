@@ -97,8 +97,8 @@ function drawCharts(drinkOne, drinkTwo) {
       ])
       .range([h - padding, padding]);
 
-    const xAxis = d3.axisBottom().scale(xScale);
-    const yAxis = d3.axisLeft().scale(yScale);
+    const xAxis = d3.axisBottom().scale(xScale).tickSizeOuter(0);
+    const yAxis = d3.axisLeft().scale(yScale).tickSizeOuter(0);
 
     const svg = d3
       .select("#" + content)
@@ -294,13 +294,13 @@ function drawCharts(drinkOne, drinkTwo) {
 
     svg
       .append("g")
-      .attr("class", "x-axis")
+      .attr("id", "x-axis")
       .attr("transform", "translate(0," + (h - padding) + ")")
       .call(xAxis);
 
     svg
       .append("g")
-      .attr("class", "y-axis")
+      .attr("id", "y-axis")
       .attr("transform", "translate(" + padding + ",0)")
       .call(yAxis);
 
@@ -312,5 +312,5 @@ function drawCharts(drinkOne, drinkTwo) {
       .style("font-size", "1.1em")
       .style("text-decoration", "underline")
       .text(yAxisNames[i]);
-  }
+    };
 }
