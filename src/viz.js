@@ -51,16 +51,6 @@ const yAxisNames = [
   "Caffeine (milligrams)"
 ];
 
-// clear the charts, which are to be replaced by new charts
-for (let i = 0; i < ELEMENTS.length; i++) {
-  document.getElementById(ELEMENTS[i]).innerHTML = "";
-}
-
-// setInterval(function () {
-//   drawCharts(_.sample(drinks), _.sample(drinks))
-//   // drawCharts(drinks[Math.floor(Math.random() * drinks.length)], drinks[Math.floor(Math.random() * drinks.length)])
-// }, 3000);
-
 export function update(drinkOne, drinkTwo) {
   console.log(drinkOne, drinkTwo);
   drawCharts(drinkOne, drinkTwo);
@@ -75,7 +65,7 @@ function drawCharts(drinkOne, drinkTwo) {
 
   for (let i = 0; i < ELEMENTS.length; i++) {
     const content = ELEMENTS[i];
-    //document.getElementById(content).style.width = "30%";
+    document.getElementById(content).style.width = "30%";
     document.getElementById(content).style.height = "15rem";
     document.getElementById(content).innerHTML = "";
     var w = window.getComputedStyle(document.getElementById(content)).width;
@@ -120,7 +110,10 @@ function drawCharts(drinkOne, drinkTwo) {
       .append("div")
       .style("position", "absolute")
       .style("z-index", "10")
-      .style("visibility", "hidden")
+      .style("background-color", "white")
+      .style("padding", "6px 10px")
+      .style( "border-radius", "6px")
+      .style("visibility", "hidden");
 
     if (content == "calories") {
       svg
@@ -171,8 +164,6 @@ function drawCharts(drinkOne, drinkTwo) {
           d3.select(this).transition()
             .duration('50')
             .attr('opacity', '.85');
-          tooltip.style("background-color", "aqua")
-          tooltip.style("padding", "12px 20px")
           return tooltip.style("visibility", "visible").text(text)
         })
         .on("mousemove", function () {
@@ -244,9 +235,6 @@ function drawCharts(drinkOne, drinkTwo) {
           d3.select(this).transition()
             .duration('50')
             .attr('opacity', '.85');
-          tooltip.style("background-color", "aqua")
-          tooltip.style("padding", "12px 20px")
-
           return tooltip.style("visibility", "visible").text(text)
         })
         .on("mousemove", function () {
@@ -287,8 +275,6 @@ function drawCharts(drinkOne, drinkTwo) {
           }
         })
         .on("mouseover", function (d) {
-          tooltip.style("background-color", "aqua")
-          tooltip.style("padding", "12px 20px")
           d3.select(this).transition()
             .duration('50')
             .attr('opacity', '.85');

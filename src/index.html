@@ -1,199 +1,157 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Nutritional facts</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-      type="text/css"
-    />
-    <div class="wrapper">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Nutritional facts</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+    type="text/css" />
+  <div class="wrapper-body">
+    <div id="selectors-container" class="div-40">
+      <div class="title-div">
+        <h1>What's in Starbucks drinks?</h1>
+      </div>
+      <div class="p-div">
+        <p>
+          Comparing the nutritional content of drinks on Starbucks' menu.
+        </p>
+      </div>
+      <div class="A" id="selector-A">
+        <h3>Drink 1</h3>
+        <select class="drink-category-selector selector A" id="drink-category-selector-A" name="Category">
+          <option>Bottled Drinks</option>
+          <option>Refreshers</option>
+          <option>Evolution Fresh</option>
+          <option>Iced Tea</option>
+          <option>Iced Coffee</option>
+          <option>Brewed Coffee</option>
+          <option>Espresso</option>
+          <option>Tea</option>
+          <option>Kids Drinks And Other</option>
+          <option>Frappuccino Blended Beverages</option>
+        </select>
+        <select class="drink-selector selector A" id="drink-selector-A" name="Name">
+          <option>Caramel Frappuccino® Blended Coffee</option>
+          <option>Double Chocolaty Chip Crème Frappuccino® Blended Crème</option>
+          <option>Chai Crème Frappuccino® Blended Crème</option>
+          <option>Vanilla Bean Crème Frappuccino® Blended Crème</option>
+          <option>Coffee Frappuccino® Blended Coffee</option>
+          <option>Strawberry Frappuccino® Blended Crème</option>
+          <option>Espresso Frappuccino® Blended Coffee</option>
+          <option>Pumpkin Spice Frappuccino® Blended Beverage</option>
+          <option>Pumpkin Spice Frappuccino® Blended Crème</option>
+          <option>Caffè Vanilla Frappuccino® Blended Coffee</option>
+          <option>Salted Caramel Mocha Frappuccino® Blended Beverage</option>
+          <option>Java Chip Frappuccino® Blended Coffee</option>
+          <option>Matcha Green Tea Crème Frappuccino® Blended Crème</option>
+          <option>White Chocolate Mocha Frappuccino® Blended Coffee</option>
+          <option>Mocha Frappuccino® Blended Coffee</option>
+        </select>
+        <label for="drink-size-selector-A">size</label>
+        <select class="drink-size-selector selector A" id="drink-size-selector-A" name="Size">
+          <option>Grande (16 fl. oz.)</option>
+          <option>Venti Iced (24 fl. oz.)</option>
+          <option>Tall (12 fl. oz.)</option>
+        </select>
+
+        <label for="shots-selector-A">Milk Type</label>
+        <select class="milk-type-selector selector A" id="milk-type-selector-A" name="Milk Type">
+          <option>Soy (United States)</option>
+          <option>Whole Milk</option>
+          <option>Nonfat milk</option>
+          <option>Almond</option>
+          <option>2% Milk</option>
+          <option>Coconut</option>
+        </select>
+        <label for="whipped-cream-selector-A">Whipped Cream</label>
+        <select class="whipped-cream-selector selector A" id="whipped-cream-selector-A" name="Whipped Cream">
+          <option>Whipped Cream</option>
+          <option>No Whipped Cream</option>
+        </select>
+      </div>
+      <div class="B" id="selector-B">
+        <h3 style="color:#E1AA28">Drink 2</h3>
+        <select class="drink-category-selector selector B" id="drink-category-selector-B" name="Category">
+          <option>Bottled Drinks</option>
+          <option>Refreshers</option>
+          <option>Evolution Fresh</option>
+          <option>Iced Tea</option>
+          <option>Iced Coffee</option>
+          <option>Brewed Coffee</option>
+          <option>Espresso</option>
+          <option>Tea</option>
+          <option>Kids Drinks And Other</option>
+          <option>Frappuccino Blended Beverages</option>
+        </select>
+        <select class="drink-selector selector B" id="drink-selector-B" name="Name">
+          <option>Caramel Frappuccino® Blended Coffee</option>
+          <option>Double Chocolaty Chip Crème Frappuccino® Blended Crème</option>
+          <option>Chai Crème Frappuccino® Blended Crème</option>
+          <option>Vanilla Bean Crème Frappuccino® Blended Crème</option>
+          <option>Coffee Frappuccino® Blended Coffee</option>
+          <option>Strawberry Frappuccino® Blended Crème</option>
+          <option>Espresso Frappuccino® Blended Coffee</option>
+          <option>Pumpkin Spice Frappuccino® Blended Beverage</option>
+          <option>Pumpkin Spice Frappuccino® Blended Crème</option>
+          <option>Caffè Vanilla Frappuccino® Blended Coffee</option>
+          <option>Salted Caramel Mocha Frappuccino® Blended Beverage</option>
+          <option>Java Chip Frappuccino® Blended Coffee</option>
+          <option>Matcha Green Tea Crème Frappuccino® Blended Crème</option>
+          <option>White Chocolate Mocha Frappuccino® Blended Coffee</option>
+          <option>Mocha Frappuccino® Blended Coffee</option>
+        </select>
+        <label for="drink-size-selector-B">Size</label>
+        <select class="drink-size-selector selector B" id="drink-size-selector-B" name="Size">
+          <option>Grande (16 fl. oz.)</option>
+          <option>Venti Iced (24 fl. oz.)</option>
+          <option>Tall (12 fl. oz.)</option>
+        </select>
+
+        <label for="shots-selector-B">Milk Type</label>
+        <select class="milk-type-selector selector B" id="milk-type-selector-B" name="Milk Type">
+          <option>Soy (United States)</option>
+          <option>Whole Milk</option>
+          <option>Nonfat milk</option>
+          <option>Almond</option>
+          <option>2% Milk</option>
+          <option>Coconut</option>
+        </select>
+        <label for="whipped-cream-selector-B">Whipped Cream</label>
+        <select class="whipped-cream-selector selector B" id="whipped-cream-selector-B" name="Whipped Cream">
+          <option>N/A</option>
+        </select>
+      </div>
     </div>
-    <div class="wrapper-body">
-      <div id="chart-container" class="div-60">
+    <div id="chart-container" class="div-60">
+      <div>
         <div id="calories" class="chart"></div>
         <div id="fat" class="chart"></div>
-        <div id="cholesterol" class="chart"></div>
+        <div id="cholesterol" class="chart"></div>  
+      </div>
+      <div>
         <div id="sodium" class="chart"></div>
         <div id="carbs" class="chart"></div>
-        <div id="fiber" class="chart"></div>
+        <div id="fiber" class="chart"></div>  
+      </div>
+      <div>
         <div id="sugar" class="chart"></div>
         <div id="protein" class="chart"></div>
-        <div id="caffeine" class="chart"></div>
+        <div id="caffeine" class="chart"></div>  
       </div>
+    </div>
 
-      <div id="selectors-container" class="div-40">
-        <div class="title-div">
-          <h1>What's in Starbucks drinks?</h1>
-        </div>
-        <div class="p-div">
-          <p>
-              Comparing the nutritional content of drinks on Starbucks' menu.
-          </p>
-        </div>
-        <div class="A" id="selector-A">
-          <h3>Drink 1</h3>
-          <select
-            class="drink-category-selector selector A"
-            id="drink-category-selector-A"
-            name="Category"
-          ></select>
-          <select
-            class="drink-selector selector A"
-            id="drink-selector-A"
-            name="Name"
-          ></select>
-          <label for="drink-size-selector-A">size</label>
-          <select
-            class="drink-size-selector selector A"
-            id="drink-size-selector-A"
-            name="Size"
-          >
-          </select>
-          </select>
-          <label for="shots-selector-A">Milk Type</label>
-          <select
-            class="milk-type-selector selector A"
-            id="milk-type-selector-A"
-            name="Milk Type"
-          >
-          </select>
-          <label for="whipped-cream-selector-A">Whipped Cream</label>
-          <select
-            class="whipped-cream-selector selector A"
-            id="whipped-cream-selector-A"
-            name="Whipped Cream"
-          ></select>
-        </div>
-        <div class="B" id="selector-B">
-          <h3 style="color:#E1AA28">Drink 2</h3>
-          <select
-            class="drink-category-selector selector B"
-            id="drink-category-selector-B"
-            name="Category"
-          ></select>
-          <select
-            class="drink-selector selector B"
-            id="drink-selector-B"
-            name="Name"
-          ></select>
-          <label for="drink-size-selector-B">Size</label>
-          <select
-            class="drink-size-selector selector B"
-            id="drink-size-selector-B"
-            name="Size"
-          >
-          </select>
-          </select>
-          <label for="shots-selector-B">Milk Type</label>
-          <select
-            class="milk-type-selector selector B"
-            id="milk-type-selector-B"
-            name="Milk Type"
-          >
-          </select>
-          <label for="whipped-cream-selector-B">Whipped Cream</label>
-          <select
-            class="whipped-cream-selector selector B"
-            id="whipped-cream-selector-B"
-            name="Whipped Cream"
-          ></select>
-        </div>
-      </div>
-
-    </div>
-    <script src="./index.js"></script>
-  </body>
-</html>
-
-
-<!-- <div class="wrapper-body">
-  <div id="selectors-container" class="div-40">
-    <div class="title-div">
-      <h1>What's in Starbucks drinks?</h1>
-    </div>
-    <div class="p-div">
-      <p>
-          Comparing the nutritional content of drinks on Starbucks' menu.
-      </p>
-    </div>
-    <div class="A" id="selector-A">
-      <h3>Drink 1</h3>
-      <select class="drink-category-selector selector A" id="drink-category-selector-A" name="Category"><option>Bottled Drinks</option><option>Refreshers</option><option>Evolution Fresh</option><option>Iced Tea</option><option>Iced Coffee</option><option>Brewed Coffee</option><option>Espresso</option><option>Tea</option><option>Kids Drinks And Other</option><option>Frappuccino Blended Beverages</option></select>
-      <select class="drink-selector selector A" id="drink-selector-A" name="Name"><option>Caramel Frappuccino® Blended Coffee</option><option>Double Chocolaty Chip Crème Frappuccino® Blended Crème</option><option>Chai Crème Frappuccino® Blended Crème</option><option>Vanilla Bean Crème Frappuccino® Blended Crème</option><option>Coffee Frappuccino® Blended Coffee</option><option>Strawberry Frappuccino® Blended Crème</option><option>Espresso Frappuccino® Blended Coffee</option><option>Pumpkin Spice Frappuccino® Blended Beverage</option><option>Pumpkin Spice Frappuccino® Blended Crème</option><option>Caffè Vanilla Frappuccino® Blended Coffee</option><option>Salted Caramel Mocha Frappuccino® Blended Beverage</option><option>Java Chip Frappuccino® Blended Coffee</option><option>Matcha Green Tea Crème Frappuccino® Blended Crème</option><option>White Chocolate Mocha Frappuccino® Blended Coffee</option><option>Mocha Frappuccino® Blended Coffee</option></select>
-      <label for="drink-size-selector-A">size</label>
-      <select class="drink-size-selector selector A" id="drink-size-selector-A" name="Size"><option>Grande (16 fl. oz.)</option><option>Venti Iced (24 fl. oz.)</option><option>Tall (12 fl. oz.)</option></select>
-      
-      <label for="shots-selector-A">Milk Type</label>
-      <select class="milk-type-selector selector A" id="milk-type-selector-A" name="Milk Type"><option>Soy (United States)</option><option>Whole Milk</option><option>Nonfat milk</option><option>Almond</option><option>2% Milk</option><option>Coconut</option></select>
-      <label for="whipped-cream-selector-A">Whipped Cream</label>
-      <select class="whipped-cream-selector selector A" id="whipped-cream-selector-A" name="Whipped Cream"><option>Whipped Cream</option><option>No Whipped Cream</option></select>
-    </div>
-    <div class="B" id="selector-B">
-      <h3 style="color:#E1AA28">Drink 2</h3>
-      <select class="drink-category-selector selector B" id="drink-category-selector-B" name="Category"><option>Bottled Drinks</option><option>Refreshers</option><option>Evolution Fresh</option><option>Iced Tea</option><option>Iced Coffee</option><option>Brewed Coffee</option><option>Espresso</option><option>Tea</option><option>Kids Drinks And Other</option><option>Frappuccino Blended Beverages</option></select>
-      <select class="drink-selector selector B" id="drink-selector-B" name="Name"><option>Caramel Frappuccino® Blended Coffee</option><option>Double Chocolaty Chip Crème Frappuccino® Blended Crème</option><option>Chai Crème Frappuccino® Blended Crème</option><option>Vanilla Bean Crème Frappuccino® Blended Crème</option><option>Coffee Frappuccino® Blended Coffee</option><option>Strawberry Frappuccino® Blended Crème</option><option>Espresso Frappuccino® Blended Coffee</option><option>Pumpkin Spice Frappuccino® Blended Beverage</option><option>Pumpkin Spice Frappuccino® Blended Crème</option><option>Caffè Vanilla Frappuccino® Blended Coffee</option><option>Salted Caramel Mocha Frappuccino® Blended Beverage</option><option>Java Chip Frappuccino® Blended Coffee</option><option>Matcha Green Tea Crème Frappuccino® Blended Crème</option><option>White Chocolate Mocha Frappuccino® Blended Coffee</option><option>Mocha Frappuccino® Blended Coffee</option></select>
-      <label for="drink-size-selector-B">Size</label>
-      <select class="drink-size-selector selector B" id="drink-size-selector-B" name="Size"><option>Grande (16 fl. oz.)</option><option>Venti Iced (24 fl. oz.)</option><option>Tall (12 fl. oz.)</option></select>
-      
-      <label for="shots-selector-B">Milk Type</label>
-      <select class="milk-type-selector selector B" id="milk-type-selector-B" name="Milk Type"><option>Soy (United States)</option><option>Whole Milk</option><option>Nonfat milk</option><option>Almond</option><option>2% Milk</option><option>Coconut</option></select>
-      <label for="whipped-cream-selector-B">Whipped Cream</label>
-      <select class="whipped-cream-selector selector B" id="whipped-cream-selector-B" name="Whipped Cream"><option>N/A</option></select>
-    </div>
-  </div><div id="chart-container" class="div-60" style="
-/* display: flex; */
-flex-direction: column;
-align-items: stretch;
-">
-<div style="
-/* align-items: stretch; */
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-">
-    <div id="calories" class="chart" style="height: 15rem;"><svg width="144" height="240"><rect x="35.345454545454544" y="49.59999999999999" height="176" width="20.94545454545454" fill="#1a75ff"><title>380 calories total</title></rect><rect x="87.70909090909089" y="119.07368421052632" height="106.52631578947367" width="20.94545454545454" fill="#00cc44"><title>230 calories total</title></rect><rect x="35.345454545454544" y="170.02105263157895" height="55.57894736842104" width="20.94545454545454" fill="#003380"><title>120 calories from fat</title></rect><rect x="87.70909090909089" y="220.96842105263158" height="4.631578947368411" width="20.94545454545454" fill="#006622"><title>10 calories from fat</title></rect><g class="axis" transform="translate(0,225.6)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M14.9,6V0.5H130.1V6"></path><g class="tick" opacity="1" transform="translate(45.81818181818181,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 1</text></g><g class="tick" opacity="1" transform="translate(98.18181818181816,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 2</text></g></g><g class="y axis" transform="translate(14.4,0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M-6,226.1H0.5V14.9H-6"></path><g class="tick" opacity="1" transform="translate(0,226.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,202.94210526315788)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">50</text></g><g class="tick" opacity="1" transform="translate(0,179.78421052631577)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">100</text></g><g class="tick" opacity="1" transform="translate(0,156.62631578947367)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">150</text></g><g class="tick" opacity="1" transform="translate(0,133.46842105263158)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">200</text></g><g class="tick" opacity="1" transform="translate(0,110.31052631578946)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">250</text></g><g class="tick" opacity="1" transform="translate(0,87.15263157894735)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">300</text></g><g class="tick" opacity="1" transform="translate(0,63.994736842105254)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">350</text></g><g class="tick" opacity="1" transform="translate(0,40.83684210526317)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">400</text></g><g class="tick" opacity="1" transform="translate(0,17.67894736842106)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">450</text></g></g><text x="72" y="15" text-anchor="middle" style="font-size: 1.1em; text-decoration: underline;">Calories</text></svg></div>
-    <div id="fat" class="chart" style="height: 15rem;"><svg width="144" height="240"><rect x="35.345454545454544" y="49.59999999999999" height="176" width="20.94545454545454" fill="#1a75ff"><title>13 g of fat total</title></rect><rect x="87.70909090909089" y="212.06153846153848" height="13.538461538461519" width="20.94545454545454" fill="#00cc44"><title>1 g of fat total</title></rect><rect x="35.345454545454544" y="225.6" height="0" width="20.94545454545454" fill="#001433"><title>0 g of trans fat</title></rect><rect x="87.70909090909089" y="225.6" height="0" width="20.94545454545454" fill="#003311"><title>0 g of trans fat</title></rect><rect x="35.345454545454544" y="130.83076923076925" height="94.76923076923075" width="20.94545454545454" fill="#003380"><title>7 g of saturated fat</title></rect><rect x="87.70909090909089" y="225.6" height="0" width="20.94545454545454" fill="#006622"><title>0 g of saturated fat</title></rect><g class="axis" transform="translate(0,225.6)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M14.9,6V0.5H130.1V6"></path><g class="tick" opacity="1" transform="translate(45.81818181818181,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 1</text></g><g class="tick" opacity="1" transform="translate(98.18181818181816,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 2</text></g></g><g class="y axis" transform="translate(14.4,0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M-6,226.1H0.5V14.9H-6"></path><g class="tick" opacity="1" transform="translate(0,226.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,199.02307692307693)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">2</text></g><g class="tick" opacity="1" transform="translate(0,171.94615384615383)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">4</text></g><g class="tick" opacity="1" transform="translate(0,144.8692307692308)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">6</text></g><g class="tick" opacity="1" transform="translate(0,117.79230769230767)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">8</text></g><g class="tick" opacity="1" transform="translate(0,90.7153846153846)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">10</text></g><g class="tick" opacity="1" transform="translate(0,63.63846153846153)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">12</text></g><g class="tick" opacity="1" transform="translate(0,36.561538461538454)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">14</text></g></g><text x="72" y="15" text-anchor="middle" style="font-size: 1.1em; text-decoration: underline;">Fat (grams)</text></svg></div>
-    <div id="cholesterol" class="chart" style="height: 15rem;"><svg width="144" height="240"><rect x="35.345454545454544" y="49.59999999999999" height="176" width="20.94545454545454" fill="#1a75ff"></rect><rect x="87.70909090909089" y="225.6" height="0" width="20.94545454545454" fill="#00cc44"></rect><g class="axis" transform="translate(0,225.6)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M14.9,6V0.5H130.1V6"></path><g class="tick" opacity="1" transform="translate(45.81818181818181,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 1</text></g><g class="tick" opacity="1" transform="translate(98.18181818181816,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 2</text></g></g><g class="y axis" transform="translate(14.4,0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M-6,226.1H0.5V14.9H-6"></path><g class="tick" opacity="1" transform="translate(0,226.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,200.95714285714286)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">5</text></g><g class="tick" opacity="1" transform="translate(0,175.8142857142857)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">10</text></g><g class="tick" opacity="1" transform="translate(0,150.67142857142855)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">15</text></g><g class="tick" opacity="1" transform="translate(0,125.52857142857144)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">20</text></g><g class="tick" opacity="1" transform="translate(0,100.38571428571429)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">25</text></g><g class="tick" opacity="1" transform="translate(0,75.24285714285715)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">30</text></g><g class="tick" opacity="1" transform="translate(0,50.09999999999999)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">35</text></g><g class="tick" opacity="1" transform="translate(0,24.95714285714287)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">40</text></g></g><text x="72" y="15" text-anchor="middle" style="font-size: 1.1em; text-decoration: underline;">Cholesterol (milligrams)</text></svg></div>
-</div>
-<div style="
-/* align-items: stretch; */
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-">
-    <div id="sodium" class="chart" style="height: 15rem;"><svg width="144" height="240"><rect x="35.345454545454544" y="49.59999999999999" height="176" width="20.94545454545454" fill="#1a75ff"></rect><rect x="87.70909090909089" y="78.93333333333334" height="146.66666666666666" width="20.94545454545454" fill="#00cc44"></rect><g class="axis" transform="translate(0,225.6)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M14.9,6V0.5H130.1V6"></path><g class="tick" opacity="1" transform="translate(45.81818181818181,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 1</text></g><g class="tick" opacity="1" transform="translate(98.18181818181816,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 2</text></g></g><g class="y axis" transform="translate(14.4,0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M-6,226.1H0.5V14.9H-6"></path><g class="tick" opacity="1" transform="translate(0,226.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,211.43333333333334)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">20</text></g><g class="tick" opacity="1" transform="translate(0,196.76666666666668)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">40</text></g><g class="tick" opacity="1" transform="translate(0,182.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">60</text></g><g class="tick" opacity="1" transform="translate(0,167.43333333333334)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">80</text></g><g class="tick" opacity="1" transform="translate(0,152.76666666666668)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">100</text></g><g class="tick" opacity="1" transform="translate(0,138.09999999999997)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">120</text></g><g class="tick" opacity="1" transform="translate(0,123.43333333333332)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">140</text></g><g class="tick" opacity="1" transform="translate(0,108.76666666666665)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">160</text></g><g class="tick" opacity="1" transform="translate(0,94.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">180</text></g><g class="tick" opacity="1" transform="translate(0,79.43333333333334)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">200</text></g><g class="tick" opacity="1" transform="translate(0,64.76666666666668)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">220</text></g><g class="tick" opacity="1" transform="translate(0,50.09999999999999)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">240</text></g><g class="tick" opacity="1" transform="translate(0,35.43333333333333)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">260</text></g><g class="tick" opacity="1" transform="translate(0,20.76666666666667)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">280</text></g></g><text x="72" y="15" text-anchor="middle" style="font-size: 1.1em; text-decoration: underline;">Sodium (milligrams)</text></svg></div>
-    <div id="carbs" class="chart" style="height: 15rem;"><svg width="144" height="240"><rect x="35.345454545454544" y="49.600000000000016" height="175.99999999999997" width="20.94545454545454" fill="#1a75ff"></rect><rect x="87.70909090909089" y="80.82580645161292" height="144.77419354838707" width="20.94545454545454" fill="#00cc44"></rect><g class="axis" transform="translate(0,225.6)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M14.9,6V0.5H130.1V6"></path><g class="tick" opacity="1" transform="translate(45.81818181818181,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 1</text></g><g class="tick" opacity="1" transform="translate(98.18181818181816,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 2</text></g></g><g class="y axis" transform="translate(14.4,0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M-6,226.1H0.5V14.9H-6"></path><g class="tick" opacity="1" transform="translate(0,226.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,197.71290322580646)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">10</text></g><g class="tick" opacity="1" transform="translate(0,169.32580645161292)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">20</text></g><g class="tick" opacity="1" transform="translate(0,140.93870967741935)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">30</text></g><g class="tick" opacity="1" transform="translate(0,112.5516129032258)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">40</text></g><g class="tick" opacity="1" transform="translate(0,84.16451612903226)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">50</text></g><g class="tick" opacity="1" transform="translate(0,55.77741935483871)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">60</text></g><g class="tick" opacity="1" transform="translate(0,27.390322580645172)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">70</text></g></g><text x="72" y="15" text-anchor="middle" style="font-size: 1.1em; text-decoration: underline;">Carbohydrates (grams)</text></svg></div>
-    <div id="fiber" class="chart" style="height: 15rem;"><svg width="144" height="240"><rect x="35.345454545454544" y="49.59999999999999" height="176" width="20.94545454545454" fill="#1a75ff"></rect><rect x="87.70909090909089" y="225.6" height="0" width="20.94545454545454" fill="#00cc44"></rect><g class="axis" transform="translate(0,225.6)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M14.9,6V0.5H130.1V6"></path><g class="tick" opacity="1" transform="translate(45.81818181818181,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 1</text></g><g class="tick" opacity="1" transform="translate(98.18181818181816,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 2</text></g></g><g class="y axis" transform="translate(14.4,0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M-6,226.1H0.5V14.9H-6"></path><g class="tick" opacity="1" transform="translate(0,226.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.0</text></g><g class="tick" opacity="1" transform="translate(0,208.49999999999997)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.1</text></g><g class="tick" opacity="1" transform="translate(0,190.89999999999998)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.2</text></g><g class="tick" opacity="1" transform="translate(0,173.29999999999998)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.3</text></g><g class="tick" opacity="1" transform="translate(0,155.7)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.4</text></g><g class="tick" opacity="1" transform="translate(0,138.09999999999997)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.5</text></g><g class="tick" opacity="1" transform="translate(0,120.5)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.6</text></g><g class="tick" opacity="1" transform="translate(0,102.89999999999999)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.7</text></g><g class="tick" opacity="1" transform="translate(0,85.29999999999998)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.8</text></g><g class="tick" opacity="1" transform="translate(0,67.7)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.9</text></g><g class="tick" opacity="1" transform="translate(0,50.09999999999999)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">1.0</text></g><g class="tick" opacity="1" transform="translate(0,32.499999999999986)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">1.1</text></g><g class="tick" opacity="1" transform="translate(0,14.9)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">1.2</text></g></g><text x="72" y="15" text-anchor="middle" style="font-size: 1.1em; text-decoration: underline;">Fiber (grams)</text></svg></div>
-</div>
-<div style="
-/* align-items: stretch; */
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-">
-    <div id="sugar" class="chart" style="height: 15rem;"><svg width="144" height="240"><rect x="35.345454545454544" y="49.59999999999999" height="176" width="20.94545454545454" fill="#1a75ff"></rect><rect x="87.70909090909089" y="79.43050847457627" height="146.16949152542372" width="20.94545454545454" fill="#00cc44"></rect><g class="axis" transform="translate(0,225.6)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M14.9,6V0.5H130.1V6"></path><g class="tick" opacity="1" transform="translate(45.81818181818181,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 1</text></g><g class="tick" opacity="1" transform="translate(98.18181818181816,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 2</text></g></g><g class="y axis" transform="translate(14.4,0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M-6,226.1H0.5V14.9H-6"></path><g class="tick" opacity="1" transform="translate(0,226.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,196.26949152542372)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">10</text></g><g class="tick" opacity="1" transform="translate(0,166.43898305084744)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">20</text></g><g class="tick" opacity="1" transform="translate(0,136.6084745762712)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">30</text></g><g class="tick" opacity="1" transform="translate(0,106.77796610169491)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">40</text></g><g class="tick" opacity="1" transform="translate(0,76.94745762711864)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">50</text></g><g class="tick" opacity="1" transform="translate(0,47.11694915254236)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">60</text></g><g class="tick" opacity="1" transform="translate(0,17.2864406779661)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">70</text></g></g><text x="72" y="15" text-anchor="middle" style="font-size: 1.1em; text-decoration: underline;">Sugar (grams)</text></svg></div>
-    <div id="protein" class="chart" style="height: 15rem;"><svg width="144" height="240"><rect x="35.345454545454544" y="49.59999999999999" height="176" width="20.94545454545454" fill="#1a75ff"></rect><rect x="87.70909090909089" y="120" height="105.6" width="20.94545454545454" fill="#00cc44"></rect><g class="axis" transform="translate(0,225.6)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M14.9,6V0.5H130.1V6"></path><g class="tick" opacity="1" transform="translate(45.81818181818181,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 1</text></g><g class="tick" opacity="1" transform="translate(98.18181818181816,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 2</text></g></g><g class="y axis" transform="translate(14.4,0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M-6,226.1H0.5V14.9H-6"></path><g class="tick" opacity="1" transform="translate(0,226.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.0</text></g><g class="tick" opacity="1" transform="translate(0,208.49999999999997)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0.5</text></g><g class="tick" opacity="1" transform="translate(0,190.9)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">1.0</text></g><g class="tick" opacity="1" transform="translate(0,173.29999999999998)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">1.5</text></g><g class="tick" opacity="1" transform="translate(0,155.70000000000002)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">2.0</text></g><g class="tick" opacity="1" transform="translate(0,138.09999999999997)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">2.5</text></g><g class="tick" opacity="1" transform="translate(0,120.5)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">3.0</text></g><g class="tick" opacity="1" transform="translate(0,102.89999999999999)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">3.5</text></g><g class="tick" opacity="1" transform="translate(0,85.3)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">4.0</text></g><g class="tick" opacity="1" transform="translate(0,67.7)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">4.5</text></g><g class="tick" opacity="1" transform="translate(0,50.09999999999999)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">5.0</text></g><g class="tick" opacity="1" transform="translate(0,32.50000000000001)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">5.5</text></g><g class="tick" opacity="1" transform="translate(0,14.9)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">6.0</text></g></g><text x="72" y="15" text-anchor="middle" style="font-size: 1.1em; text-decoration: underline;">Protein (grams)</text></svg></div>
-    <div id="caffeine" class="chart" style="height: 15rem;"><svg width="144" height="240"><rect x="35.345454545454544" y="225.6" height="0" width="20.94545454545454" fill="#1a75ff"></rect><rect x="87.70909090909089" y="49.59999999999999" height="176" width="20.94545454545454" fill="#00cc44"></rect><g class="axis" transform="translate(0,225.6)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M14.9,6V0.5H130.1V6"></path><g class="tick" opacity="1" transform="translate(45.81818181818181,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 1</text></g><g class="tick" opacity="1" transform="translate(98.18181818181816,0)"><line stroke="currentColor" y2="6"></line><text fill="currentColor" y="9" dy="0.71em">Drink 2</text></g></g><g class="y axis" transform="translate(14.4,0)" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="currentColor" d="M-6,226.1H0.5V14.9H-6"></path><g class="tick" opacity="1" transform="translate(0,226.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">0</text></g><g class="tick" opacity="1" transform="translate(0,204.76666666666668)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">20</text></g><g class="tick" opacity="1" transform="translate(0,183.43333333333334)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">40</text></g><g class="tick" opacity="1" transform="translate(0,162.10000000000002)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">60</text></g><g class="tick" opacity="1" transform="translate(0,140.76666666666668)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">80</text></g><g class="tick" opacity="1" transform="translate(0,119.43333333333334)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">100</text></g><g class="tick" opacity="1" transform="translate(0,98.1)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">120</text></g><g class="tick" opacity="1" transform="translate(0,76.76666666666667)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">140</text></g><g class="tick" opacity="1" transform="translate(0,55.43333333333334)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">160</text></g><g class="tick" opacity="1" transform="translate(0,34.10000000000001)"><line stroke="currentColor" x2="-6"></line><text fill="currentColor" x="-9" dy="0.32em">180</text></g></g><text x="72" y="15" text-anchor="middle" style="font-size: 1.1em; text-decoration: underline;">Caffeine (milligrams)</text></svg></div>
-</div>
   </div>
+  <script src="./index.js"></script>
+</body>
 
-  
-
-</div> -->
+</html>
