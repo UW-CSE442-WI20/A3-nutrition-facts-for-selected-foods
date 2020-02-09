@@ -75,7 +75,7 @@ function drawCharts(drinkOne, drinkTwo) {
 
   for (let i = 0; i < ELEMENTS.length; i++) {
     const content = ELEMENTS[i];
-    document.getElementById(content).style.width = "30%";
+    //document.getElementById(content).style.width = "30%";
     document.getElementById(content).style.height = "20rem";
     document.getElementById(content).innerHTML = "";
     var w = window.getComputedStyle(document.getElementById(content)).width;
@@ -253,14 +253,14 @@ function drawCharts(drinkOne, drinkTwo) {
             return "#00cc44";
           }
         })
-        .on("mouseover", function (d) { 
+        .on("mouseover", function (d) {
           return tooltip.style("visibility", "visible").text(Object.byString(d.nutritions[i], content) + " " + units[i])
         })
-        .on("mousemove", function () { 
-          return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px"); 
+        .on("mousemove", function () {
+          return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
         })
-        .on("mouseout", function () { 
-          return tooltip.style("visibility", "hidden"); 
+        .on("mouseout", function () {
+          return tooltip.style("visibility", "hidden");
         });
     }
 
