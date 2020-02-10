@@ -60,7 +60,7 @@ function drawCharts(drinkOne, drinkTwo) {
   for (let i = 0; i < ELEMENTS.length; i++) {
     const content = ELEMENTS[i];
     document.getElementById(content).style.width = "30%";
-    document.getElementById(content).style.height = "15rem";
+    document.getElementById(content).style.height = "13rem";
     document.getElementById(content).innerHTML = "";
     var w = window.getComputedStyle(document.getElementById(content)).width;
     var h = window.getComputedStyle(document.getElementById(content)).height;
