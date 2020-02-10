@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Antonym-Regular";
+  src: url("/Antonym-Regular.38f1be03.otf");
+}
+
+@font-face {
+  font-family: "Antonym-Light";
+  src: url("/Antonym-Light.2e2125fa.otf");
+}
+
+@font-face {
+  font-family: "formular-regular";
+  src: url("/formular-regular.037f3d19.otf");
+}
+
+@font-face {
+  font-family: "formular-light";
+  src: url("/formular-light.342c1701.otf");
+}
+
+@font-face {
+  font-family: "formular-bold";
+  src: url("/formular-bold.818e8038.otf");
+}
+
+body {
+  background-color: #fff5e6;
+}
+
+/*Typography*/
+h1 {
+  font-family: "Antonym-Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 60px;
+  color: #3f546c;
+}
+
+h3 {
+  font-family: "formular-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.A h3 {
+  color: #1a75ff;
+}
+
+.B h3 {
+  color: #00cc44;
+}
+
+p {
+  font-family: "formular-light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: #3f546c;
+}
+
+body {
+  background-color: #fff5e6;
+}
+
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 50px 56px 56px 56px;
+}
+
+.wrapper-body{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+/* .title-div{
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 60%;
+  padding: auto 0px auto 0px;
+} */
+
+/* .p-div{
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: auto 0px auto 0px;
+} */
+
+.p-div > p {
+  font-size: 17px;
+}
+
+.div-60{
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 60%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+}
+
+.div-40{
+  width: 30%;
+  margin: 0px 0px auto 0px;
+}
+
+#selectors-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.div-40 {
+  margin: auto
+}
+
+#chart-container {
+  flex-direction: column;
+  align-items: stretch;
+  width: 60%;
+}
+
+#chart-container > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
