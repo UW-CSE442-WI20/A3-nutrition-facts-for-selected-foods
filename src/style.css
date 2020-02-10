@@ -45,6 +45,14 @@ h3 {
   line-height: 20px;
 }
 
+h4 {
+  font-family: "formular-regular";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3f546c;
+}
+
 .A h3 {
   color: #206AAC;
 }
@@ -70,9 +78,16 @@ body {
   display: flex;
   flex-flow: row wrap;
   flex-direction: row;
+  align-content: stretch;
+}
+
+.wrapper-2{
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: space-evenly;
-  padding: 50px 56px 56px 56px;
+  justify-content: flex-start;
 }
 
 .wrapper-body{
@@ -84,22 +99,10 @@ body {
   align-items: stretch;
   justify-content: space-around;
 }
-/* .title-div{
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 60%;
-  padding: auto 0px auto 0px;
-} */
-
-/* .p-div{
-  align-items: flex-start;
-  justify-content: space-evenly;
-  width: 30%;
-  padding: auto 0px auto 0px;
-} */
 
 .p-div > p {
   font-size: 17px;
+  margin-bottom: 30px;
 }
 
 .div-60{
@@ -119,8 +122,79 @@ body {
   margin: auto
 }
 
-.drink-selector {
-  padding-top:
+.drinks-selector {
+  margin-bottom: 30px;
+}
+
+.long-selector{
+  width: 100%;
+  outline: 2px solid #3f546c;
+  height: 34px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 0px 16px;
+  background-position: 97% 12px;
+  font-family: "formular-regular";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3f546c;
+}
+
+.drink-size-selector{
+  width: 100%;
+  outline: 2px solid #3f546c;
+  height: 34px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 0px 16px;
+  background-position: 97% 12px;
+  font-family: "formular-regular";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3f546c;
+}
+
+.milk-type-selector{
+  width: 100%;
+  outline: 2px solid #3f546c;
+  height: 34px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 0px 16px;
+  background-position: 97% 12px;
+  font-family: "formular-regular";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3f546c;
+}
+
+.whipped-cream-selector{
+  width: 100%;
+  outline: 2px solid #3f546c;
+  height: 34px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 0px 16px;
+  background-position: 97% 12px;
+  font-family: "formular-regular";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3f546c;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  border: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("icons/arrow.svg") no-repeat;
 }
 
 #selectors-container {
