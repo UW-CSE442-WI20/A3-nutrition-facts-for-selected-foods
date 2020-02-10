@@ -155,7 +155,8 @@ function drawCharts(drinkOne, drinkTwo) {
           if (j < 2) {
             text = Object.byString(d.nutritions[i], content) + " " + units[i] + " total";
           } else {
-            text = Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat";
+            text = Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat ("
+                   + Object.byString(d.nutritions[i], content) + " " + units[i] + " total)";
           }
           d3.select(this).transition()
             .duration('50')
@@ -224,9 +225,11 @@ function drawCharts(drinkOne, drinkTwo) {
           if (j < 2) {
             text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total";
           } else if (j < 4) {
-            text = Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat";
+            text = Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat ("
+                   + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
           } else {
-            text = Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat";
+            text = Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat ("
+                   + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
           }
           d3.select(this).transition()
             .duration('50')
