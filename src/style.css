@@ -88,6 +88,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-top: 10px;
 }
 
 .wrapper-body{
