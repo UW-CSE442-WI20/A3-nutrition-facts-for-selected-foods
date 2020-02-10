@@ -32,8 +32,8 @@ h1 {
   font-family: "Antonym-Regular";
   font-style: normal;
   font-weight: bold;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 36px;
   color: #3f546c;
 }
 
@@ -65,13 +65,24 @@ p {
   font-family: "formular-light";
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 17px;
   color: #3f546c;
 }
 
 body {
   background-color: #fff5e6;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  border: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("icons/arrow.svg") no-repeat;
 }
 
 .wrapper{
@@ -88,7 +99,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .wrapper-body{
@@ -102,7 +113,7 @@ body {
 }
 
 .p-div > p {
-  font-size: 17px;
+  font-size: 14px;
   margin-bottom: 30px;
 }
 
@@ -129,7 +140,7 @@ body {
 
 .long-selector{
   width: 100%;
-  outline: 2px solid #3f546c;
+  outline: 1px solid #3f546c;
   height: 34px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -144,7 +155,7 @@ body {
 
 .drink-size-selector{
   width: 100%;
-  outline: 2px solid #3f546c;
+  outline: 1px solid #3f546c;
   height: 34px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -159,7 +170,7 @@ body {
 
 .milk-type-selector{
   width: 100%;
-  outline: 2px solid #3f546c;
+  outline: 1px solid #3f546c;
   height: 34px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -174,7 +185,7 @@ body {
 
 .whipped-cream-selector{
   width: 100%;
-  outline: 2px solid #3f546c;
+  outline: 1px solid #3f546c;
   height: 34px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -187,16 +198,15 @@ body {
   color: #3f546c;
 }
 
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 2px 0;
-  box-sizing: border-box;
-  border: 0 !important;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url("icons/arrow.svg") no-repeat;
+.chart {
+  margin-top: 20px;
+  font-family: "Antonym-regular";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3f546c;
 }
+
 
 #selectors-container {
   margin-top: 0px;

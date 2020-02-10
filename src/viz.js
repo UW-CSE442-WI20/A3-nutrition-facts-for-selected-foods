@@ -307,7 +307,8 @@ function drawCharts(drinkOne, drinkTwo) {
       .attr("y", 15)
       .attr("text-anchor", "middle")
       .style("font-size", "1.1em")
-      .style("text-decoration", "underline")
+      .style("fill", "#3f546c")
+      //.style("text-decoration", "underline")
       .text(yAxisNames[i]);
     };
 }
