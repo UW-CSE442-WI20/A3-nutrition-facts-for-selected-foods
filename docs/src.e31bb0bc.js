@@ -19465,7 +19465,8 @@ function drawCharts(drinkOne, drinkTwo) {
 
     svg.append("g").attr("id", "x-axis").attr("transform", "translate(0," + (h - padding) + ")").call(xAxis);
     svg.append("g").attr("id", "y-axis").attr("transform", "translate(" + padding + ",0)").call(yAxis);
-    svg.append("text").attr("x", w / 2).attr("y", 15).attr("text-anchor", "middle").style("font-size", "1.1em").style("text-decoration", "underline").text(yAxisNames[i]);
+    svg.append("text").attr("x", w / 2).attr("y", 15).attr("text-anchor", "middle").style("font-size", "1.1em").style("fill", "#3f546c") //.style("text-decoration", "underline")
+    .text(yAxisNames[i]);
   };
 
   for (var i = 0; i < ELEMENTS.length; i++) {
@@ -61801,7 +61802,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54450" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54729" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
