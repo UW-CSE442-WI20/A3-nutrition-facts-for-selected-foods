@@ -60,7 +60,7 @@ function drawCharts(drinkOne, drinkTwo) {
   for (let i = 0; i < ELEMENTS.length; i++) {
     const content = ELEMENTS[i];
     document.getElementById(content).style.width = "30%";
-    document.getElementById(content).style.height = "13rem";
+    document.getElementById(content).style.height = "15rem";
     document.getElementById(content).innerHTML = "";
     var w = window.getComputedStyle(document.getElementById(content)).width;
     var h = window.getComputedStyle(document.getElementById(content)).height;
@@ -106,9 +106,11 @@ function drawCharts(drinkOne, drinkTwo) {
       .append("div")
       .style("position", "absolute")
       .style("z-index", "10")
-      .style("background-color", "white")
+      .style("color", "#fff5e6")
+      .style("background-color", "#3f546c")
       .style("padding", "6px 10px")
-      .style( "border-radius", "6px")
+      .style("font-family", "formular-light")
+      .style("font-size", "0.8rem")
       .style("visibility", "hidden");
 
     if (content == "calories") {
@@ -147,7 +149,7 @@ function drawCharts(drinkOne, drinkTwo) {
           } else if (j == 2) {
             return "#0D3F6B";
           } else {
-            return "#BA613B";
+            return "#CA7E33";
           }
         })
         .on("mouseover", function (d, j) {
@@ -213,11 +215,11 @@ function drawCharts(drinkOne, drinkTwo) {
           } else if (j == 2) {
             return "#001433";
           } else if (j == 3) {
-            return "#003311";
+            return "#854022";
           } else if (j == 4) {
             return "#0D3F6B";
           } else {
-            return "#BA613B";
+            return "#CA7E33";
           }
         })
         .on("mouseover", function (d, j) {
