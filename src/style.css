@@ -111,6 +111,7 @@ select {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-around;
+  margin-left: 2%;
 }
 
 .p-div > p {
