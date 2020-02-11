@@ -12,6 +12,28 @@ document.addEventListener(
   false
 );
 
+function getSizeKeyFromSize(size) {
+  if (size === "Short (8 fl. oz.)") {
+    return "01_Short (8 fl. oz.)";
+  }
+  if (size === "Tall (12 fl. oz.)") {
+    return "02_Tall (12 fl. oz.)";
+  }
+  if (size === "Grande (16 fl. oz.)") {
+    return "03_Grande (16 fl. oz.)";
+  }
+  if (size === "Venti (20 fl. oz.)") {
+    return "04_Venti (20 fl. oz.)";
+  }
+  if (size === "Venti Iced (24 fl. oz.)") {
+    return "05_Venti Iced (24 fl. oz.)";
+  }
+  if (size === "Trenta (30 fl. oz.)") {
+    return "06_Trenta (30 fl. oz.)";
+  }
+  return "07_" + size;
+}
+
 /*
  * Selector Options
  */
@@ -36,13 +58,13 @@ export function getDrinkSizeOptions(selection) {
 
 export function getMilkTypeOptions(selection) {
   return Object.keys(
-    index[selection["Category"]][selection["Name"]][selection["Size"]]
+    index[selection["Category"]][selection["Name"]][getSizeKeyFromSize(selection["Size"])]
   );
 }
 
 export function getWhippedCreamOptions(selection) {
   return Object.keys(
-    index[selection["Category"]][selection["Name"]][selection["Size"]][
+    index[selection["Category"]][selection["Name"]][getSizeKeyFromSize(selection["Size"])][
       selection["Milk Type"]
     ]
   );
@@ -56,7 +78,7 @@ export function getNumShotsOptions(selection) {
 // object containing the nutrition information for the selection
 export function getNutritionData(selection) {
   return transformNutritionData(
-    index[selection["Category"]][selection["Name"]][selection["Size"]][
+    index[selection["Category"]][selection["Name"]][getSizeKeyFromSize(selection["Size"])][
       selection["Milk Type"]
     ][selection["Whipped Cream"]]
   );
