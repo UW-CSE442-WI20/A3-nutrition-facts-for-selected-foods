@@ -143,11 +143,11 @@ function drawCharts(drinkOne, drinkTwo) {
         .attr("width", xScale.bandwidth() / 2)
         .attr("fill", function (d, j) {
           if (j == 0) {
-            return "#206AAC";
+            return "#2478c2";
           } else if (j == 1) {
             return "#E1AA28";
           } else if (j == 2) {
-            return "#0D3F6B";
+            return "#115088";
           } else {
             return "#CA7E33";
           }
@@ -209,7 +209,7 @@ function drawCharts(drinkOne, drinkTwo) {
         .attr("width", xScale.bandwidth() / 2)
         .attr("fill", function (d, j) {
           if (j == 0) {
-            return "#206AAC";
+            return "#2478c2";
           } else if (j == 1) {
             return "#E1AA28";
           } else if (j == 2) {
@@ -217,7 +217,7 @@ function drawCharts(drinkOne, drinkTwo) {
           } else if (j == 3) {
             return "#854022";
           } else if (j == 4) {
-            return "#0D3F6B";
+            return "#115088";
           } else {
             return "#CA7E33";
           }
@@ -270,7 +270,7 @@ function drawCharts(drinkOne, drinkTwo) {
         .attr("width", xScale.bandwidth() / 2)
         .attr("fill", function (d, j) {
           if (j == 0) {
-            return "#206AAC";
+            return "#2478c2";
           } else {
             return "#E1AA28";
           }
