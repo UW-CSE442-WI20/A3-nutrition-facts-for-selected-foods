@@ -47,18 +47,18 @@ def get_category_name(s):
 
 def get_size_name(s, row):
     if s == "8.0":
-        return "Short (8 fl. oz.)"
+        return "01_Short (8 fl. oz.)"
     if s == "12.0":
-        return "Tall (12 fl. oz.)"
+        return "02_Tall (12 fl. oz.)"
     if s == "16.0":
-        return "Grande (16 fl. oz.)"
+        return "03_Grande (16 fl. oz.)"
     if s == "20.0":
-        return "Venti (20 fl. oz.)"
+        return "04_Venti (20 fl. oz.)"
     if s == "24.0":
-        return "Venti Iced (24 fl. oz.)"
+        return "05_Venti Iced (24 fl. oz.)"
     if s == "30.0":
-        return "Trenta (30 fl. oz.)"
-    return s + " fl. oz."  # Bottled drinks have weird sizes
+        return "06_Trenta (30 fl. oz.)"
+    return "07_" + s + " fl. oz."  # Bottled drinks have weird sizes
 
 res = {}
 
@@ -83,7 +83,7 @@ with open("drinks.csv", newline="") as f:
             res[category][name][portion][milk][whip] = row
 
 with open("drinks.json", "w+") as f:
-    json.dump(res, f, separators=(',', ':'))
+    json.dump(res, f, separators=(',', ':'), sort_keys=True)
 
 print("Done!")
 

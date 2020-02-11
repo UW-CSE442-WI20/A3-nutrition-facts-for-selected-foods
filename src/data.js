@@ -24,7 +24,14 @@ export function getDrinkOptions(selection) {
 }
 
 export function getDrinkSizeOptions(selection) {
-  return Object.keys(index[selection["Category"]][selection["Name"]]);
+  let options = Object.keys(index[selection["Category"]][selection["Name"]]);
+  let res = [];
+
+  for (let o of options) {
+    res.push(o.substring(3));
+  }
+
+  return res;
 }
 
 export function getMilkTypeOptions(selection) {
