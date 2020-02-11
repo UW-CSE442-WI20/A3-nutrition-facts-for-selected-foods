@@ -19318,7 +19318,7 @@ function drawCharts(drinkOne, drinkTwo) {
   var _loop = function _loop(i) {
     var content = ELEMENTS[i];
     document.getElementById(content).style.width = "30%";
-    document.getElementById(content).style.height = "15rem";
+    document.getElementById(content).style.height = "13rem";
     document.getElementById(content).innerHTML = "";
     w = window.getComputedStyle(document.getElementById(content)).width;
     h = window.getComputedStyle(document.getElementById(content)).height;
@@ -61802,7 +61802,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55973" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63343" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
