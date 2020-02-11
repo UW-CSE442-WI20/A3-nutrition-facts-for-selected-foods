@@ -32,9 +32,10 @@ h1 {
   font-family: "Antonym-Regular";
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 42px;
+  line-height: 46px;
   color: #3f546c;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -114,7 +115,7 @@ select {
 
 .p-div > p {
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .div-60{
