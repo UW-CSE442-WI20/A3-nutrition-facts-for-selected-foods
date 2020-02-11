@@ -19318,7 +19318,7 @@ function drawCharts(drinkOne, drinkTwo) {
   var _loop = function _loop(i) {
     var content = ELEMENTS[i];
     document.getElementById(content).style.width = "30%";
-    document.getElementById(content).style.height = "13rem";
+    document.getElementById(content).style.height = "15rem";
     document.getElementById(content).innerHTML = "";
     w = window.getComputedStyle(document.getElementById(content)).width;
     h = window.getComputedStyle(document.getElementById(content)).height;
@@ -19330,7 +19330,7 @@ function drawCharts(drinkOne, drinkTwo) {
     var xAxis = d3.axisBottom().scale(xScale).tickSizeOuter(0);
     var yAxis = d3.axisLeft().scale(yScale).tickSizeOuter(0).ticks(6);
     var svg = d3.select("#" + content).append("svg").attr("width", w).attr("height", h);
-    var tooltip = d3.select("body").append("div").style("position", "absolute").style("z-index", "10").style("background-color", "white").style("padding", "6px 10px").style("border-radius", "6px").style("visibility", "hidden");
+    var tooltip = d3.select("body").append("div").style("position", "absolute").style("z-index", "10").style("color", "#fff5e6").style("background-color", "#3f546c").style("padding", "6px 10px").style("font-family", "formular-light").style("font-size", "0.8rem").style("visibility", "hidden");
 
     if (content == "calories") {
       svg.selectAll("rect").data([drinkOne, drinkTwo, drinkOne, drinkTwo]).enter().append("rect").attr("x", function (d, j) {
@@ -19359,7 +19359,7 @@ function drawCharts(drinkOne, drinkTwo) {
         } else if (j == 2) {
           return "#0D3F6B";
         } else {
-          return "#BA613B";
+          return "#CA7E33";
         }
       }).on("mouseover", function (d, j) {
         var text = "";
@@ -19367,7 +19367,7 @@ function drawCharts(drinkOne, drinkTwo) {
         if (j < 2) {
           text = Object.byString(d.nutritions[i], content) + " " + units[i] + " total";
         } else {
-          text = Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat";
+          text = Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat (" + Object.byString(d.nutritions[i], content) + " " + units[i] + " total)";
         }
 
         d3.select(this).transition().duration('50').attr('opacity', '.85');
@@ -19409,11 +19409,11 @@ function drawCharts(drinkOne, drinkTwo) {
         } else if (j == 2) {
           return "#001433";
         } else if (j == 3) {
-          return "#003311";
+          return "#854022";
         } else if (j == 4) {
           return "#0D3F6B";
         } else {
-          return "#BA613B";
+          return "#CA7E33";
         }
       }).on("mouseover", function (d, j) {
         var text = "";
@@ -19421,9 +19421,9 @@ function drawCharts(drinkOne, drinkTwo) {
         if (j < 2) {
           text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total";
         } else if (j < 4) {
-          text = Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat";
+          text = Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat (" + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
         } else {
-          text = Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat";
+          text = Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat (" + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
         }
 
         d3.select(this).transition().duration('50').attr('opacity', '.85');
@@ -61802,7 +61802,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56426" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55973" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
