@@ -58,7 +58,7 @@ def get_size_name(s, row):
         return "Venti Iced (24 fl. oz.)"
     if s == "30.0":
         return "Trenta (30 fl. oz.)"
-    return s  # Bottled drinks have weird sizes
+    return s + " fl. oz."  # Bottled drinks have weird sizes
 
 res = {}
 
