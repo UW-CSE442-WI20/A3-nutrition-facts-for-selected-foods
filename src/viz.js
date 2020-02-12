@@ -309,7 +309,6 @@ function drawCharts(drinkOne, drinkTwo) {
     }
 
     if ($(".chart-elements-x-axis").length != 9) {
-      console.log("here")
       svg
       .append("g")
       .attr("id", "x-axis")
