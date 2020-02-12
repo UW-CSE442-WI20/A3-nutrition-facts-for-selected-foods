@@ -50,18 +50,29 @@ const yAxisNames = [
   "Protein (grams)",
   "Caffeine (milligrams)"
 ];
-
 export function update(drinkOne, drinkTwo) {
-  drawCharts(drinkOne, drinkTwo);
+  if (d3.selectAll("svg").size() == 0) {
+    for (let i = 0; i < ELEMENTS.length; i++) {
+      const content = ELEMENTS[i];
+      document.getElementById(content).style.width = "30%";
+      document.getElementById(content).style.height = "13rem";
+    }
+    drawCharts(drinkOne, drinkTwo);
+    $("svg").slideDown("slow");
+  } else {
+    $("svg").slideUp("fast", () => $("svg").remove());
+    setTimeout(function () {
+      drawCharts(drinkOne, drinkTwo);
+    }, 500);
+    setTimeout(function () {
+      $("svg").slideDown("slow");
+    }, 500);
+  }
 }
 
 function drawCharts(drinkOne, drinkTwo) {
-
   for (let i = 0; i < ELEMENTS.length; i++) {
     const content = ELEMENTS[i];
-    document.getElementById(content).style.width = "30%";
-    document.getElementById(content).style.height = "13rem";
-    document.getElementById(content).innerHTML = "";
     var w = window.getComputedStyle(document.getElementById(content)).width;
     var h = window.getComputedStyle(document.getElementById(content)).height;
 
@@ -79,29 +90,29 @@ function drawCharts(drinkOne, drinkTwo) {
     const yScale = d3
       .scaleLinear()
       .domain(
-      [
-        0, Math.max(
-        Math.max(
-          Object.byString(drinkOne.nutritions[i], content),
-          Object.byString(drinkTwo.nutritions[i], content)
-        ) +
-        Math.max(
-          Object.byString(drinkOne.nutritions[i], content),
-          Object.byString(drinkTwo.nutritions[i], content)
-        ) *
-        0.2,
-        1)
-      ])
+        [
+          0, Math.max(
+            Math.max(
+              Object.byString(drinkOne.nutritions[i], content),
+              Object.byString(drinkTwo.nutritions[i], content)
+            ) +
+            Math.max(
+              Object.byString(drinkOne.nutritions[i], content),
+              Object.byString(drinkTwo.nutritions[i], content)
+            ) *
+            0.2,
+            1)
+        ])
       .range([h - padding, padding]);
 
     const xAxis = d3.axisBottom().scale(xScale).tickSizeOuter(0);
     const yAxis = d3.axisLeft().scale(yScale).tickSizeOuter(0).ticks(6);
-
     const svg = d3
       .select("#" + content)
       .append("svg")
       .attr("width", w)
-      .attr("height", h);
+      .attr("height", h)
+      .attr("display", "none");
     const tooltip = d3.select("body")
       .append("div")
       .style("position", "absolute")
@@ -158,7 +169,7 @@ function drawCharts(drinkOne, drinkTwo) {
             text = Object.byString(d.nutritions[i], content) + " " + units[i] + " total";
           } else {
             text = Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat ("
-                   + Object.byString(d.nutritions[i], content) + " " + units[i] + " total)";
+              + Object.byString(d.nutritions[i], content) + " " + units[i] + " total)";
           }
           d3.select(this).transition()
             .duration('50')
@@ -228,10 +239,10 @@ function drawCharts(drinkOne, drinkTwo) {
             text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total";
           } else if (j < 4) {
             text = Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat ("
-                   + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
+              + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
           } else {
             text = Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat ("
-                   + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
+              + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
           }
           d3.select(this).transition()
             .duration('50')
@@ -313,7 +324,6 @@ function drawCharts(drinkOne, drinkTwo) {
       .attr("text-anchor", "middle")
       .style("font-size", "1.1em")
       .style("fill", "#3f546c")
-      //.style("text-decoration", "underline")
       .text(yAxisNames[i]);
-    };
+  };
 }
