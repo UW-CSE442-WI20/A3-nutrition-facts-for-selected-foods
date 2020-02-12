@@ -58,19 +58,22 @@ export function update(drinkOne, drinkTwo) {
       document.getElementById(content).style.height = "13rem";
     }
     drawCharts(drinkOne, drinkTwo);
-    $("svg").slideDown("slow");
+    $(".chart-elements").slideDown("slow");
   } else {
-    $("svg").slideUp("fast", () => $("svg").remove());
+    $(".chart-elements").slideUp("fast", () => $(".chart-elements").remove());
     setTimeout(function () {
       drawCharts(drinkOne, drinkTwo);
     }, 500);
     setTimeout(function () {
-      $("svg").slideDown("slow");
+      $(".chart-elements").slideDown("slow");
     }, 500);
   }
 }
 
 function drawCharts(drinkOne, drinkTwo) {
+  if ($(".chart-title").length != 9) {
+    drawChartTitle(drinkOne, drinkTwo)
+  }
   for (let i = 0; i < ELEMENTS.length; i++) {
     const content = ELEMENTS[i];
     var w = window.getComputedStyle(document.getElementById(content)).width;
@@ -109,10 +112,7 @@ function drawCharts(drinkOne, drinkTwo) {
     const yAxis = d3.axisLeft().scale(yScale).tickSizeOuter(0).ticks(6);
     const svg = d3
       .select("#" + content)
-      .append("svg")
-      .attr("width", w)
-      .attr("height", h)
-      .attr("display", "none");
+      .select("svg")
     const tooltip = d3.select("body")
       .append("div")
       .style("position", "absolute")
@@ -130,6 +130,7 @@ function drawCharts(drinkOne, drinkTwo) {
         .data([drinkOne, drinkTwo, drinkOne, drinkTwo])
         .enter()
         .append("rect")
+        .attr("class", "chart-elements")
         .attr("x", function (d, j) {
           if (j == 0 || j == 2) {
             return xScale("Drink 1") + xScale.bandwidth() / 4;
@@ -192,6 +193,7 @@ function drawCharts(drinkOne, drinkTwo) {
         .data([drinkOne, drinkTwo, drinkOne, drinkTwo, drinkOne, drinkTwo])
         .enter()
         .append("rect")
+        .attr("class", "chart-elements")
         .attr("x", function (d, j) {
           if (j == 0 || j == 2 || j == 4) {
             return xScale("Drink 1") + xScale.bandwidth() / 4;
@@ -265,6 +267,7 @@ function drawCharts(drinkOne, drinkTwo) {
         .data([drinkOne, drinkTwo])
         .enter()
         .append("rect")
+        .attr("class", "chart-elements")
         .attr("x", function (d, j) {
           if (j == 0) {
             return xScale("Drink 1") + xScale.bandwidth() / 4;
@@ -305,22 +308,45 @@ function drawCharts(drinkOne, drinkTwo) {
         });
     }
 
-    svg
+    if ($(".chart-elements-x-axis").length != 9) {
+      console.log("here")
+      svg
       .append("g")
       .attr("id", "x-axis")
+      .attr("class", "chart-elements-x-axis")
       .attr("transform", "translate(0," + (h - padding) + ")")
       .call(xAxis);
+    }
 
     svg
       .append("g")
       .attr("id", "y-axis")
+      .attr("class", "chart-elements")
       .attr("transform", "translate(" + padding + ",0)")
       .call(yAxis);
+    $(".chart-elements").attr("display", "none");
+  };
+}
 
+function drawChartTitle(drinkOne, drinkTwo) {
+  for (let i = 0; i < ELEMENTS.length; i++) {
+    const content = ELEMENTS[i];
+    var w = window.getComputedStyle(document.getElementById(content)).width;
+    var h = window.getComputedStyle(document.getElementById(content)).height;
+
+    w = w.substring(0, w.length - 2);
+    h = h.substring(0, h.length - 2);
+
+    const svg = d3
+      .select("#" + content)
+      .append("svg")
+      .attr("width", w)
+      .attr("height", h)
     svg
       .append("text")
       .attr("x", w / 2)
       .attr("y", 15)
+      .attr("class", "chart-title")
       .attr("text-anchor", "middle")
       .style("font-size", "1.1em")
       .style("fill", "#3f546c")
