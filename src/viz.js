@@ -165,17 +165,14 @@ function drawCharts(drinkOne, drinkTwo) {
           }
         })
         .on("mouseover", function (d, j) {
-          let text = ""
-          if (j < 2) {
-            text = Object.byString(d.nutritions[i], content) + " " + units[i] + " total";
-          } else {
-            text = Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat ("
-              + Object.byString(d.nutritions[i], content) + " " + units[i] + " total)";
-          }
+          let text = "<div>";
+          text += Object.byString(d.nutritions[i], content) + " calories<br />";
+          text += Object.byString(d.nutritions[9], "fatCalories") + " calories from fat";
+          text += "</div>";
           d3.select(this).transition()
             .duration('50')
             .attr('opacity', '.85');
-          return tooltip.style("visibility", "visible").text(text)
+          return tooltip.style("visibility", "visible").html(text);
         })
         .on("mousemove", function () {
           return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
@@ -236,20 +233,15 @@ function drawCharts(drinkOne, drinkTwo) {
           }
         })
         .on("mouseover", function (d, j) {
-          let text = ""
-          if (j < 2) {
-            text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total";
-          } else if (j < 4) {
-            text = Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat ("
-              + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
-          } else {
-            text = Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat ("
-              + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
-          }
+          let text = "<div>"
+          text += Object.byString(d.nutritions[i], content) + " " + units[i] + " of total fat<br />";
+          text += Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat<br />";
+          text += Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat";
+          text += "</div>";
           d3.select(this).transition()
             .duration('50')
             .attr('opacity', '.85');
-          return tooltip.style("visibility", "visible").text(text)
+          return tooltip.style("visibility", "visible").html(text)          
         })
         .on("mousemove", function () {
           return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
@@ -291,11 +283,11 @@ function drawCharts(drinkOne, drinkTwo) {
         })
         .on("mouseover", function (d) {
           d3.select(this).transition()
-            .duration('50')
-            .attr('opacity', '.85');
+          .duration('50')
+          .attr('opacity', '.85');
           const text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of " + ELEMENTS[i];
-          return tooltip.style("visibility", "visible").text(text)
-        })
+          return tooltip.style("visibility", "visible").html("<div>" + text + "</div>")
+                  })
         .on("mousemove", function () {
           return tooltip.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
         })
@@ -310,11 +302,11 @@ function drawCharts(drinkOne, drinkTwo) {
 
     if ($(".chart-elements-x-axis").length != 9) {
       svg
-      .append("g")
-      .attr("id", "x-axis")
-      .attr("class", "chart-elements-x-axis")
-      .attr("transform", "translate(0," + (h - padding) + ")")
-      .call(xAxis);
+        .append("g")
+        .attr("id", "x-axis")
+        .attr("class", "chart-elements-x-axis")
+        .attr("transform", "translate(0," + (h - padding) + ")")
+        .call(xAxis);
     }
 
     svg
