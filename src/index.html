@@ -15,25 +15,27 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
     type="text/css" />
+  <div class="wrapper-header">
+    <div class="title-div">
+      <h1>What’s in Starbucks’ drinks?</h1>
+    </div>
+    <div class="p-div">
+      <h4>
+        Comparing the nutritional content of drinks on Starbucks' menu.
+      </h4>
+      <h4>  
+        Hover over the bars in the charts to see nutrition details.
+      </h4>
+    </div>
+  </div>
   <div class="wrapper-body">
     <div id="selectors-container" class="div-40">
-      <div>
-        <div class="title-div">
-          <h1>What’s in Starbucks drinks?</h1>
-        </div>
-        <div class="p-div">
-          <p>
-            Comparing the nutritional content of drinks on Starbucks' menu.
-            Hover over the bars in the charts to see nutrition details.
-          </p>
-        </div>
-      </div>
-
       <div class="drinks-selector">
         <div class="A" id="selector-A">
           <h3>Drink 1</h3>
-            <h4>Drink Category</h4>
-          <select class="drink-category-selector selector A long-selector" id="drink-category-selector-A" name="Category">
+          <h4>Drink Category</h4>
+          <select class="drink-category-selector selector A long-selector" id="drink-category-selector-A"
+            name="Category">
           </select>
           <h4>Drink Name</h4>
           <select class="drink-selector selector A long-selector" id="drink-selector-A" name="Name">
@@ -59,13 +61,14 @@
             </select>
           </div>
         </div>
-        </div>
+      </div>
 
       <div class="drinks-selector">
         <div class="B" id="selector-B">
           <h3>Drink 2</h3>
           <h4>Drink Category</h4>
-          <select class="drink-category-selector selector B long-selector" id="drink-category-selector-B" name="Category">
+          <select class="drink-category-selector selector B long-selector" id="drink-category-selector-B"
+            name="Category">
           </select>
           <h4>Drink Name</h4>
           <select class="drink-selector selector B long-selector" id="drink-selector-B" name="Name">
@@ -91,7 +94,7 @@
         </div>
       </div>
 
-  </div>
+    </div>
     <div id="chart-container" class="div-60">
       <div>
         <div id="calories" class="chart"></div>
