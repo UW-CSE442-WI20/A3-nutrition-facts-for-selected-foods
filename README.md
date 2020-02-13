@@ -1,5 +1,7 @@
 # A3 Writeup
 
+https://uw-cse442-wi20.github.io/A3-nutrition-facts-for-selected-foods/
+
 ## Link to dataset
 
 https://www.kaggle.com/swoolfeek/starbucks-nutrition-with-sugar-and-etc#starbucks_drink.csv
