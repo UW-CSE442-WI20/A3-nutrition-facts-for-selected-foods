@@ -19382,12 +19382,16 @@ function drawCharts(drinkOne, drinkTwo) {
           return "#CA7E33";
         }
       }).on("mouseover", function (d, j) {
-        var text = "<div>";
-        text += Object.byString(d.nutritions[i], content) + " calories<br />";
-        text += Object.byString(d.nutritions[9], "fatCalories") + " calories from fat";
-        text += "</div>";
+        var text = "";
+
+        if (j < 2) {
+          text = Object.byString(d.nutritions[i], content) + " " + units[i] + " total";
+        } else {
+          text = Object.byString(d.nutritions[9], "fatCalories") + " " + units[i] + " from fat (" + Object.byString(d.nutritions[i], content) + " " + units[i] + " total)";
+        }
+
         d3.select(this).transition().duration('50').attr('opacity', '.85');
-        return tooltip.style("visibility", "visible").html(text);
+        return tooltip.style("visibility", "visible").text(text);
       }).on("mousemove", function () {
         return tooltip.style("top", event.pageY - 10 + "px").style("left", event.pageX + 10 + "px");
       }).on("mouseout", function () {
@@ -19432,13 +19436,18 @@ function drawCharts(drinkOne, drinkTwo) {
           return "#CA7E33";
         }
       }).on("mouseover", function (d, j) {
-        var text = "<div>";
-        text += Object.byString(d.nutritions[i], content) + " " + units[i] + " of total fat<br />";
-        text += Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat<br />";
-        text += Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat";
-        text += "</div>";
+        var text = "";
+
+        if (j < 2) {
+          text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total";
+        } else if (j < 4) {
+          text = Object.byString(d.nutritions[10], "transFat") + " " + units[i] + " of trans fat (" + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
+        } else {
+          text = Object.byString(d.nutritions[11], "satFat") + " " + units[i] + " of saturated fat (" + Object.byString(d.nutritions[i], content) + " " + units[i] + " of fat total)";
+        }
+
         d3.select(this).transition().duration('50').attr('opacity', '.85');
-        return tooltip.style("visibility", "visible").html(text);
+        return tooltip.style("visibility", "visible").text(text);
       }).on("mousemove", function () {
         return tooltip.style("top", event.pageY - 10 + "px").style("left", event.pageX + 10 + "px");
       }).on("mouseout", function () {
@@ -19465,7 +19474,7 @@ function drawCharts(drinkOne, drinkTwo) {
       }).on("mouseover", function (d) {
         d3.select(this).transition().duration('50').attr('opacity', '.85');
         var text = Object.byString(d.nutritions[i], content) + " " + units[i] + " of " + ELEMENTS[i];
-        return tooltip.style("visibility", "visible").html("<div>" + text + "</div>");
+        return tooltip.style("visibility", "visible").text(text);
       }).on("mousemove", function () {
         return tooltip.style("top", event.pageY - 10 + "px").style("left", event.pageX + 10 + "px");
       }).on("mouseout", function () {
@@ -61866,7 +61875,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50675" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50145" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

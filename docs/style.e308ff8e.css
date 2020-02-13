@@ -103,13 +103,8 @@ select {
   margin-top: 5px;
 }
 
-.wrapper-header {
-  padding-top: 20px;
-  text-align: center;
-}
-
 .wrapper-body{
-  padding-top: 5px;
+  padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
@@ -119,9 +114,9 @@ select {
   margin-left: 2%;
 }
 
-.p-div > h4 {
-  font-size: 15px;
-  margin-bottom: 4px;
+.p-div > p {
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .div-60{
@@ -216,12 +211,12 @@ select {
 
 
 #selectors-container {
-  /* margin-top: 0px; */
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   justify-content: flex-start;
-  /* margin-right: 50px; */
+  margin-right: 50px;
 }
 
 #chart-container {
