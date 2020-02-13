@@ -1,53 +1,37 @@
+# A3 Writeup
 
+## Link to dataset
 
-# A3 Starter template
+https://www.kaggle.com/swoolfeek/starbucks-nutrition-with-sugar-and-etc#starbucks_drink.csv
 
-The starter code for creating interactive visualization prototypes.
+## Short description
 
-## Getting Started
+Tool for exploration and comparison of Starbucks drinks’ nutrition content based on size, milk type, and additional toppings such as whipped cream.
 
-This repo is set up to use the [Parcel](https://parceljs.org/) bundler. If you don't
-like the way we've set things up, feel free to change it however you like!
+## Team
 
-The only restriction is that __your final HTML/CSS/JS output must be stored in the "docs" folder__ so that
-GitHub knows how to serve it as a static site.
+We spent about 60 hours developing our application.
 
-### Install
+- Thomas Fuller: data formatting/organization, data loading/querying, selectors
 
-#### Required software
+- Erica Eaton and Dylan Chan: the bar charts (creation and styling, displaying data, and creating tooltips)
 
-You must have Node.js installed. I prefer to install it using [nvm](https://github.com/nvm-sh/nvm)
-because it doesn't require sudo and makes upgrades easier, but you can also just get it directly from
-https://nodejs.org/en/.
+- Olga Khvan: UX/UI design, HTML/CSS stylization
 
-#### Install dependecies
+Since it was Erica and Dylan’s first time working with D3, writing the code for the bar charts took a lot of time. Some of the challenges faced while creating the bar charts were determining the correct values for the y and height attributes for each bar, displaying stacked bars, and styling the charts such that they are easy to read, do not overlap, and do not have the values on the y-axis partially cut off (i.e. seeing only “20” in a tick mark labeled “120” on the y-axis).
+Process
 
-Once you've got `node`, run the command `npm install` in this project folder
-and it will install all of the project-specific dependencies (if you're curious open up `package.json` to see where these are listed).
+## Rationale for design decisions (visual encodings and interactions)
 
-npm is the _node package manager_.
+Since people customize drinks at Starbucks, it is difficult to know the nutritional content of specific, customized drinks. Size, milk type, and whipped cream all affect the nutritional content of a drink. Thus, we wanted to create a tool to visualize the differences in two Starbucks drinks’ nutritional content. We created selectors for drink customizations that affect the drinks’ nutritional content and that we had data for. We decided to only display selectors for two drinks to allow for simple comparison and avoid clutter.
 
-### Running the local dev server
+We chose to use bar charts because they make it easier to compare two different values and clearly show which drink has a larger amount of a specific nutritional content. Moreover, we decided to create one bar chart for each type of nutritional content because most people only compare the same nutritional content types with each other. Also, some nutritional contents have different units and different scales.
 
-To run the project locally, run `npm start` and it will be available at http://localhost:1234/.
+We ordered the charts to roughly correspond with the ordering of nutrition facts on food product labels as this is what we anticipate our audience to be familiar with.
+We broke some nutritional categories down further. For example, calories are broken down into “Calories” and “Calories from Fat”. In addition, fat is broken down into “Fat”, “Saturated Fat”, and “Trans Fat”. We used a stacked bar chart to encode these distinctions. Since “Calories from Fat” is a subcategory of “Calories”, we use a bar to show the total calories, and the portion of calories that come from fat are a different shade to highlight the difference (we used this same technique for the chart displaying fat). Tooltips were added to make this more clear and show the exact values.
 
-### Building the final output
+Last, we decided to add animation to the bar charts whenever a user changes part of their selection. The reason is that when changing a selection, the physical height of a bar may appear to stay the same, but the scale on the y-axis changed, so that bar does not encode the same value. Without animation, a user may not notice the change in scale and could infer that the value of that particular nutrition content stayed the same despite their selection changing.
 
-Run `npm run build` and all of your assets will be compiled and placed into the `docs/` folder. Note
-that this command will overwrite the existing docs folder.
+## Rationale for visual design and layout
 
-Once pushed to GitHub, the output should be available at UW-CSE442-WI20.github.io/your-repo-name/
-
-
-## Other notes
-
-### Using 3rd party libraries
-
-You are more than welcome to use open source packages such as D3.js, just make sure to cite these.
-
-To add a new one run `npm install --save <library-name>`, e.g. `npm install --save d3`. This will
-add the library locally so it is available for use in your JS files. It will also add `d3` to the
-list of dependencies in `package.json`.
-
-_Note that if you install a library your teammates will need to install it too. Once the dep is added
-to `package.json` simply running `npm install` in this directory will download the new dependency._
+The warm color palette was inspired by the color of coffee drinks and we chose the other colors (blue and yellow) to contrast with that color palette. In regards to the layout, we placed the selectors on the left and the bar charts on the right, mainly to follow convention and thereby leverage users' previous experiences to assume how they might interact with our tool as well. Specifically, since many GUI based software have a toolbar on the left (i.e. Tableau, Google Maps, Microsoft Outlook, Finder/Windows Explorer), we opted to put our selectors in the same location.
