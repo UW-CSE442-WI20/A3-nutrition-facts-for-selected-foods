@@ -46,17 +46,17 @@ def get_category_name(s):
     
 
 def get_size_name(s, row):
-    if s == "8.0":
+    if s == "8.0" or s == "8":
         return "01_Short (8 fl. oz.)"
-    if s == "12.0":
+    if s == "12.0" or s == "12":
         return "02_Tall (12 fl. oz.)"
-    if s == "16.0":
+    if s == "16.0" or s == "16":
         return "03_Grande (16 fl. oz.)"
-    if s == "20.0":
+    if s == "20.0" or s == "20":
         return "04_Venti (20 fl. oz.)"
-    if s == "24.0":
+    if s == "24.0" or s == "24":
         return "05_Venti Iced (24 fl. oz.)"
-    if s == "30.0":
+    if s == "30.0" or s == "30":
         return "06_Trenta (30 fl. oz.)"
     return "07_" + s + " fl. oz."  # Bottled drinks have weird sizes
 
@@ -67,7 +67,7 @@ with open("drinks.csv", newline="") as f:
     for row in reader:
         category = get_category_name(row["Category"]).strip()
         name = row["Name"].strip()
-        portion = get_size_name(row["Portion(fl oz)"], row).strip()
+        portion = get_size_name(row["Portion(fl oz)"], row)
         milk = row["Milk"].strip() or "N/A"
         whip = row["Whipped Cream"] or "N/A".strip()
 
