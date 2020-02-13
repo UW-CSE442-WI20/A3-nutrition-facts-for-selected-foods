@@ -19,7 +19,10 @@ We spent about 60 hours developing our application.
 - Olga Khvan: UX/UI design, HTML/CSS stylization
 
 Since it was Erica and Dylan’s first time working with D3, writing the code for the bar charts took a lot of time. Some of the challenges faced while creating the bar charts were determining the correct values for the y and height attributes for each bar, displaying stacked bars, and styling the charts such that they are easy to read, do not overlap, and do not have the values on the y-axis partially cut off (i.e. seeing only “20” in a tick mark labeled “120” on the y-axis).
-Process
+
+## Process
+
+![Our work process](./process_diagram.png)
 
 ## Rationale for design decisions (visual encodings and interactions)
 
