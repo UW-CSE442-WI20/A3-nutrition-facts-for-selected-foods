@@ -65,11 +65,14 @@ res = {}
 with open("drinks.csv", newline="") as f:
     reader = csv.DictReader(f)
     for row in reader:
-        category = get_category_name(row["Category"])
-        name = row["Name"]
-        portion = get_size_name(row["Portion(fl oz)"], row)
-        milk = row["Milk"] or "N/A"
-        whip = row["Whipped Cream"] or "N/A"
+        category = get_category_name(row["Category"]).strip()
+        name = row["Name"].strip()
+        portion = get_size_name(row["Portion(fl oz)"], row).strip()
+        milk = row["Milk"].strip() or "N/A"
+        whip = row["Whipped Cream"] or "N/A".strip()
+
+        if "Iced Espresso Classics - Vanilla Latte" in name:
+            continue
 
         if category not in res:
             res[category] = {}
