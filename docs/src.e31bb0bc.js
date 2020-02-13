@@ -19509,7 +19509,7 @@ function drawChartTitle(drinkOne, drinkTwo) {
 module.exports = {
   "Bottled Drinks": {
     "Starbucks\xAE Iced Coffee Light Sweetened": {
-      "07_8 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "110",
@@ -19535,7 +19535,7 @@ module.exports = {
       }
     },
     "Starbucks\xAE Iced Coffee Unsweetened": {
-      "07_8 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "110",
@@ -19641,7 +19641,31 @@ module.exports = {
   },
   "Brewed Coffee": {
     "Blonde Roast": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "180",
+            "Calories": "5",
+            "Calories from fat": "0",
+            "Category": "brewed-coffee",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Blonde Roast",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "5",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "270",
@@ -19665,7 +19689,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "360",
@@ -19689,7 +19713,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "475",
@@ -19712,34 +19736,144 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
+      }
+    },
+    "Caff\xE8 Misto": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
           "N/A": {
-            "Caffeine(mg)": "180",
-            "Calories": "5",
+            "Caffeine(mg)": "75",
+            "Calories": "50",
+            "Calories from fat": "20",
+            "Category": "brewed-coffee",
+            "Cholesterol(mg)": "10",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Caff\xE8 Misto",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "4",
+            "Saturated fat(g)": "1",
+            "Size": "Short",
+            "Sodium(mg)": "50",
+            "Sugars(g)": "5",
+            "Total Carbohydrate(g)": "5",
+            "Total Fat(g)": "2",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Almond": {
+          "N/A": {
+            "Caffeine(mg)": "75",
+            "Calories": "30",
+            "Calories from fat": "15",
+            "Category": "brewed-coffee",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Almond",
+            "Name": "Caff\xE8 Misto",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "50",
+            "Sugars(g)": "2",
+            "Total Carbohydrate(g)": "2",
+            "Total Fat(g)": "2",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Coconut": {
+          "N/A": {
+            "Caffeine(mg)": "75",
+            "Calories": "40",
+            "Calories from fat": "20",
+            "Category": "brewed-coffee",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Caff\xE8 Misto",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "2.5",
+            "Size": "Short",
+            "Sodium(mg)": "45",
+            "Sugars(g)": "3",
+            "Total Carbohydrate(g)": "4",
+            "Total Fat(g)": "2.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Nonfat milk": {
+          "N/A": {
+            "Caffeine(mg)": "75",
+            "Calories": "35",
             "Calories from fat": "0",
             "Category": "brewed-coffee",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Blonde Roast",
+            "Milk": "Nonfat milk",
+            "Name": "Caff\xE8 Misto",
             "Portion(fl oz)": "8",
-            "Protein(g)": "0",
+            "Protein(g)": "4",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "5",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
+            "Sodium(mg)": "45",
+            "Sugars(g)": "5",
+            "Total Carbohydrate(g)": "5",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
+        },
+        "Soy (United States)": {
+          "N/A": {
+            "Caffeine(mg)": "75",
+            "Calories": "50",
+            "Calories from fat": "15",
+            "Category": "brewed-coffee",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Soy (United States)",
+            "Name": "Caff\xE8 Misto",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "3",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "40",
+            "Sugars(g)": "5",
+            "Total Carbohydrate(g)": "6",
+            "Total Fat(g)": "1.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Whole Milk": {
+          "N/A": {
+            "Caffeine(mg)": "75",
+            "Calories": "70",
+            "Calories from fat": "30",
+            "Category": "brewed-coffee",
+            "Cholesterol(mg)": "10",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Caff\xE8 Misto",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "3",
+            "Saturated fat(g)": "2",
+            "Size": "Short",
+            "Sodium(mg)": "50",
+            "Sugars(g)": "5",
+            "Total Carbohydrate(g)": "5",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
         }
-      }
-    },
-    "Caff\xE8 Misto": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "115",
@@ -19873,7 +20007,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -20007,7 +20141,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "195",
@@ -20140,144 +20274,34 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
+      }
+    },
+    "Clover\xAE Brewed Coffee": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
           "N/A": {
-            "Caffeine(mg)": "75",
-            "Calories": "50",
-            "Calories from fat": "20",
-            "Category": "brewed-coffee",
-            "Cholesterol(mg)": "10",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "Caff\xE8 Misto",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "4",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "50",
-            "Sugars(g)": "5",
-            "Total Carbohydrate(g)": "5",
-            "Total Fat(g)": "2",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Almond": {
-          "N/A": {
-            "Caffeine(mg)": "75",
-            "Calories": "30",
-            "Calories from fat": "15",
-            "Category": "brewed-coffee",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Almond",
-            "Name": "Caff\xE8 Misto",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "50",
-            "Sugars(g)": "2",
-            "Total Carbohydrate(g)": "2",
-            "Total Fat(g)": "2",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Coconut": {
-          "N/A": {
-            "Caffeine(mg)": "75",
-            "Calories": "40",
-            "Calories from fat": "20",
-            "Category": "brewed-coffee",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "Caff\xE8 Misto",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "2.5",
-            "Size": "Short",
-            "Sodium(mg)": "45",
-            "Sugars(g)": "3",
-            "Total Carbohydrate(g)": "4",
-            "Total Fat(g)": "2.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Nonfat milk": {
-          "N/A": {
-            "Caffeine(mg)": "75",
-            "Calories": "35",
+            "Caffeine(mg)": "170",
+            "Calories": "10",
             "Calories from fat": "0",
             "Category": "brewed-coffee",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "Caff\xE8 Misto",
+            "Milk": "",
+            "Name": "Clover\xAE Brewed Coffee",
             "Portion(fl oz)": "8",
-            "Protein(g)": "4",
+            "Protein(g)": "0",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "45",
-            "Sugars(g)": "5",
-            "Total Carbohydrate(g)": "5",
+            "Sodium(mg)": "5",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
-        },
-        "Soy (United States)": {
-          "N/A": {
-            "Caffeine(mg)": "75",
-            "Calories": "50",
-            "Calories from fat": "15",
-            "Category": "brewed-coffee",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Soy (United States)",
-            "Name": "Caff\xE8 Misto",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "40",
-            "Sugars(g)": "5",
-            "Total Carbohydrate(g)": "6",
-            "Total Fat(g)": "1.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Whole Milk": {
-          "N/A": {
-            "Caffeine(mg)": "75",
-            "Calories": "70",
-            "Calories from fat": "30",
-            "Category": "brewed-coffee",
-            "Cholesterol(mg)": "10",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "Caff\xE8 Misto",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "2",
-            "Size": "Short",
-            "Sodium(mg)": "50",
-            "Sugars(g)": "5",
-            "Total Carbohydrate(g)": "5",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
         }
-      }
-    },
-    "Clover\xAE Brewed Coffee": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "280",
@@ -20301,7 +20325,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "375",
@@ -20325,7 +20349,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "445",
@@ -20348,34 +20372,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "170",
-            "Calories": "10",
-            "Calories from fat": "0",
-            "Category": "brewed-coffee",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Clover\xAE Brewed Coffee",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "5",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       }
     },
     "Cold Brew with Cold Foam": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "155",
@@ -20399,7 +20399,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "205",
@@ -20423,7 +20423,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "310",
@@ -20447,7 +20447,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "360",
@@ -20473,7 +20473,7 @@ module.exports = {
       }
     },
     "Cold Brew with Salted Cream Cold Foam": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "140",
@@ -20497,7 +20497,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "185",
@@ -20521,7 +20521,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "275",
@@ -20545,7 +20545,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "320",
@@ -20571,7 +20571,31 @@ module.exports = {
       }
     },
     "Decaf Pike Place\xAE Roast": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "15",
+            "Calories": "5",
+            "Calories from fat": "0",
+            "Category": "brewed-coffee",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Decaf Pike Place\xAE Roast",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "5",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20",
@@ -20595,7 +20619,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25",
@@ -20619,7 +20643,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "30",
@@ -20642,18 +20666,20 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Featured Dark Roast": {
+      "01_Short (8 fl. oz.)": {
         "N/A": {
           "N/A": {
-            "Caffeine(mg)": "15",
+            "Caffeine(mg)": "130",
             "Calories": "5",
             "Calories from fat": "0",
             "Category": "brewed-coffee",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "",
-            "Name": "Decaf Pike Place\xAE Roast",
+            "Name": "Featured Dark Roast",
             "Portion(fl oz)": "8",
             "Protein(g)": "0",
             "Saturated fat(g)": "0",
@@ -20666,10 +20692,8 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      }
-    },
-    "Featured Dark Roast": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "195",
@@ -20693,7 +20717,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "260",
@@ -20717,7 +20741,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "340",
@@ -20740,18 +20764,20 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Pike Place\xAE Roast": {
+      "01_Short (8 fl. oz.)": {
         "N/A": {
           "N/A": {
-            "Caffeine(mg)": "130",
+            "Caffeine(mg)": "155",
             "Calories": "5",
             "Calories from fat": "0",
             "Category": "brewed-coffee",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "",
-            "Name": "Featured Dark Roast",
+            "Name": "Pike Place\xAE Roast",
             "Portion(fl oz)": "8",
             "Protein(g)": "0",
             "Saturated fat(g)": "0",
@@ -20764,10 +20790,8 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      }
-    },
-    "Pike Place\xAE Roast": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "235",
@@ -20791,7 +20815,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "310",
@@ -20815,7 +20839,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "410",
@@ -20838,34 +20862,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "155",
-            "Calories": "5",
-            "Calories from fat": "0",
-            "Category": "brewed-coffee",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Pike Place\xAE Roast",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "5",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       }
     },
     "Pumpkin Cream Cold Brew": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "145",
@@ -20889,7 +20889,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "185",
@@ -20913,7 +20913,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "275",
@@ -20937,7 +20937,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "315",
@@ -20965,7 +20965,7 @@ module.exports = {
   },
   "Espresso": {
     "Iced Starbucks\xAE Blonde Caff\xE8 Latte": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -21099,7 +21099,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -21233,7 +21233,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "255",
@@ -21369,7 +21369,7 @@ module.exports = {
       }
     },
     "Iced Starbucks\xAE Blonde Caramel Cloud Macchiato": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -21503,7 +21503,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -21637,7 +21637,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "255",
@@ -21773,7 +21773,7 @@ module.exports = {
       }
     },
     "Iced Starbucks\xAE Blonde Cocoa Cloud Macchiato": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -21907,7 +21907,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -22041,7 +22041,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "255",
@@ -22177,7 +22177,7 @@ module.exports = {
       }
     },
     "Iced Starbucks\xAE Blonde Flat White": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -22311,7 +22311,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "225",
@@ -22445,7 +22445,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "300",
@@ -22581,7 +22581,7 @@ module.exports = {
       }
     },
     "Iced Starbucks\xAE Blonde Vanilla Latte": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -22715,7 +22715,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -22849,7 +22849,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "255",
@@ -22985,7 +22985,7 @@ module.exports = {
       }
     },
     "Iced Vanilla Bean Coconutmilk Latte": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "75",
@@ -23119,7 +23119,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -23253,7 +23253,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "Almond": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -23277,7 +23277,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "225",
@@ -23391,7 +23391,7 @@ module.exports = {
       }
     },
     "Iced White Chocolate Mocha": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "75",
@@ -23645,7 +23645,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "150",
@@ -23899,7 +23899,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "Almond": {
           "No Whipped Cream": {
             "Caffeine(mg)": "150",
@@ -23923,7 +23923,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "225",
@@ -24159,7 +24159,141 @@ module.exports = {
       }
     },
     "Latte Macchiato": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "90",
+            "Calories from fat": "30",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Latte Macchiato",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "2",
+            "Size": "Short",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "8",
+            "Total Carbohydrate(g)": "9",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Almond": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "50",
+            "Calories from fat": "25",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Latte Macchiato",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "2",
+            "Total Carbohydrate(g)": "5",
+            "Total Fat(g)": "3",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Coconut": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "70",
+            "Calories from fat": "35",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Latte Macchiato",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "5",
+            "Total Carbohydrate(g)": "7",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Nonfat milk": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "60",
+            "Calories from fat": "0",
+            "Category": "espresso",
+            "Cholesterol(mg)": "5",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Latte Macchiato",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "8",
+            "Total Carbohydrate(g)": "10",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Soy (United States)": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "90",
+            "Calories from fat": "25",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "Latte Macchiato",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "60",
+            "Sugars(g)": "8",
+            "Total Carbohydrate(g)": "12",
+            "Total Fat(g)": "2.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Whole Milk": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "110",
+            "Calories from fat": "50",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Latte Macchiato",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3",
+            "Size": "Short",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "8",
+            "Total Carbohydrate(g)": "9",
+            "Total Fat(g)": "5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -24293,7 +24427,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "225",
@@ -24427,7 +24561,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "225",
@@ -24560,144 +24694,264 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Pumpkin Spice Latte": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "90",
+          "No Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "160",
             "Calories from fat": "30",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
             "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Latte Macchiato",
+            "Name": "Pumpkin Spice Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
+            "Protein(g)": "7",
             "Saturated fat(g)": "2",
             "Size": "Short",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "8",
-            "Total Carbohydrate(g)": "9",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "24",
+            "Total Carbohydrate(g)": "25",
             "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "210",
+            "Calories from fat": "80",
+            "Category": "espresso",
+            "Cholesterol(mg)": "35",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "5",
+            "Size": "Short",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "27",
+            "Total Fat(g)": "8",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Almond": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "50",
+          "No Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "120",
             "Calories from fat": "25",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Almond",
-            "Name": "Latte Macchiato",
+            "Name": "Pumpkin Spice Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "2",
+            "Protein(g)": "3",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "2",
-            "Total Carbohydrate(g)": "5",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "21",
             "Total Fat(g)": "3",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "170",
+            "Calories from fat": "70",
+            "Category": "espresso",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "3",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "20",
+            "Total Carbohydrate(g)": "22",
+            "Total Fat(g)": "8",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Coconut": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "70",
+          "No Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "130",
             "Calories from fat": "35",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Latte Macchiato",
+            "Name": "Pumpkin Spice Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "1",
+            "Protein(g)": "2",
             "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "5",
-            "Total Carbohydrate(g)": "7",
+            "Sodium(mg)": "105",
+            "Sugars(g)": "22",
+            "Total Carbohydrate(g)": "23",
             "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "180",
+            "Calories from fat": "80",
+            "Category": "espresso",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "7",
+            "Size": "Short",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "23",
+            "Total Carbohydrate(g)": "25",
+            "Total Fat(g)": "9",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Nonfat milk": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "60",
+          "No Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "130",
             "Calories from fat": "0",
             "Category": "espresso",
             "Cholesterol(mg)": "5",
             "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Latte Macchiato",
+            "Name": "Pumpkin Spice Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
+            "Protein(g)": "7",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "8",
-            "Total Carbohydrate(g)": "10",
+            "Sodium(mg)": "105",
+            "Sugars(g)": "24",
+            "Total Carbohydrate(g)": "25",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "180",
+            "Calories from fat": "50",
+            "Category": "espresso",
+            "Cholesterol(mg)": "25",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "27",
+            "Total Fat(g)": "5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Soy (United States)": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "90",
+          "No Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "160",
             "Calories from fat": "25",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Soy (United States)",
-            "Name": "Latte Macchiato",
+            "Name": "Pumpkin Spice Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "5",
+            "Protein(g)": "6",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "60",
-            "Sugars(g)": "8",
-            "Total Carbohydrate(g)": "12",
+            "Sodium(mg)": "100",
+            "Sugars(g)": "24",
+            "Total Carbohydrate(g)": "27",
             "Total Fat(g)": "2.5",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "210",
+            "Calories from fat": "70",
+            "Category": "espresso",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "105",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "29",
+            "Total Fat(g)": "8",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Whole Milk": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "110",
+          "No Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "170",
             "Calories from fat": "50",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
             "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Latte Macchiato",
+            "Name": "Pumpkin Spice Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
+            "Protein(g)": "7",
             "Saturated fat(g)": "3",
             "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "8",
-            "Total Carbohydrate(g)": "9",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "24",
+            "Total Carbohydrate(g)": "25",
             "Total Fat(g)": "5",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "230",
+            "Calories from fat": "90",
+            "Category": "espresso",
+            "Cholesterol(mg)": "35",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "6",
+            "Size": "Short",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "27",
+            "Total Fat(g)": "10",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         }
-      }
-    },
-    "Pumpkin Spice Latte": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "75",
@@ -24951,7 +25205,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "150",
@@ -25205,7 +25459,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "150",
@@ -25458,264 +25712,264 @@ module.exports = {
             "Whipped Cream": "Whipped Cream"
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Salted Caramel Mocha": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "160",
-            "Calories from fat": "30",
+            "Caffeine(mg)": "90",
+            "Calories": "180",
+            "Calories from fat": "35",
             "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
+            "Cholesterol(mg)": "10",
+            "Dietary Fiber(g)": "2",
             "Milk": "2% Milk",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "2",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "2.5",
             "Size": "Short",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "24",
-            "Total Carbohydrate(g)": "25",
-            "Total Fat(g)": "3.5",
+            "Sodium(mg)": "140",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "30",
+            "Total Fat(g)": "4",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "210",
-            "Calories from fat": "80",
+            "Caffeine(mg)": "90",
+            "Calories": "260",
+            "Calories from fat": "90",
             "Category": "espresso",
             "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "2% Milk",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "7",
-            "Saturated fat(g)": "5",
+            "Saturated fat(g)": "6",
             "Size": "Short",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "8",
+            "Sodium(mg)": "210",
+            "Sugars(g)": "31",
+            "Total Carbohydrate(g)": "36",
+            "Total Fat(g)": "10",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Almond": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "120",
-            "Calories from fat": "25",
+            "Caffeine(mg)": "90",
+            "Calories": "150",
+            "Calories from fat": "35",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "3",
             "Milk": "Almond",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "3",
-            "Saturated fat(g)": "0",
+            "Saturated fat(g)": "1",
             "Size": "Short",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "21",
-            "Total Fat(g)": "3",
+            "Sodium(mg)": "140",
+            "Sugars(g)": "22",
+            "Total Carbohydrate(g)": "27",
+            "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "170",
-            "Calories from fat": "70",
+            "Caffeine(mg)": "90",
+            "Calories": "220",
+            "Calories from fat": "90",
             "Category": "espresso",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "3",
             "Milk": "Almond",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "3",
-            "Saturated fat(g)": "3.5",
+            "Saturated fat(g)": "4.5",
             "Size": "Short",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "20",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "8",
+            "Sodium(mg)": "200",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "32",
+            "Total Fat(g)": "10",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Coconut": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "130",
-            "Calories from fat": "35",
+            "Caffeine(mg)": "90",
+            "Calories": "160",
+            "Calories from fat": "40",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Coconut",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
             "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "105",
-            "Sugars(g)": "22",
-            "Total Carbohydrate(g)": "23",
-            "Total Fat(g)": "3.5",
+            "Sodium(mg)": "130",
+            "Sugars(g)": "24",
+            "Total Carbohydrate(g)": "29",
+            "Total Fat(g)": "4.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "180",
-            "Calories from fat": "80",
+            "Caffeine(mg)": "90",
+            "Calories": "240",
+            "Calories from fat": "90",
             "Category": "espresso",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Coconut",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
             "Saturated fat(g)": "7",
             "Size": "Short",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "23",
-            "Total Carbohydrate(g)": "25",
-            "Total Fat(g)": "9",
+            "Sodium(mg)": "200",
+            "Sugars(g)": "29",
+            "Total Carbohydrate(g)": "34",
+            "Total Fat(g)": "10",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Nonfat milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "130",
-            "Calories from fat": "0",
+            "Caffeine(mg)": "90",
+            "Calories": "160",
+            "Calories from fat": "15",
             "Category": "espresso",
             "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Nonfat milk",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "0",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "1",
             "Size": "Short",
-            "Sodium(mg)": "105",
-            "Sugars(g)": "24",
-            "Total Carbohydrate(g)": "25",
-            "Total Fat(g)": "0",
+            "Sodium(mg)": "135",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "31",
+            "Total Fat(g)": "1.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "180",
-            "Calories from fat": "50",
+            "Caffeine(mg)": "90",
+            "Calories": "240",
+            "Calories from fat": "70",
             "Category": "espresso",
             "Cholesterol(mg)": "25",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Nonfat milk",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "7",
-            "Saturated fat(g)": "3.5",
+            "Saturated fat(g)": "4.5",
             "Size": "Short",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "5",
+            "Sodium(mg)": "200",
+            "Sugars(g)": "32",
+            "Total Carbohydrate(g)": "36",
+            "Total Fat(g)": "7",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Soy (United States)": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "160",
-            "Calories from fat": "25",
+            "Caffeine(mg)": "90",
+            "Calories": "180",
+            "Calories from fat": "30",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "2",
             "Milk": "Soy (United States)",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "0",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "1",
             "Size": "Short",
-            "Sodium(mg)": "100",
-            "Sugars(g)": "24",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "2.5",
+            "Sodium(mg)": "125",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "32",
+            "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "210",
-            "Calories from fat": "70",
+            "Caffeine(mg)": "90",
+            "Calories": "260",
+            "Calories from fat": "80",
             "Category": "espresso",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "2",
             "Milk": "Soy (United States)",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
+            "Saturated fat(g)": "4.5",
             "Size": "Short",
-            "Sodium(mg)": "105",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "29",
-            "Total Fat(g)": "8",
+            "Sodium(mg)": "190",
+            "Sugars(g)": "32",
+            "Total Carbohydrate(g)": "38",
+            "Total Fat(g)": "9",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Whole Milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "170",
+            "Caffeine(mg)": "90",
+            "Calories": "200",
             "Calories from fat": "50",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Whole Milk",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "3",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "24",
-            "Total Carbohydrate(g)": "25",
-            "Total Fat(g)": "5",
+            "Sodium(mg)": "135",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "30",
+            "Total Fat(g)": "6",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "230",
-            "Calories from fat": "90",
+            "Caffeine(mg)": "90",
+            "Calories": "270",
+            "Calories from fat": "110",
             "Category": "espresso",
             "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Whole Milk",
-            "Name": "Pumpkin Spice Latte",
+            "Name": "Salted Caramel Mocha",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "6",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "7",
             "Size": "Short",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "10",
+            "Sodium(mg)": "200",
+            "Sugars(g)": "31",
+            "Total Carbohydrate(g)": "36",
+            "Total Fat(g)": "12",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         }
-      }
-    },
-    "Salted Caramel Mocha": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "95",
@@ -25969,7 +26223,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "175",
@@ -26223,7 +26477,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "185",
@@ -26476,264 +26730,34 @@ module.exports = {
             "Whipped Cream": "Whipped Cream"
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "180",
-            "Calories from fat": "35",
-            "Category": "espresso",
-            "Cholesterol(mg)": "10",
-            "Dietary Fiber(g)": "2",
-            "Milk": "2% Milk",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "2.5",
-            "Size": "Short",
-            "Sodium(mg)": "140",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "30",
-            "Total Fat(g)": "4",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "260",
-            "Calories from fat": "90",
-            "Category": "espresso",
-            "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "2",
-            "Milk": "2% Milk",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "6",
-            "Size": "Short",
-            "Sodium(mg)": "210",
-            "Sugars(g)": "31",
-            "Total Carbohydrate(g)": "36",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Almond": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "150",
-            "Calories from fat": "35",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "3",
-            "Milk": "Almond",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "140",
-            "Sugars(g)": "22",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "220",
-            "Calories from fat": "90",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "3",
-            "Milk": "Almond",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "4.5",
-            "Size": "Short",
-            "Sodium(mg)": "200",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "32",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Coconut": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "160",
-            "Calories from fat": "40",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Coconut",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "3.5",
-            "Size": "Short",
-            "Sodium(mg)": "130",
-            "Sugars(g)": "24",
-            "Total Carbohydrate(g)": "29",
-            "Total Fat(g)": "4.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "240",
-            "Calories from fat": "90",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Coconut",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "7",
-            "Size": "Short",
-            "Sodium(mg)": "200",
-            "Sugars(g)": "29",
-            "Total Carbohydrate(g)": "34",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Nonfat milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "160",
-            "Calories from fat": "15",
-            "Category": "espresso",
-            "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Nonfat milk",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "135",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "31",
-            "Total Fat(g)": "1.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "240",
-            "Calories from fat": "70",
-            "Category": "espresso",
-            "Cholesterol(mg)": "25",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Nonfat milk",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "4.5",
-            "Size": "Short",
-            "Sodium(mg)": "200",
-            "Sugars(g)": "32",
-            "Total Carbohydrate(g)": "36",
-            "Total Fat(g)": "7",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Soy (United States)": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "180",
-            "Calories from fat": "30",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Soy (United States)",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "125",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "32",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "260",
-            "Calories from fat": "80",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Soy (United States)",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "4.5",
-            "Size": "Short",
-            "Sodium(mg)": "190",
-            "Sugars(g)": "32",
-            "Total Carbohydrate(g)": "38",
-            "Total Fat(g)": "9",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Whole Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "200",
-            "Calories from fat": "50",
-            "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Whole Milk",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
-            "Size": "Short",
-            "Sodium(mg)": "135",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "30",
-            "Total Fat(g)": "6",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "270",
-            "Calories from fat": "110",
-            "Category": "espresso",
-            "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Whole Milk",
-            "Name": "Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "7",
-            "Size": "Short",
-            "Sodium(mg)": "200",
-            "Sugars(g)": "31",
-            "Total Carbohydrate(g)": "36",
-            "Total Fat(g)": "12",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        }
       }
     },
     "Skinny Mocha": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "75",
+            "Calories": "80",
+            "Calories from fat": "5",
+            "Category": "espresso",
+            "Cholesterol(mg)": "5",
+            "Dietary Fiber(g)": "2",
+            "Milk": "",
+            "Name": "Skinny Mocha",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "0.5",
+            "Size": "Short",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "8",
+            "Total Carbohydrate(g)": "12",
+            "Total Fat(g)": "1",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "75",
@@ -26757,7 +26781,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -26781,7 +26805,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -26804,34 +26828,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "75",
-            "Calories": "80",
-            "Calories from fat": "5",
-            "Category": "espresso",
-            "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "2",
-            "Milk": "",
-            "Name": "Skinny Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "0.5",
-            "Size": "Short",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "8",
-            "Total Carbohydrate(g)": "12",
-            "Total Fat(g)": "1",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       }
     },
     "Starbucks Doubleshot\xAE on Ice Beverage": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "150",
@@ -27085,7 +27085,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "225",
@@ -27339,7 +27339,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "375",
@@ -27595,7 +27595,31 @@ module.exports = {
       }
     },
     "Starbucks\xAE Blonde Caff\xE8 Americano": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "5",
+            "Calories from fat": "0",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Starbucks\xAE Blonde Caff\xE8 Americano",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "5",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "1",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -27619,7 +27643,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "255",
@@ -27643,7 +27667,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "340",
@@ -27666,34 +27690,144 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
+      }
+    },
+    "Starbucks\xAE Blonde Caff\xE8 Latte": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
-            "Calories": "5",
-            "Calories from fat": "0",
+            "Calories": "100",
+            "Calories from fat": "35",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "2.5",
+            "Size": "Short",
+            "Sodium(mg)": "85",
+            "Sugars(g)": "9",
+            "Total Carbohydrate(g)": "10",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Almond": {
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "50",
+            "Calories from fat": "30",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "85",
+            "Sugars(g)": "3",
+            "Total Carbohydrate(g)": "5",
+            "Total Fat(g)": "3",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Coconut": {
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "70",
+            "Calories from fat": "35",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Starbucks\xAE Blonde Caff\xE8 Americano",
+            "Milk": "Coconut",
+            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "0",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "4",
+            "Size": "Short",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "6",
+            "Total Carbohydrate(g)": "7",
+            "Total Fat(g)": "4",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Nonfat milk": {
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "70",
+            "Calories from fat": "0",
+            "Category": "espresso",
+            "Cholesterol(mg)": "5",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "5",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "1",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "9",
+            "Total Carbohydrate(g)": "10",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
+        },
+        "Soy (United States)": {
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "100",
+            "Calories from fat": "25",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "65",
+            "Sugars(g)": "9",
+            "Total Carbohydrate(g)": "12",
+            "Total Fat(g)": "3",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Whole Milk": {
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "120",
+            "Calories from fat": "50",
+            "Category": "espresso",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "9",
+            "Total Carbohydrate(g)": "10",
+            "Total Fat(g)": "6",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
         }
-      }
-    },
-    "Starbucks\xAE Blonde Caff\xE8 Latte": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -27827,7 +27961,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -27961,7 +28095,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -28094,26 +28228,28 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Starbucks\xAE Blonde Caramel Cloud Macchiato": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
-            "Calories": "100",
+            "Calories": "140",
             "Calories from fat": "35",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
             "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
             "Saturated fat(g)": "2.5",
             "Size": "Short",
-            "Sodium(mg)": "85",
-            "Sugars(g)": "9",
-            "Total Carbohydrate(g)": "10",
-            "Total Fat(g)": "3.5",
+            "Sodium(mg)": "95",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "20",
+            "Total Fat(g)": "4",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
@@ -28121,21 +28257,21 @@ module.exports = {
         "Almond": {
           "N/A": {
             "Caffeine(mg)": "85",
-            "Calories": "50",
+            "Calories": "100",
             "Calories from fat": "30",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
             "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "0",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "0.5",
             "Size": "Short",
             "Sodium(mg)": "85",
-            "Sugars(g)": "3",
-            "Total Carbohydrate(g)": "5",
-            "Total Fat(g)": "3",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "17",
+            "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
@@ -28143,20 +28279,20 @@ module.exports = {
         "Coconut": {
           "N/A": {
             "Caffeine(mg)": "85",
-            "Calories": "70",
+            "Calories": "120",
             "Calories from fat": "35",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
             "Portion(fl oz)": "8",
             "Protein(g)": "1",
-            "Saturated fat(g)": "4",
+            "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "6",
-            "Total Carbohydrate(g)": "7",
+            "Sodium(mg)": "90",
+            "Sugars(g)": "16",
+            "Total Carbohydrate(g)": "19",
             "Total Fat(g)": "4",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -28165,21 +28301,21 @@ module.exports = {
         "Nonfat milk": {
           "N/A": {
             "Caffeine(mg)": "85",
-            "Calories": "70",
-            "Calories from fat": "0",
+            "Calories": "110",
+            "Calories from fat": "10",
             "Category": "espresso",
             "Cholesterol(mg)": "5",
             "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "0",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "0.5",
             "Size": "Short",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "9",
-            "Total Carbohydrate(g)": "10",
-            "Total Fat(g)": "0",
+            "Sodium(mg)": "85",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "21",
+            "Total Fat(g)": "1",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
@@ -28187,20 +28323,20 @@ module.exports = {
         "Soy (United States)": {
           "N/A": {
             "Caffeine(mg)": "85",
-            "Calories": "100",
-            "Calories from fat": "25",
+            "Calories": "140",
+            "Calories from fat": "30",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
             "Portion(fl oz)": "8",
             "Protein(g)": "5",
-            "Saturated fat(g)": "0",
+            "Saturated fat(g)": "1",
             "Size": "Short",
-            "Sodium(mg)": "65",
-            "Sugars(g)": "9",
-            "Total Carbohydrate(g)": "12",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "23",
             "Total Fat(g)": "3",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -28209,29 +28345,27 @@ module.exports = {
         "Whole Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
-            "Calories": "120",
+            "Calories": "160",
             "Calories from fat": "50",
             "Category": "espresso",
             "Cholesterol(mg)": "20",
             "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Caff\xE8 Latte",
+            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
+            "Protein(g)": "5",
             "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "9",
-            "Total Carbohydrate(g)": "10",
+            "Sodium(mg)": "90",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "20",
             "Total Fat(g)": "6",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
         }
-      }
-    },
-    "Starbucks\xAE Blonde Caramel Cloud Macchiato": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -28365,7 +28499,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -28499,7 +28633,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -28632,8 +28766,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Starbucks\xAE Blonde Cocoa Cloud Macchiato": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -28643,14 +28779,14 @@ module.exports = {
             "Cholesterol(mg)": "15",
             "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
+            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
             "Saturated fat(g)": "2.5",
             "Size": "Short",
-            "Sodium(mg)": "95",
+            "Sodium(mg)": "125",
             "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "20",
+            "Total Carbohydrate(g)": "22",
             "Total Fat(g)": "4",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -28659,20 +28795,20 @@ module.exports = {
         "Almond": {
           "N/A": {
             "Caffeine(mg)": "85",
-            "Calories": "100",
+            "Calories": "110",
             "Calories from fat": "30",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
+            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
-            "Saturated fat(g)": "0.5",
+            "Saturated fat(g)": "1",
             "Size": "Short",
-            "Sodium(mg)": "85",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "17",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "15",
+            "Total Carbohydrate(g)": "18",
             "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -28687,14 +28823,14 @@ module.exports = {
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
+            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
             "Portion(fl oz)": "8",
             "Protein(g)": "1",
             "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "90",
-            "Sugars(g)": "16",
-            "Total Carbohydrate(g)": "19",
+            "Sodium(mg)": "125",
+            "Sugars(g)": "17",
+            "Total Carbohydrate(g)": "20",
             "Total Fat(g)": "4",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -28703,20 +28839,20 @@ module.exports = {
         "Nonfat milk": {
           "N/A": {
             "Caffeine(mg)": "85",
-            "Calories": "110",
+            "Calories": "120",
             "Calories from fat": "10",
             "Category": "espresso",
             "Cholesterol(mg)": "5",
             "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
+            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
             "Saturated fat(g)": "0.5",
             "Size": "Short",
-            "Sodium(mg)": "85",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "21",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "20",
+            "Total Carbohydrate(g)": "22",
             "Total Fat(g)": "1",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -28731,14 +28867,14 @@ module.exports = {
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
+            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
             "Portion(fl oz)": "8",
             "Protein(g)": "5",
             "Saturated fat(g)": "1",
             "Size": "Short",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "23",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "20",
+            "Total Carbohydrate(g)": "24",
             "Total Fat(g)": "3",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -28753,23 +28889,21 @@ module.exports = {
             "Cholesterol(mg)": "20",
             "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Caramel Cloud Macchiato",
+            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
             "Portion(fl oz)": "8",
-            "Protein(g)": "5",
+            "Protein(g)": "6",
             "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "90",
+            "Sodium(mg)": "120",
             "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "20",
+            "Total Carbohydrate(g)": "22",
             "Total Fat(g)": "6",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
         }
-      }
-    },
-    "Starbucks\xAE Blonde Cocoa Cloud Macchiato": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -28903,7 +29037,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -29037,7 +29171,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -29170,144 +29304,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
-          "N/A": {
-            "Caffeine(mg)": "85",
-            "Calories": "140",
-            "Calories from fat": "35",
-            "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "2.5",
-            "Size": "Short",
-            "Sodium(mg)": "125",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "4",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Almond": {
-          "N/A": {
-            "Caffeine(mg)": "85",
-            "Calories": "110",
-            "Calories from fat": "30",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "15",
-            "Total Carbohydrate(g)": "18",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Coconut": {
-          "N/A": {
-            "Caffeine(mg)": "85",
-            "Calories": "120",
-            "Calories from fat": "35",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "3.5",
-            "Size": "Short",
-            "Sodium(mg)": "125",
-            "Sugars(g)": "17",
-            "Total Carbohydrate(g)": "20",
-            "Total Fat(g)": "4",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Nonfat milk": {
-          "N/A": {
-            "Caffeine(mg)": "85",
-            "Calories": "120",
-            "Calories from fat": "10",
-            "Category": "espresso",
-            "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "0.5",
-            "Size": "Short",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "20",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "1",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Soy (United States)": {
-          "N/A": {
-            "Caffeine(mg)": "85",
-            "Calories": "140",
-            "Calories from fat": "30",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "20",
-            "Total Carbohydrate(g)": "24",
-            "Total Fat(g)": "3",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Whole Milk": {
-          "N/A": {
-            "Caffeine(mg)": "85",
-            "Calories": "160",
-            "Calories from fat": "50",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Cocoa Cloud Macchiato",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
-            "Size": "Short",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "6",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       }
     },
     "Starbucks\xAE Blonde Doubleshot\xAE On Ice": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "170",
@@ -29561,7 +29561,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "255",
@@ -29815,7 +29815,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "425",
@@ -30071,7 +30071,141 @@ module.exports = {
       }
     },
     "Starbucks\xAE Blonde Flat White": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "90",
+            "Calories from fat": "30",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Starbucks\xAE Blonde Flat White",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "2",
+            "Size": "Short",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "8",
+            "Total Carbohydrate(g)": "9",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Almond": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "50",
+            "Calories from fat": "25",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Starbucks\xAE Blonde Flat White",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "2",
+            "Total Carbohydrate(g)": "5",
+            "Total Fat(g)": "3",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Coconut": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "60",
+            "Calories from fat": "35",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Starbucks\xAE Blonde Flat White",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "5",
+            "Total Carbohydrate(g)": "7",
+            "Total Fat(g)": "4",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Nonfat milk": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "60",
+            "Calories from fat": "0",
+            "Category": "espresso",
+            "Cholesterol(mg)": "5",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Starbucks\xAE Blonde Flat White",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "8",
+            "Total Carbohydrate(g)": "9",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Soy (United States)": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "90",
+            "Calories from fat": "25",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "Starbucks\xAE Blonde Flat White",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "65",
+            "Sugars(g)": "9",
+            "Total Carbohydrate(g)": "12",
+            "Total Fat(g)": "2.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Whole Milk": {
+          "N/A": {
+            "Caffeine(mg)": "150",
+            "Calories": "110",
+            "Calories from fat": "50",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Starbucks\xAE Blonde Flat White",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3",
+            "Size": "Short",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "8",
+            "Total Carbohydrate(g)": "9",
+            "Total Fat(g)": "5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -30205,7 +30339,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "225",
@@ -30339,7 +30473,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "225",
@@ -30472,144 +30606,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "90",
-            "Calories from fat": "30",
-            "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Flat White",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "2",
-            "Size": "Short",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "8",
-            "Total Carbohydrate(g)": "9",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Almond": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "50",
-            "Calories from fat": "25",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Flat White",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "2",
-            "Total Carbohydrate(g)": "5",
-            "Total Fat(g)": "3",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Coconut": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "60",
-            "Calories from fat": "35",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Flat White",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "3.5",
-            "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "5",
-            "Total Carbohydrate(g)": "7",
-            "Total Fat(g)": "4",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Nonfat milk": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "60",
-            "Calories from fat": "0",
-            "Category": "espresso",
-            "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Flat White",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "8",
-            "Total Carbohydrate(g)": "9",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Soy (United States)": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "90",
-            "Calories from fat": "25",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Flat White",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "65",
-            "Sugars(g)": "9",
-            "Total Carbohydrate(g)": "12",
-            "Total Fat(g)": "2.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Whole Milk": {
-          "N/A": {
-            "Caffeine(mg)": "150",
-            "Calories": "110",
-            "Calories from fat": "50",
-            "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Flat White",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "3",
-            "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "8",
-            "Total Carbohydrate(g)": "9",
-            "Total Fat(g)": "5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       }
     },
     "Starbucks\xAE Blonde Iced Pumpkin Spice Latte": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "85",
@@ -30863,7 +30863,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "170",
@@ -31117,7 +31117,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "255",
@@ -31373,7 +31373,7 @@ module.exports = {
       }
     },
     "Starbucks\xAE Blonde Iced Salted Caramel Mocha": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "100",
@@ -31627,7 +31627,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "190",
@@ -31881,7 +31881,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "290",
@@ -32137,7 +32137,261 @@ module.exports = {
       }
     },
     "Starbucks\xAE Blonde Pumpkin Spice Latte": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "120",
+            "Calories from fat": "30",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "2",
+            "Size": "Short",
+            "Sodium(mg)": "100",
+            "Sugars(g)": "16",
+            "Total Carbohydrate(g)": "17",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "180",
+            "Calories from fat": "80",
+            "Category": "espresso",
+            "Cholesterol(mg)": "30",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "5",
+            "Size": "Short",
+            "Sodium(mg)": "105",
+            "Sugars(g)": "18",
+            "Total Carbohydrate(g)": "19",
+            "Total Fat(g)": "8",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Almond": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "80",
+            "Calories from fat": "25",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "90",
+            "Sugars(g)": "11",
+            "Total Carbohydrate(g)": "13",
+            "Total Fat(g)": "3",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "130",
+            "Calories from fat": "70",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "95",
+            "Sugars(g)": "13",
+            "Total Carbohydrate(g)": "15",
+            "Total Fat(g)": "8",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Coconut": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "100",
+            "Calories from fat": "35",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "95",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "15",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "150",
+            "Calories from fat": "80",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "6",
+            "Size": "Short",
+            "Sodium(mg)": "100",
+            "Sugars(g)": "15",
+            "Total Carbohydrate(g)": "17",
+            "Total Fat(g)": "9",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Nonfat milk": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "100",
+            "Calories from fat": "0",
+            "Category": "espresso",
+            "Cholesterol(mg)": "5",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "90",
+            "Sugars(g)": "17",
+            "Total Carbohydrate(g)": "17",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "150",
+            "Calories from fat": "45",
+            "Category": "espresso",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "95",
+            "Sugars(g)": "18",
+            "Total Carbohydrate(g)": "19",
+            "Total Fat(g)": "5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Soy (United States)": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "120",
+            "Calories from fat": "25",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "17",
+            "Total Carbohydrate(g)": "19",
+            "Total Fat(g)": "2.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "180",
+            "Calories from fat": "70",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "85",
+            "Sugars(g)": "18",
+            "Total Carbohydrate(g)": "21",
+            "Total Fat(g)": "8",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Whole Milk": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "140",
+            "Calories from fat": "50",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3",
+            "Size": "Short",
+            "Sodium(mg)": "90",
+            "Sugars(g)": "16",
+            "Total Carbohydrate(g)": "17",
+            "Total Fat(g)": "6",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "85",
+            "Calories": "190",
+            "Calories from fat": "90",
+            "Category": "espresso",
+            "Cholesterol(mg)": "35",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "6",
+            "Size": "Short",
+            "Sodium(mg)": "95",
+            "Sugars(g)": "18",
+            "Total Carbohydrate(g)": "19",
+            "Total Fat(g)": "11",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "85",
@@ -32391,7 +32645,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "170",
@@ -32645,7 +32899,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "170",
@@ -32898,264 +33152,264 @@ module.exports = {
             "Whipped Cream": "Whipped Cream"
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Starbucks\xAE Blonde Salted Caramel Mocha": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "120",
-            "Calories from fat": "30",
+            "Caffeine(mg)": "90",
+            "Calories": "140",
+            "Calories from fat": "35",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "1",
             "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "2",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "2.5",
             "Size": "Short",
-            "Sodium(mg)": "100",
-            "Sugars(g)": "16",
-            "Total Carbohydrate(g)": "17",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "17",
+            "Total Carbohydrate(g)": "20",
             "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "180",
-            "Calories from fat": "80",
+            "Caffeine(mg)": "90",
+            "Calories": "210",
+            "Calories from fat": "90",
             "Category": "espresso",
             "Cholesterol(mg)": "30",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "1",
             "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "7",
-            "Saturated fat(g)": "5",
+            "Saturated fat(g)": "6",
             "Size": "Short",
-            "Sodium(mg)": "105",
-            "Sugars(g)": "18",
-            "Total Carbohydrate(g)": "19",
-            "Total Fat(g)": "8",
+            "Sodium(mg)": "170",
+            "Sugars(g)": "22",
+            "Total Carbohydrate(g)": "25",
+            "Total Fat(g)": "10",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Almond": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "80",
-            "Calories from fat": "25",
+            "Caffeine(mg)": "90",
+            "Calories": "100",
+            "Calories from fat": "30",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "2",
             "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
-            "Saturated fat(g)": "0",
+            "Saturated fat(g)": "0.5",
             "Size": "Short",
-            "Sodium(mg)": "90",
-            "Sugars(g)": "11",
-            "Total Carbohydrate(g)": "13",
-            "Total Fat(g)": "3",
+            "Sodium(mg)": "100",
+            "Sugars(g)": "13",
+            "Total Carbohydrate(g)": "16",
+            "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "130",
-            "Calories from fat": "70",
+            "Caffeine(mg)": "90",
+            "Calories": "170",
+            "Calories from fat": "80",
             "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "1",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "2",
             "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
-            "Saturated fat(g)": "3.5",
+            "Saturated fat(g)": "4.5",
             "Size": "Short",
-            "Sodium(mg)": "95",
-            "Sugars(g)": "13",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "8",
+            "Sodium(mg)": "170",
+            "Sugars(g)": "18",
+            "Total Carbohydrate(g)": "22",
+            "Total Fat(g)": "9",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Coconut": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "100",
+            "Caffeine(mg)": "90",
+            "Calories": "110",
             "Calories from fat": "35",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "1",
             "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "1",
             "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "95",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "3.5",
+            "Sodium(mg)": "105",
+            "Sugars(g)": "15",
+            "Total Carbohydrate(g)": "18",
+            "Total Fat(g)": "4",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "150",
-            "Calories from fat": "80",
+            "Caffeine(mg)": "90",
+            "Calories": "190",
+            "Calories from fat": "90",
             "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "1",
             "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
-            "Saturated fat(g)": "6",
+            "Saturated fat(g)": "7",
             "Size": "Short",
-            "Sodium(mg)": "100",
-            "Sugars(g)": "15",
-            "Total Carbohydrate(g)": "17",
-            "Total Fat(g)": "9",
+            "Sodium(mg)": "170",
+            "Sugars(g)": "20",
+            "Total Carbohydrate(g)": "23",
+            "Total Fat(g)": "10",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Nonfat milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "100",
-            "Calories from fat": "0",
+            "Caffeine(mg)": "90",
+            "Calories": "110",
+            "Calories from fat": "5",
             "Category": "espresso",
             "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "1",
             "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
+            "Protein(g)": "6",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "90",
-            "Sugars(g)": "17",
-            "Total Carbohydrate(g)": "17",
-            "Total Fat(g)": "0",
+            "Sodium(mg)": "100",
+            "Sugars(g)": "18",
+            "Total Carbohydrate(g)": "20",
+            "Total Fat(g)": "0.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "150",
-            "Calories from fat": "45",
+            "Caffeine(mg)": "90",
+            "Calories": "190",
+            "Calories from fat": "60",
             "Category": "espresso",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "1",
             "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "7",
-            "Saturated fat(g)": "3.5",
+            "Saturated fat(g)": "4",
             "Size": "Short",
-            "Sodium(mg)": "95",
-            "Sugars(g)": "18",
-            "Total Carbohydrate(g)": "19",
-            "Total Fat(g)": "5",
+            "Sodium(mg)": "170",
+            "Sugars(g)": "23",
+            "Total Carbohydrate(g)": "25",
+            "Total Fat(g)": "7",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Soy (United States)": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "120",
+            "Caffeine(mg)": "90",
+            "Calories": "140",
             "Calories from fat": "25",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "2",
             "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "5",
-            "Saturated fat(g)": "0",
+            "Saturated fat(g)": "0.5",
             "Size": "Short",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "17",
-            "Total Carbohydrate(g)": "19",
-            "Total Fat(g)": "2.5",
+            "Sodium(mg)": "90",
+            "Sugars(g)": "18",
+            "Total Carbohydrate(g)": "22",
+            "Total Fat(g)": "3",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "180",
-            "Calories from fat": "70",
+            "Caffeine(mg)": "90",
+            "Calories": "210",
+            "Calories from fat": "80",
             "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "1",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "2",
             "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
+            "Saturated fat(g)": "4.5",
             "Size": "Short",
-            "Sodium(mg)": "85",
-            "Sugars(g)": "18",
-            "Total Carbohydrate(g)": "21",
-            "Total Fat(g)": "8",
+            "Sodium(mg)": "160",
+            "Sugars(g)": "23",
+            "Total Carbohydrate(g)": "27",
+            "Total Fat(g)": "9",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Whole Milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "140",
+            "Caffeine(mg)": "90",
+            "Calories": "150",
             "Calories from fat": "50",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "1",
             "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
-            "Saturated fat(g)": "3",
+            "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "90",
-            "Sugars(g)": "16",
-            "Total Carbohydrate(g)": "17",
+            "Sodium(mg)": "100",
+            "Sugars(g)": "17",
+            "Total Carbohydrate(g)": "20",
             "Total Fat(g)": "6",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "85",
-            "Calories": "190",
-            "Calories from fat": "90",
+            "Caffeine(mg)": "90",
+            "Calories": "230",
+            "Calories from fat": "100",
             "Category": "espresso",
             "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "1",
             "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Pumpkin Spice Latte",
+            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "6",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "7",
             "Size": "Short",
-            "Sodium(mg)": "95",
-            "Sugars(g)": "18",
-            "Total Carbohydrate(g)": "19",
-            "Total Fat(g)": "11",
+            "Sodium(mg)": "170",
+            "Sugars(g)": "22",
+            "Total Carbohydrate(g)": "25",
+            "Total Fat(g)": "12",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         }
-      }
-    },
-    "Starbucks\xAE Blonde Salted Caramel Mocha": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "100",
@@ -33409,7 +33663,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "190",
@@ -33663,7 +33917,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "195",
@@ -33916,264 +34170,144 @@ module.exports = {
             "Whipped Cream": "Whipped Cream"
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "140",
-            "Calories from fat": "35",
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "110",
+            "Calories from fat": "30",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
+            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "2.5",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "2",
             "Size": "Short",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "17",
-            "Total Carbohydrate(g)": "20",
-            "Total Fat(g)": "3.5",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "15",
+            "Total Fat(g)": "3",
             "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "210",
-            "Calories from fat": "90",
-            "Category": "espresso",
-            "Cholesterol(mg)": "30",
-            "Dietary Fiber(g)": "1",
-            "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "6",
-            "Size": "Short",
-            "Sodium(mg)": "170",
-            "Sugars(g)": "22",
-            "Total Carbohydrate(g)": "25",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
+            "Whipped Cream": ""
           }
         },
         "Almond": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "100",
-            "Calories from fat": "30",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "0.5",
-            "Size": "Short",
-            "Sodium(mg)": "100",
-            "Sugars(g)": "13",
-            "Total Carbohydrate(g)": "16",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "170",
-            "Calories from fat": "80",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "4.5",
-            "Size": "Short",
-            "Sodium(mg)": "170",
-            "Sugars(g)": "18",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "9",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Coconut": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "110",
-            "Calories from fat": "35",
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "70",
+            "Calories from fat": "25",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "9",
+            "Total Carbohydrate(g)": "11",
+            "Total Fat(g)": "2.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Coconut": {
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "90",
+            "Calories from fat": "30",
+            "Category": "espresso",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
+            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "1",
             "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "105",
-            "Sugars(g)": "15",
-            "Total Carbohydrate(g)": "18",
-            "Total Fat(g)": "4",
+            "Sodium(mg)": "65",
+            "Sugars(g)": "12",
+            "Total Carbohydrate(g)": "13",
+            "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "190",
-            "Calories from fat": "90",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "7",
-            "Size": "Short",
-            "Sodium(mg)": "170",
-            "Sugars(g)": "20",
-            "Total Carbohydrate(g)": "23",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
+            "Whipped Cream": ""
           }
         },
         "Nonfat milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "110",
-            "Calories from fat": "5",
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "80",
+            "Calories from fat": "0",
             "Category": "espresso",
             "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
+            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "100",
-            "Sugars(g)": "18",
-            "Total Carbohydrate(g)": "20",
-            "Total Fat(g)": "0.5",
+            "Sodium(mg)": "65",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "15",
+            "Total Fat(g)": "0",
             "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "190",
-            "Calories from fat": "60",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "4",
-            "Size": "Short",
-            "Sodium(mg)": "170",
-            "Sugars(g)": "23",
-            "Total Carbohydrate(g)": "25",
-            "Total Fat(g)": "7",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
+            "Whipped Cream": ""
           }
         },
         "Soy (United States)": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "140",
-            "Calories from fat": "25",
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "110",
+            "Calories from fat": "20",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "2",
+            "Dietary Fiber(g)": "1",
             "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
+            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "0.5",
+            "Protein(g)": "4",
+            "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "90",
-            "Sugars(g)": "18",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "3",
+            "Sodium(mg)": "55",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "17",
+            "Total Fat(g)": "2.5",
             "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "210",
-            "Calories from fat": "80",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "4.5",
-            "Size": "Short",
-            "Sodium(mg)": "160",
-            "Sugars(g)": "23",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "9",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
+            "Whipped Cream": ""
           }
         },
         "Whole Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "150",
-            "Calories from fat": "50",
+          "N/A": {
+            "Caffeine(mg)": "85",
+            "Calories": "130",
+            "Calories from fat": "45",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
+            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "3",
             "Size": "Short",
-            "Sodium(mg)": "100",
-            "Sugars(g)": "17",
-            "Total Carbohydrate(g)": "20",
-            "Total Fat(g)": "6",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "15",
+            "Total Fat(g)": "5",
             "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "90",
-            "Calories": "230",
-            "Calories from fat": "100",
-            "Category": "espresso",
-            "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Salted Caramel Mocha",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "7",
-            "Size": "Short",
-            "Sodium(mg)": "170",
-            "Sugars(g)": "22",
-            "Total Carbohydrate(g)": "25",
-            "Total Fat(g)": "12",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
+            "Whipped Cream": ""
           }
         }
-      }
-    },
-    "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -34307,7 +34441,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -34441,7 +34575,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -34574,8 +34708,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Starbucks\xAE Blonde Vanilla Latte": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -34585,15 +34721,15 @@ module.exports = {
             "Cholesterol(mg)": "15",
             "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
+            "Name": "Starbucks\xAE Blonde Vanilla Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "5",
+            "Protein(g)": "6",
             "Saturated fat(g)": "2",
             "Size": "Short",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "3",
+            "Sodium(mg)": "85",
+            "Sugars(g)": "13",
+            "Total Carbohydrate(g)": "14",
+            "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
@@ -34607,15 +34743,15 @@ module.exports = {
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
+            "Name": "Starbucks\xAE Blonde Vanilla Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "1",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "9",
-            "Total Carbohydrate(g)": "11",
-            "Total Fat(g)": "2.5",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "7",
+            "Total Carbohydrate(g)": "9",
+            "Total Fat(g)": "3",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
@@ -34624,20 +34760,20 @@ module.exports = {
           "N/A": {
             "Caffeine(mg)": "85",
             "Calories": "90",
-            "Calories from fat": "30",
+            "Calories from fat": "35",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
+            "Name": "Starbucks\xAE Blonde Vanilla Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "1",
-            "Saturated fat(g)": "3.5",
+            "Saturated fat(g)": "4",
             "Size": "Short",
-            "Sodium(mg)": "65",
-            "Sugars(g)": "12",
-            "Total Carbohydrate(g)": "13",
-            "Total Fat(g)": "3.5",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "11",
+            "Total Carbohydrate(g)": "12",
+            "Total Fat(g)": "4",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
@@ -34651,14 +34787,14 @@ module.exports = {
             "Cholesterol(mg)": "5",
             "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
+            "Name": "Starbucks\xAE Blonde Vanilla Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "65",
+            "Sodium(mg)": "75",
             "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "15",
+            "Total Carbohydrate(g)": "14",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -34668,19 +34804,19 @@ module.exports = {
           "N/A": {
             "Caffeine(mg)": "85",
             "Calories": "110",
-            "Calories from fat": "20",
+            "Calories from fat": "25",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
+            "Name": "Starbucks\xAE Blonde Vanilla Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "4",
+            "Protein(g)": "5",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "55",
+            "Sodium(mg)": "65",
             "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "17",
+            "Total Carbohydrate(g)": "16",
             "Total Fat(g)": "2.5",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -34690,28 +34826,26 @@ module.exports = {
           "N/A": {
             "Caffeine(mg)": "85",
             "Calories": "130",
-            "Calories from fat": "45",
+            "Calories from fat": "50",
             "Category": "espresso",
-            "Cholesterol(mg)": "15",
+            "Cholesterol(mg)": "20",
             "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Vanilla Bean Coconutmilk Latte",
+            "Name": "Starbucks\xAE Blonde Vanilla Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "3",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "5",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "13",
+            "Total Carbohydrate(g)": "14",
+            "Total Fat(g)": "6",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
         }
-      }
-    },
-    "Starbucks\xAE Blonde Vanilla Latte": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -34845,7 +34979,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -34979,7 +35113,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "170",
@@ -35112,91 +35246,93 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Vanilla Bean Coconutmilk Latte": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
           "N/A": {
-            "Caffeine(mg)": "85",
+            "Caffeine(mg)": "75",
             "Calories": "110",
             "Calories from fat": "30",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
             "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Starbucks\xAE Blonde Vanilla Latte",
+            "Name": "Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
+            "Protein(g)": "5",
             "Saturated fat(g)": "2",
             "Size": "Short",
-            "Sodium(mg)": "85",
-            "Sugars(g)": "13",
-            "Total Carbohydrate(g)": "14",
-            "Total Fat(g)": "3.5",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "15",
+            "Total Fat(g)": "3",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
         },
         "Almond": {
           "N/A": {
-            "Caffeine(mg)": "85",
+            "Caffeine(mg)": "75",
             "Calories": "70",
             "Calories from fat": "25",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Almond",
-            "Name": "Starbucks\xAE Blonde Vanilla Latte",
+            "Name": "Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "1",
             "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "7",
-            "Total Carbohydrate(g)": "9",
-            "Total Fat(g)": "3",
+            "Size": "Tall",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "9",
+            "Total Carbohydrate(g)": "11",
+            "Total Fat(g)": "2.5",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
         },
         "Coconut": {
           "N/A": {
-            "Caffeine(mg)": "85",
+            "Caffeine(mg)": "75",
             "Calories": "90",
-            "Calories from fat": "35",
+            "Calories from fat": "30",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Starbucks\xAE Blonde Vanilla Latte",
+            "Name": "Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "1",
-            "Saturated fat(g)": "4",
+            "Saturated fat(g)": "3.5",
             "Size": "Short",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "11",
-            "Total Carbohydrate(g)": "12",
-            "Total Fat(g)": "4",
+            "Sodium(mg)": "65",
+            "Sugars(g)": "12",
+            "Total Carbohydrate(g)": "13",
+            "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
         },
         "Nonfat milk": {
           "N/A": {
-            "Caffeine(mg)": "85",
+            "Caffeine(mg)": "75",
             "Calories": "80",
             "Calories from fat": "0",
             "Category": "espresso",
             "Cholesterol(mg)": "5",
             "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Starbucks\xAE Blonde Vanilla Latte",
+            "Name": "Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "75",
+            "Sodium(mg)": "65",
             "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "14",
+            "Total Carbohydrate(g)": "15",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -35204,21 +35340,21 @@ module.exports = {
         },
         "Soy (United States)": {
           "N/A": {
-            "Caffeine(mg)": "85",
+            "Caffeine(mg)": "75",
             "Calories": "110",
-            "Calories from fat": "25",
+            "Calories from fat": "20",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Soy (United States)",
-            "Name": "Starbucks\xAE Blonde Vanilla Latte",
+            "Name": "Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "5",
+            "Protein(g)": "4",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "65",
+            "Sodium(mg)": "55",
             "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "16",
+            "Total Carbohydrate(g)": "17",
             "Total Fat(g)": "2.5",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -35226,30 +35362,28 @@ module.exports = {
         },
         "Whole Milk": {
           "N/A": {
-            "Caffeine(mg)": "85",
+            "Caffeine(mg)": "75",
             "Calories": "130",
-            "Calories from fat": "50",
+            "Calories from fat": "45",
             "Category": "espresso",
-            "Cholesterol(mg)": "20",
+            "Cholesterol(mg)": "15",
             "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Starbucks\xAE Blonde Vanilla Latte",
+            "Name": "Vanilla Bean Coconutmilk Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "3",
             "Size": "Short",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "13",
-            "Total Carbohydrate(g)": "14",
-            "Total Fat(g)": "6",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "15",
+            "Total Fat(g)": "5",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
         }
-      }
-    },
-    "Vanilla Bean Coconutmilk Latte": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "75",
@@ -35383,7 +35517,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -35517,7 +35651,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "150",
@@ -35629,7 +35763,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "Almond": {
           "N/A": {
             "Caffeine(mg)": "115",
@@ -35652,144 +35786,264 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "White Chocolate Mocha": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
-          "N/A": {
+          "No Whipped Cream": {
             "Caffeine(mg)": "75",
-            "Calories": "110",
-            "Calories from fat": "30",
+            "Calories": "180",
+            "Calories from fat": "50",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
             "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Vanilla Bean Coconutmilk Latte",
+            "Name": "White Chocolate Mocha ",
             "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "2",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "4",
             "Size": "Short",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "3",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "26",
+            "Total Fat(g)": "5",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "230",
+            "Calories from fat": "90",
+            "Category": "espresso",
+            "Cholesterol(mg)": "30",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "White Chocolate Mocha ",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "7",
+            "Size": "Short",
+            "Sodium(mg)": "125",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "28",
+            "Total Fat(g)": "10",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Almond": {
-          "N/A": {
+          "No Whipped Cream": {
             "Caffeine(mg)": "75",
-            "Calories": "70",
-            "Calories from fat": "25",
+            "Calories": "190",
+            "Calories from fat": "90",
+            "Category": "espresso",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "White Chocolate Mocha ",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "3",
+            "Saturated fat(g)": "5",
+            "Size": "Tall",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "22",
+            "Total Carbohydrate(g)": "24",
+            "Total Fat(g)": "10",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "140",
+            "Calories from fat": "45",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Almond",
-            "Name": "Vanilla Bean Coconutmilk Latte",
+            "Name": "White Chocolate Mocha ",
             "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "0",
-            "Size": "Tall",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "9",
-            "Total Carbohydrate(g)": "11",
-            "Total Fat(g)": "2.5",
+            "Protein(g)": "3",
+            "Saturated fat(g)": "2",
+            "Size": "Short",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "20",
+            "Total Carbohydrate(g)": "22",
+            "Total Fat(g)": "5",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Coconut": {
-          "N/A": {
+          "No Whipped Cream": {
             "Caffeine(mg)": "75",
-            "Calories": "90",
-            "Calories from fat": "30",
+            "Calories": "160",
+            "Calories from fat": "50",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Vanilla Bean Coconutmilk Latte",
+            "Name": "White Chocolate Mocha ",
             "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "3.5",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "5",
             "Size": "Short",
-            "Sodium(mg)": "65",
-            "Sugars(g)": "12",
-            "Total Carbohydrate(g)": "13",
-            "Total Fat(g)": "3.5",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "23",
+            "Total Carbohydrate(g)": "24",
+            "Total Fat(g)": "6",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "210",
+            "Calories from fat": "100",
+            "Category": "espresso",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "White Chocolate Mocha ",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "3",
+            "Saturated fat(g)": "8",
+            "Size": "Short",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "25",
+            "Total Carbohydrate(g)": "26",
+            "Total Fat(g)": "11",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Nonfat milk": {
-          "N/A": {
+          "No Whipped Cream": {
             "Caffeine(mg)": "75",
-            "Calories": "80",
-            "Calories from fat": "0",
+            "Calories": "160",
+            "Calories from fat": "20",
             "Category": "espresso",
             "Cholesterol(mg)": "5",
             "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Vanilla Bean Coconutmilk Latte",
+            "Name": "White Chocolate Mocha ",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "0",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "2",
             "Size": "Short",
-            "Sodium(mg)": "65",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "0",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "27",
+            "Total Fat(g)": "2.5",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "210",
+            "Calories from fat": "70",
+            "Category": "espresso",
+            "Cholesterol(mg)": "25",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "White Chocolate Mocha ",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "5",
+            "Size": "Short",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "28",
+            "Total Fat(g)": "8",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Soy (United States)": {
-          "N/A": {
+          "No Whipped Cream": {
             "Caffeine(mg)": "75",
-            "Calories": "110",
-            "Calories from fat": "20",
+            "Calories": "180",
+            "Calories from fat": "40",
             "Category": "espresso",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "1",
             "Milk": "Soy (United States)",
-            "Name": "Vanilla Bean Coconutmilk Latte",
+            "Name": "White Chocolate Mocha ",
             "Portion(fl oz)": "8",
-            "Protein(g)": "4",
-            "Saturated fat(g)": "0",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "2",
             "Size": "Short",
-            "Sodium(mg)": "55",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "17",
-            "Total Fat(g)": "2.5",
+            "Sodium(mg)": "105",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "29",
+            "Total Fat(g)": "4.5",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "230",
+            "Calories from fat": "90",
+            "Category": "espresso",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "White Chocolate Mocha ",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "5",
+            "Size": "Short",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "30",
+            "Total Fat(g)": "10",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         },
         "Whole Milk": {
-          "N/A": {
+          "No Whipped Cream": {
             "Caffeine(mg)": "75",
-            "Calories": "130",
-            "Calories from fat": "45",
+            "Calories": "200",
+            "Calories from fat": "70",
             "Category": "espresso",
             "Cholesterol(mg)": "15",
             "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Vanilla Bean Coconutmilk Latte",
+            "Name": "White Chocolate Mocha ",
             "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "3",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "5",
             "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "5",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "26",
+            "Total Carbohydrate(g)": "26",
+            "Total Fat(g)": "7",
             "Trans fat(g)": "0",
-            "Whipped Cream": ""
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "75",
+            "Calories": "250",
+            "Calories from fat": "110",
+            "Category": "espresso",
+            "Cholesterol(mg)": "35",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "White Chocolate Mocha ",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "8",
+            "Size": "Short",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "28",
+            "Total Fat(g)": "12",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
           }
         }
-      }
-    },
-    "White Chocolate Mocha": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "75",
@@ -36043,7 +36297,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "150",
@@ -36297,7 +36551,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "150",
@@ -36550,260 +36804,6 @@ module.exports = {
             "Whipped Cream": "Whipped Cream"
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "180",
-            "Calories from fat": "50",
-            "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "4",
-            "Size": "Short",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "26",
-            "Total Fat(g)": "5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "230",
-            "Calories from fat": "90",
-            "Category": "espresso",
-            "Cholesterol(mg)": "30",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "7",
-            "Size": "Short",
-            "Sodium(mg)": "125",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "28",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Almond": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "190",
-            "Calories from fat": "90",
-            "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Almond",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "5",
-            "Size": "Tall",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "22",
-            "Total Carbohydrate(g)": "24",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "140",
-            "Calories from fat": "45",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Almond",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "2",
-            "Size": "Short",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "20",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Coconut": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "160",
-            "Calories from fat": "50",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "5",
-            "Size": "Short",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "23",
-            "Total Carbohydrate(g)": "24",
-            "Total Fat(g)": "6",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "210",
-            "Calories from fat": "100",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "8",
-            "Size": "Short",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "25",
-            "Total Carbohydrate(g)": "26",
-            "Total Fat(g)": "11",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Nonfat milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "160",
-            "Calories from fat": "20",
-            "Category": "espresso",
-            "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "2",
-            "Size": "Short",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "2.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "210",
-            "Calories from fat": "70",
-            "Category": "espresso",
-            "Cholesterol(mg)": "25",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "5",
-            "Size": "Short",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "28",
-            "Total Fat(g)": "8",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Soy (United States)": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "180",
-            "Calories from fat": "40",
-            "Category": "espresso",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Soy (United States)",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "2",
-            "Size": "Short",
-            "Sodium(mg)": "105",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "29",
-            "Total Fat(g)": "4.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "230",
-            "Calories from fat": "90",
-            "Category": "espresso",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Soy (United States)",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "5",
-            "Size": "Short",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "30",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Whole Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "200",
-            "Calories from fat": "70",
-            "Category": "espresso",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "5",
-            "Size": "Short",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "26",
-            "Total Carbohydrate(g)": "26",
-            "Total Fat(g)": "7",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "75",
-            "Calories": "250",
-            "Calories from fat": "110",
-            "Category": "espresso",
-            "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "White Chocolate Mocha ",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "8",
-            "Size": "Short",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "28",
-            "Total Fat(g)": "12",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        }
       }
     }
   },
@@ -36915,7 +36915,7 @@ module.exports = {
   },
   "Frappuccino Blended Beverages": {
     "Caff\xE8 Vanilla Frappuccino\xAE Blended Coffee": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "65",
@@ -37169,7 +37169,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "95",
@@ -37423,7 +37423,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "125",
@@ -37679,7 +37679,7 @@ module.exports = {
       }
     },
     "Caramel Frappuccino\xAE Blended Coffee": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "70",
@@ -37933,7 +37933,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "100",
@@ -38187,7 +38187,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "130",
@@ -38443,7 +38443,7 @@ module.exports = {
       }
     },
     "Chai Cr\xE8me Frappuccino\xAE Blended Cr\xE8me": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "20",
@@ -38697,7 +38697,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "40",
@@ -38951,7 +38951,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "45",
@@ -39207,7 +39207,7 @@ module.exports = {
       }
     },
     "Coffee Frappuccino\xAE Blended Coffee": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "70",
@@ -39341,7 +39341,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "95",
@@ -39475,7 +39475,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "130",
@@ -39611,7 +39611,7 @@ module.exports = {
       }
     },
     "Double Chocolaty Chip Cr\xE8me Frappuccino\xAE Blended Cr\xE8me": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "10",
@@ -39865,7 +39865,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "15",
@@ -40119,7 +40119,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "20",
@@ -40375,7 +40375,7 @@ module.exports = {
       }
     },
     "Espresso Frappuccino\xAE Blended Coffee": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "130",
@@ -40509,7 +40509,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "165",
@@ -40643,7 +40643,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "185",
@@ -40779,7 +40779,7 @@ module.exports = {
       }
     },
     "Java Chip Frappuccino\xAE Blended Coffee": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "75",
@@ -41033,7 +41033,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "110",
@@ -41287,7 +41287,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "145",
@@ -41543,7 +41543,7 @@ module.exports = {
       }
     },
     "Matcha Green Tea Cr\xE8me Frappuccino\xAE Blended Cr\xE8me": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "50",
@@ -41797,7 +41797,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "70",
@@ -42051,7 +42051,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "95",
@@ -42307,7 +42307,7 @@ module.exports = {
       }
     },
     "Mocha Frappuccino\xAE Blended Coffee": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "75",
@@ -42561,7 +42561,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "110",
@@ -42815,7 +42815,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "140",
@@ -43071,7 +43071,7 @@ module.exports = {
       }
     },
     "Pumpkin Spice Frappuccino\xAE Blended Beverage": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "70",
@@ -43325,7 +43325,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "100",
@@ -43579,7 +43579,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "120",
@@ -43835,7 +43835,7 @@ module.exports = {
       }
     },
     "Pumpkin Spice Frappuccino\xAE Blended Cr\xE8me": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -44089,7 +44089,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -44343,7 +44343,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -44599,7 +44599,7 @@ module.exports = {
       }
     },
     "Salted Caramel Mocha Frappuccino\xAE Blended Beverage": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "75",
@@ -44853,7 +44853,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "100",
@@ -45107,7 +45107,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "140",
@@ -45363,7 +45363,7 @@ module.exports = {
       }
     },
     "Strawberry Frappuccino\xAE Blended Cr\xE8me": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -45617,7 +45617,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -45871,7 +45871,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -46127,7 +46127,7 @@ module.exports = {
       }
     },
     "Vanilla Bean Cr\xE8me Frappuccino\xAE Blended Cr\xE8me": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -46381,7 +46381,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -46635,7 +46635,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -46891,7 +46891,7 @@ module.exports = {
       }
     },
     "White Chocolate Mocha Frappuccino\xAE Blended Coffee": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "65",
@@ -47145,7 +47145,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "90",
@@ -47399,7 +47399,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "125",
@@ -47657,7 +47657,7 @@ module.exports = {
   },
   "Iced Coffee": {
     "Cold Brew with Cascara Cold Foam": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "145",
@@ -47681,7 +47681,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "190",
@@ -47705,7 +47705,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "280",
@@ -47729,7 +47729,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "320",
@@ -47755,7 +47755,7 @@ module.exports = {
       }
     },
     "Iced Coffee": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "Sweetened": {
             "Caffeine(mg)": "120",
@@ -47799,7 +47799,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "Sweetened": {
             "Caffeine(mg)": "165",
@@ -47843,7 +47843,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "Sweetened": {
             "Caffeine(mg)": "235",
@@ -47887,7 +47887,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "Sweetened": {
             "Caffeine(mg)": "280",
@@ -47933,7 +47933,7 @@ module.exports = {
       }
     },
     "Iced Coffee with Milk": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "90",
@@ -48187,7 +48187,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "125",
@@ -48441,7 +48441,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "170",
@@ -48695,7 +48695,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "2% Milk": {
           "Sweetened": {
             "Caffeine(mg)": "190",
@@ -48931,7 +48931,7 @@ module.exports = {
       }
     },
     "Iced Espresso Classics - Caffe Mocha": {
-      "07_8 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -48957,7 +48957,7 @@ module.exports = {
       }
     },
     "Iced Espresso Classics - Caramel Macchiato": {
-      "07_8 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "85",
@@ -48983,7 +48983,7 @@ module.exports = {
       }
     },
     "Nitro Cold Brew": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "215",
@@ -49007,7 +49007,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "280",
@@ -49033,7 +49033,7 @@ module.exports = {
       }
     },
     "Nitro Cold Brew with Cascara Cold Foam": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "200",
@@ -49057,7 +49057,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "270",
@@ -49083,7 +49083,7 @@ module.exports = {
       }
     },
     "Nitro Cold Brew with Sweet Cream": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "200",
@@ -49107,7 +49107,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "265",
@@ -49133,7 +49133,7 @@ module.exports = {
       }
     },
     "Starbucks\xAE Cold Brew Coffee": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "155",
@@ -49157,7 +49157,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "205",
@@ -49181,7 +49181,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "310",
@@ -49205,7 +49205,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "360",
@@ -49231,7 +49231,7 @@ module.exports = {
       }
     },
     "Starbucks\xAE Cold Brew Coffee with Milk": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "155",
@@ -49365,7 +49365,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "205",
@@ -49499,7 +49499,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "310",
@@ -49633,7 +49633,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "360",
@@ -49769,7 +49769,7 @@ module.exports = {
       }
     },
     "Vanilla Sweet Cream Cold Brew": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "145",
@@ -49793,7 +49793,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "185",
@@ -49817,7 +49817,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "275",
@@ -49841,7 +49841,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "320",
@@ -49869,7 +49869,7 @@ module.exports = {
   },
   "Iced Tea": {
     "Nitro Lemon Fog": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -49893,7 +49893,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -49917,7 +49917,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -49943,7 +49943,7 @@ module.exports = {
       }
     },
     "Teavana\xAE Shaken Iced Black Tea": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -49967,7 +49967,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25\u201330",
@@ -49991,7 +49991,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -50015,7 +50015,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "50\u201355",
@@ -50041,7 +50041,7 @@ module.exports = {
       }
     },
     "Teavana\xAE Shaken Iced Black Tea Lemonade": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -50065,7 +50065,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25\u201330",
@@ -50089,7 +50089,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -50113,7 +50113,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "50\u201355",
@@ -50139,7 +50139,7 @@ module.exports = {
       }
     },
     "Teavana\xAE Shaken Iced Green Tea": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -50163,7 +50163,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25\u201330",
@@ -50187,7 +50187,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -50211,7 +50211,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "50\u201355",
@@ -50237,7 +50237,7 @@ module.exports = {
       }
     },
     "Teavana\xAE Shaken Iced Green Tea Lemonade": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -50261,7 +50261,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25\u201330",
@@ -50285,7 +50285,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -50309,7 +50309,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "50\u201355",
@@ -50335,7 +50335,7 @@ module.exports = {
       }
     },
     "Teavana\xAE Shaken Iced Passion Tango\u2122 Tea": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -50359,7 +50359,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -50383,7 +50383,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -50407,7 +50407,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -50433,7 +50433,7 @@ module.exports = {
       }
     },
     "Teavana\xAE Shaken Iced Passion Tango\u2122 Tea Lemonade": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -50457,7 +50457,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -50481,7 +50481,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -50505,7 +50505,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -50533,7 +50533,7 @@ module.exports = {
   },
   "Kids Drinks And Other": {
     "Cinnamon Dolce Cr\xE8me": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -50787,7 +50787,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -51041,7 +51041,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -51297,7 +51297,261 @@ module.exports = {
       }
     },
     "Hot Chocolate": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "170",
+            "Calories from fat": "40",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "2",
+            "Milk": "2% Milk",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "3",
+            "Size": "Kids",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "22",
+            "Total Carbohydrate(g)": "26",
+            "Total Fat(g)": "4.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "230",
+            "Calories from fat": "90",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "30",
+            "Dietary Fiber(g)": "2",
+            "Milk": "2% Milk",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "6",
+            "Size": "Kids",
+            "Sodium(mg)": "85",
+            "Sugars(g)": "24",
+            "Total Carbohydrate(g)": "28",
+            "Total Fat(g)": "10",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Almond": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "130",
+            "Calories from fat": "35",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "3",
+            "Milk": "Almond",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "1",
+            "Size": "Kids",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "17",
+            "Total Carbohydrate(g)": "21",
+            "Total Fat(g)": "4",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "190",
+            "Calories from fat": "80",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "3",
+            "Milk": "Almond",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "3",
+            "Saturated fat(g)": "4",
+            "Size": "Kids",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "24",
+            "Total Fat(g)": "9",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Coconut": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "140",
+            "Calories from fat": "45",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "2",
+            "Milk": "Coconut",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "4.5",
+            "Size": "Kids",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "20",
+            "Total Carbohydrate(g)": "23",
+            "Total Fat(g)": "5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "200",
+            "Calories from fat": "90",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "2",
+            "Milk": "Coconut",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "2",
+            "Saturated fat(g)": "8",
+            "Size": "Kids",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "22",
+            "Total Carbohydrate(g)": "26",
+            "Total Fat(g)": "10",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Nonfat milk": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "140",
+            "Calories from fat": "10",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "5",
+            "Dietary Fiber(g)": "2",
+            "Milk": "Nonfat milk",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "1",
+            "Size": "Kids",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "23",
+            "Total Carbohydrate(g)": "26",
+            "Total Fat(g)": "1.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "200",
+            "Calories from fat": "60",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "2",
+            "Milk": "Nonfat milk",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "8",
+            "Saturated fat(g)": "4",
+            "Size": "Kids",
+            "Sodium(mg)": "95",
+            "Sugars(g)": "24",
+            "Total Carbohydrate(g)": "29",
+            "Total Fat(g)": "6",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Soy (United States)": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "170",
+            "Calories from fat": "35",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "3",
+            "Milk": "Soy (United States)",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "1",
+            "Size": "Kids",
+            "Sodium(mg)": "60",
+            "Sugars(g)": "23",
+            "Total Carbohydrate(g)": "28",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "230",
+            "Calories from fat": "80",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "3",
+            "Milk": "Soy (United States)",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "4.5",
+            "Size": "Kids",
+            "Sodium(mg)": "65",
+            "Sugars(g)": "25",
+            "Total Carbohydrate(g)": "30",
+            "Total Fat(g)": "9",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Whole Milk": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "190",
+            "Calories from fat": "60",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "2",
+            "Milk": "Whole Milk",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "4",
+            "Size": "Kids",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "22",
+            "Total Carbohydrate(g)": "26",
+            "Total Fat(g)": "7",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "15",
+            "Calories": "250",
+            "Calories from fat": "110",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "35",
+            "Dietary Fiber(g)": "2",
+            "Milk": "Whole Milk",
+            "Name": "Hot Chocolate",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "7",
+            "Size": "Kids",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "24",
+            "Total Carbohydrate(g)": "28",
+            "Total Fat(g)": "12",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "20",
@@ -51551,7 +51805,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "25",
@@ -51805,7 +52059,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "35",
@@ -52058,264 +52312,264 @@ module.exports = {
             "Whipped Cream": "Whipped Cream"
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Pumpkin Spice Cr\xE8me": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "170",
-            "Calories from fat": "40",
+            "Caffeine(mg)": "0",
+            "Calories": "160",
+            "Calories from fat": "35",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "2",
+            "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "7",
-            "Saturated fat(g)": "3",
+            "Saturated fat(g)": "2.5",
             "Size": "Kids",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "22",
-            "Total Carbohydrate(g)": "26",
-            "Total Fat(g)": "4.5",
+            "Sodium(mg)": "125",
+            "Sugars(g)": "25",
+            "Total Carbohydrate(g)": "25",
+            "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "230",
-            "Calories from fat": "90",
+            "Caffeine(mg)": "0",
+            "Calories": "210",
+            "Calories from fat": "80",
             "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "30",
-            "Dietary Fiber(g)": "2",
+            "Cholesterol(mg)": "35",
+            "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "6",
+            "Protein(g)": "8",
+            "Saturated fat(g)": "5",
             "Size": "Kids",
-            "Sodium(mg)": "85",
-            "Sugars(g)": "24",
-            "Total Carbohydrate(g)": "28",
-            "Total Fat(g)": "10",
+            "Sodium(mg)": "130",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "27",
+            "Total Fat(g)": "9",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Almond": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "130",
-            "Calories from fat": "35",
+            "Caffeine(mg)": "0",
+            "Calories": "120",
+            "Calories from fat": "30",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "3",
+            "Dietary Fiber(g)": "1",
             "Milk": "Almond",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
-            "Saturated fat(g)": "1",
+            "Saturated fat(g)": "0",
             "Size": "Kids",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "17",
-            "Total Carbohydrate(g)": "21",
-            "Total Fat(g)": "4",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "20",
+            "Total Fat(g)": "3",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "190",
-            "Calories from fat": "80",
+            "Caffeine(mg)": "0",
+            "Calories": "170",
+            "Calories from fat": "70",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "3",
+            "Dietary Fiber(g)": "1",
             "Milk": "Almond",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "3",
-            "Saturated fat(g)": "4",
+            "Saturated fat(g)": "3.5",
             "Size": "Kids",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "24",
-            "Total Fat(g)": "9",
+            "Sodium(mg)": "125",
+            "Sugars(g)": "21",
+            "Total Carbohydrate(g)": "22",
+            "Total Fat(g)": "8",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Coconut": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "140",
-            "Calories from fat": "45",
+            "Caffeine(mg)": "0",
+            "Calories": "130",
+            "Calories from fat": "35",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "2",
+            "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
-            "Saturated fat(g)": "4.5",
+            "Saturated fat(g)": "4",
             "Size": "Kids",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "20",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "22",
             "Total Carbohydrate(g)": "23",
-            "Total Fat(g)": "5",
+            "Total Fat(g)": "4",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "200",
-            "Calories from fat": "90",
+            "Caffeine(mg)": "0",
+            "Calories": "190",
+            "Calories from fat": "80",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "2",
+            "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
-            "Saturated fat(g)": "8",
+            "Saturated fat(g)": "7",
             "Size": "Kids",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "22",
-            "Total Carbohydrate(g)": "26",
-            "Total Fat(g)": "10",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "24",
+            "Total Carbohydrate(g)": "25",
+            "Total Fat(g)": "9",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Nonfat milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "140",
-            "Calories from fat": "10",
+            "Caffeine(mg)": "0",
+            "Calories": "130",
+            "Calories from fat": "0",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "2",
+            "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "7",
-            "Saturated fat(g)": "1",
+            "Saturated fat(g)": "0",
             "Size": "Kids",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "23",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "25",
             "Total Carbohydrate(g)": "26",
-            "Total Fat(g)": "1.5",
+            "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "200",
-            "Calories from fat": "60",
+            "Caffeine(mg)": "0",
+            "Calories": "190",
+            "Calories from fat": "50",
             "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "2",
+            "Cholesterol(mg)": "25",
+            "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "8",
-            "Saturated fat(g)": "4",
+            "Saturated fat(g)": "3.5",
             "Size": "Kids",
-            "Sodium(mg)": "95",
-            "Sugars(g)": "24",
-            "Total Carbohydrate(g)": "29",
-            "Total Fat(g)": "6",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "27",
+            "Total Fat(g)": "5",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Soy (United States)": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "170",
-            "Calories from fat": "35",
+            "Caffeine(mg)": "0",
+            "Calories": "160",
+            "Calories from fat": "25",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "3",
+            "Dietary Fiber(g)": "1",
             "Milk": "Soy (United States)",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
-            "Saturated fat(g)": "1",
+            "Saturated fat(g)": "0",
             "Size": "Kids",
-            "Sodium(mg)": "60",
-            "Sugars(g)": "23",
+            "Sodium(mg)": "105",
+            "Sugars(g)": "25",
             "Total Carbohydrate(g)": "28",
-            "Total Fat(g)": "3.5",
+            "Total Fat(g)": "3",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "230",
-            "Calories from fat": "80",
+            "Caffeine(mg)": "0",
+            "Calories": "210",
+            "Calories from fat": "70",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "3",
+            "Dietary Fiber(g)": "1",
             "Milk": "Soy (United States)",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
-            "Saturated fat(g)": "4.5",
+            "Saturated fat(g)": "3.5",
             "Size": "Kids",
-            "Sodium(mg)": "65",
-            "Sugars(g)": "25",
-            "Total Carbohydrate(g)": "30",
-            "Total Fat(g)": "9",
+            "Sodium(mg)": "110",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "29",
+            "Total Fat(g)": "8",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Whole Milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "190",
-            "Calories from fat": "60",
+            "Caffeine(mg)": "0",
+            "Calories": "180",
+            "Calories from fat": "50",
             "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "2",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "7",
-            "Saturated fat(g)": "4",
+            "Saturated fat(g)": "3.5",
             "Size": "Kids",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "22",
-            "Total Carbohydrate(g)": "26",
-            "Total Fat(g)": "7",
+            "Sodium(mg)": "115",
+            "Sugars(g)": "25",
+            "Total Carbohydrate(g)": "25",
+            "Total Fat(g)": "6",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "250",
-            "Calories from fat": "110",
+            "Caffeine(mg)": "0",
+            "Calories": "230",
+            "Calories from fat": "100",
             "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "2",
+            "Cholesterol(mg)": "40",
+            "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Hot Chocolate",
+            "Name": "Pumpkin Spice Cr\xE8me",
             "Portion(fl oz)": "8",
             "Protein(g)": "7",
             "Saturated fat(g)": "7",
             "Size": "Kids",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "24",
-            "Total Carbohydrate(g)": "28",
-            "Total Fat(g)": "12",
+            "Sodium(mg)": "120",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "27",
+            "Total Fat(g)": "11",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         }
-      }
-    },
-    "Pumpkin Spice Cr\xE8me": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -52569,7 +52823,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -52823,7 +53077,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -53076,264 +53330,264 @@ module.exports = {
             "Whipped Cream": "Whipped Cream"
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Salted Caramel Hot Chocolate": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "160",
-            "Calories from fat": "35",
+            "Caffeine(mg)": "15",
+            "Calories": "200",
+            "Calories from fat": "40",
             "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
+            "Cholesterol(mg)": "10",
+            "Dietary Fiber(g)": "2",
             "Milk": "2% Milk",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
+            "Protein(g)": "6",
             "Saturated fat(g)": "2.5",
-            "Size": "Kids",
-            "Sodium(mg)": "125",
-            "Sugars(g)": "25",
-            "Total Carbohydrate(g)": "25",
-            "Total Fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "150",
+            "Sugars(g)": "32",
+            "Total Carbohydrate(g)": "35",
+            "Total Fat(g)": "4.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "210",
-            "Calories from fat": "80",
+            "Caffeine(mg)": "15",
+            "Calories": "280",
+            "Calories from fat": "90",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "2% Milk",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
-            "Protein(g)": "8",
-            "Saturated fat(g)": "5",
-            "Size": "Kids",
-            "Sodium(mg)": "130",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "9",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "6",
+            "Size": "Short",
+            "Sodium(mg)": "210",
+            "Sugars(g)": "37",
+            "Total Carbohydrate(g)": "41",
+            "Total Fat(g)": "10",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Almond": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "120",
-            "Calories from fat": "30",
+            "Caffeine(mg)": "15",
+            "Calories": "170",
+            "Calories from fat": "35",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "3",
             "Milk": "Almond",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
-            "Saturated fat(g)": "0",
-            "Size": "Kids",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "20",
-            "Total Fat(g)": "3",
+            "Saturated fat(g)": "1",
+            "Size": "Short",
+            "Sodium(mg)": "140",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "31",
+            "Total Fat(g)": "4",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "170",
-            "Calories from fat": "70",
+            "Caffeine(mg)": "15",
+            "Calories": "240",
+            "Calories from fat": "90",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "3",
             "Milk": "Almond",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
             "Protein(g)": "3",
-            "Saturated fat(g)": "3.5",
-            "Size": "Kids",
-            "Sodium(mg)": "125",
-            "Sugars(g)": "21",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "8",
+            "Saturated fat(g)": "4.5",
+            "Size": "Short",
+            "Sodium(mg)": "210",
+            "Sugars(g)": "32",
+            "Total Carbohydrate(g)": "37",
+            "Total Fat(g)": "10",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Coconut": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "130",
-            "Calories from fat": "35",
+            "Caffeine(mg)": "15",
+            "Calories": "180",
+            "Calories from fat": "45",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Coconut",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
             "Saturated fat(g)": "4",
-            "Size": "Kids",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "22",
-            "Total Carbohydrate(g)": "23",
-            "Total Fat(g)": "4",
+            "Size": "Short",
+            "Sodium(mg)": "140",
+            "Sugars(g)": "29",
+            "Total Carbohydrate(g)": "33",
+            "Total Fat(g)": "5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "190",
-            "Calories from fat": "80",
+            "Caffeine(mg)": "15",
+            "Calories": "260",
+            "Calories from fat": "100",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Coconut",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
             "Protein(g)": "2",
-            "Saturated fat(g)": "7",
-            "Size": "Kids",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "24",
-            "Total Carbohydrate(g)": "25",
-            "Total Fat(g)": "9",
+            "Saturated fat(g)": "8",
+            "Size": "Short",
+            "Sodium(mg)": "200",
+            "Sugars(g)": "34",
+            "Total Carbohydrate(g)": "39",
+            "Total Fat(g)": "11",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Nonfat milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "130",
-            "Calories from fat": "0",
+            "Caffeine(mg)": "15",
+            "Calories": "180",
+            "Calories from fat": "15",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Nonfat milk",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "0",
-            "Size": "Kids",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "25",
-            "Total Carbohydrate(g)": "26",
-            "Total Fat(g)": "0",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "1",
+            "Size": "Short",
+            "Sodium(mg)": "140",
+            "Sugars(g)": "32",
+            "Total Carbohydrate(g)": "35",
+            "Total Fat(g)": "1.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "190",
-            "Calories from fat": "50",
+            "Caffeine(mg)": "15",
+            "Calories": "260",
+            "Calories from fat": "70",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "25",
-            "Dietary Fiber(g)": "0",
+            "Dietary Fiber(g)": "2",
             "Milk": "Nonfat milk",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
-            "Protein(g)": "8",
-            "Saturated fat(g)": "3.5",
-            "Size": "Kids",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "5",
+            "Protein(g)": "7",
+            "Saturated fat(g)": "4.5",
+            "Size": "Short",
+            "Sodium(mg)": "210",
+            "Sugars(g)": "37",
+            "Total Carbohydrate(g)": "41",
+            "Total Fat(g)": "7",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Soy (United States)": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "160",
-            "Calories from fat": "25",
+            "Caffeine(mg)": "15",
+            "Calories": "200",
+            "Calories from fat": "35",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "3",
             "Milk": "Soy (United States)",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "0",
-            "Size": "Kids",
-            "Sodium(mg)": "105",
-            "Sugars(g)": "25",
-            "Total Carbohydrate(g)": "28",
-            "Total Fat(g)": "3",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "1",
+            "Size": "Short",
+            "Sodium(mg)": "130",
+            "Sugars(g)": "32",
+            "Total Carbohydrate(g)": "37",
+            "Total Fat(g)": "3.5",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "210",
-            "Calories from fat": "70",
+            "Caffeine(mg)": "15",
+            "Calories": "280",
+            "Calories from fat": "90",
             "Category": "kids-drinks-and-other",
             "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "3",
             "Milk": "Soy (United States)",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
             "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
-            "Size": "Kids",
-            "Sodium(mg)": "110",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "29",
-            "Total Fat(g)": "8",
+            "Saturated fat(g)": "4.5",
+            "Size": "Short",
+            "Sodium(mg)": "200",
+            "Sugars(g)": "37",
+            "Total Carbohydrate(g)": "43",
+            "Total Fat(g)": "10",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         },
         "Whole Milk": {
           "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "180",
-            "Calories from fat": "50",
+            "Caffeine(mg)": "15",
+            "Calories": "220",
+            "Calories from fat": "60",
             "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "0",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "2",
             "Milk": "Whole Milk",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
+            "Protein(g)": "6",
             "Saturated fat(g)": "3.5",
-            "Size": "Kids",
-            "Sodium(mg)": "115",
-            "Sugars(g)": "25",
-            "Total Carbohydrate(g)": "25",
+            "Size": "Short",
+            "Sodium(mg)": "140",
+            "Sugars(g)": "32",
+            "Total Carbohydrate(g)": "35",
             "Total Fat(g)": "6",
             "Trans fat(g)": "0",
             "Whipped Cream": "No Whipped Cream"
           },
           "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "230",
-            "Calories from fat": "100",
+            "Caffeine(mg)": "15",
+            "Calories": "300",
+            "Calories from fat": "110",
             "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "40",
-            "Dietary Fiber(g)": "0",
+            "Cholesterol(mg)": "35",
+            "Dietary Fiber(g)": "2",
             "Milk": "Whole Milk",
-            "Name": "Pumpkin Spice Cr\xE8me",
+            "Name": "Salted Caramel Hot Chocolate",
             "Portion(fl oz)": "8",
-            "Protein(g)": "7",
+            "Protein(g)": "6",
             "Saturated fat(g)": "7",
-            "Size": "Kids",
-            "Sodium(mg)": "120",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "27",
-            "Total Fat(g)": "11",
+            "Size": "Short",
+            "Sodium(mg)": "210",
+            "Sugars(g)": "37",
+            "Total Carbohydrate(g)": "41",
+            "Total Fat(g)": "12",
             "Trans fat(g)": "0",
             "Whipped Cream": "Whipped Cream"
           }
         }
-      }
-    },
-    "Salted Caramel Hot Chocolate": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "20",
@@ -53587,7 +53841,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "25",
@@ -53841,7 +54095,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "35",
@@ -54094,264 +54348,34 @@ module.exports = {
             "Whipped Cream": "Whipped Cream"
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "200",
-            "Calories from fat": "40",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "10",
-            "Dietary Fiber(g)": "2",
-            "Milk": "2% Milk",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "2.5",
-            "Size": "Short",
-            "Sodium(mg)": "150",
-            "Sugars(g)": "32",
-            "Total Carbohydrate(g)": "35",
-            "Total Fat(g)": "4.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "280",
-            "Calories from fat": "90",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "2",
-            "Milk": "2% Milk",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "6",
-            "Size": "Short",
-            "Sodium(mg)": "210",
-            "Sugars(g)": "37",
-            "Total Carbohydrate(g)": "41",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Almond": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "170",
-            "Calories from fat": "35",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "3",
-            "Milk": "Almond",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "140",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "31",
-            "Total Fat(g)": "4",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "240",
-            "Calories from fat": "90",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "3",
-            "Milk": "Almond",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "4.5",
-            "Size": "Short",
-            "Sodium(mg)": "210",
-            "Sugars(g)": "32",
-            "Total Carbohydrate(g)": "37",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Coconut": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "180",
-            "Calories from fat": "45",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Coconut",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "4",
-            "Size": "Short",
-            "Sodium(mg)": "140",
-            "Sugars(g)": "29",
-            "Total Carbohydrate(g)": "33",
-            "Total Fat(g)": "5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "260",
-            "Calories from fat": "100",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Coconut",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "2",
-            "Saturated fat(g)": "8",
-            "Size": "Short",
-            "Sodium(mg)": "200",
-            "Sugars(g)": "34",
-            "Total Carbohydrate(g)": "39",
-            "Total Fat(g)": "11",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Nonfat milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "180",
-            "Calories from fat": "15",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Nonfat milk",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "140",
-            "Sugars(g)": "32",
-            "Total Carbohydrate(g)": "35",
-            "Total Fat(g)": "1.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "260",
-            "Calories from fat": "70",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "25",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Nonfat milk",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "7",
-            "Saturated fat(g)": "4.5",
-            "Size": "Short",
-            "Sodium(mg)": "210",
-            "Sugars(g)": "37",
-            "Total Carbohydrate(g)": "41",
-            "Total Fat(g)": "7",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Soy (United States)": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "200",
-            "Calories from fat": "35",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "3",
-            "Milk": "Soy (United States)",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "130",
-            "Sugars(g)": "32",
-            "Total Carbohydrate(g)": "37",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "280",
-            "Calories from fat": "90",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "3",
-            "Milk": "Soy (United States)",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "4.5",
-            "Size": "Short",
-            "Sodium(mg)": "200",
-            "Sugars(g)": "37",
-            "Total Carbohydrate(g)": "43",
-            "Total Fat(g)": "10",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Whole Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "220",
-            "Calories from fat": "60",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Whole Milk",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
-            "Size": "Short",
-            "Sodium(mg)": "140",
-            "Sugars(g)": "32",
-            "Total Carbohydrate(g)": "35",
-            "Total Fat(g)": "6",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "15",
-            "Calories": "300",
-            "Calories from fat": "110",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "2",
-            "Milk": "Whole Milk",
-            "Name": "Salted Caramel Hot Chocolate",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "7",
-            "Size": "Short",
-            "Sodium(mg)": "210",
-            "Sugars(g)": "37",
-            "Total Carbohydrate(g)": "41",
-            "Total Fat(g)": "12",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        }
       }
     },
     "Steamed Apple Juice": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "0",
+            "Calories": "120",
+            "Calories from fat": "0",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Steamed Apple Juice",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Kids",
+            "Sodium(mg)": "10",
+            "Sugars(g)": "27",
+            "Total Carbohydrate(g)": "30",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -54375,7 +54399,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -54399,7 +54423,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -54422,34 +54446,244 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "0",
-            "Calories": "120",
-            "Calories from fat": "0",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Steamed Apple Juice",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Kids",
-            "Sodium(mg)": "10",
-            "Sugars(g)": "27",
-            "Total Carbohydrate(g)": "30",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       }
     },
     "Vanilla Cr\xE8me": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "130",
+            "Calories from fat": "35",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "2",
+            "Size": "Kids",
+            "Sodium(mg)": "90",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "19",
+            "Total Fat(g)": "4",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "180",
+            "Calories from fat": "80",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "35",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "5",
+            "Size": "Kids",
+            "Sodium(mg)": "90",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "20",
+            "Total Fat(g)": "9",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Almond": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "90",
+            "Calories from fat": "30",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "0",
+            "Size": "Tall",
+            "Sodium(mg)": "90",
+            "Sugars(g)": "12",
+            "Total Carbohydrate(g)": "14",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          }
+        },
+        "Coconut": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "110",
+            "Calories from fat": "40",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "4",
+            "Size": "Kids",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "16",
+            "Total Carbohydrate(g)": "16",
+            "Total Fat(g)": "4.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "150",
+            "Calories from fat": "80",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "7",
+            "Size": "Short",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "17",
+            "Total Carbohydrate(g)": "17",
+            "Total Fat(g)": "9",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Nonfat milk": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "100",
+            "Calories from fat": "0",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "5",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "0",
+            "Size": "Kids",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "19",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "150",
+            "Calories from fat": "45",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "25",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3.5",
+            "Size": "Kids",
+            "Sodium(mg)": "85",
+            "Sugars(g)": "20",
+            "Total Carbohydrate(g)": "20",
+            "Total Fat(g)": "5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Soy (United States)": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "130",
+            "Calories from fat": "25",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "0",
+            "Size": "Kids",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "21",
+            "Total Fat(g)": "3",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "180",
+            "Calories from fat": "70",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "3.5",
+            "Size": "Kids",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "20",
+            "Total Carbohydrate(g)": "22",
+            "Total Fat(g)": "8",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        },
+        "Whole Milk": {
+          "No Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "150",
+            "Calories from fat": "60",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "20",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3.5",
+            "Size": "Kids",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "19",
+            "Total Fat(g)": "6",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "No Whipped Cream"
+          },
+          "Whipped Cream": {
+            "Caffeine(mg)": "0",
+            "Calories": "200",
+            "Calories from fat": "100",
+            "Category": "kids-drinks-and-other",
+            "Cholesterol(mg)": "35",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Vanilla Cr\xE8me",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "7",
+            "Size": "Kids",
+            "Sodium(mg)": "85",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "20",
+            "Total Fat(g)": "11",
+            "Trans fat(g)": "0",
+            "Whipped Cream": "Whipped Cream"
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -54683,7 +54917,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -54917,7 +55151,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "No Whipped Cream": {
             "Caffeine(mg)": "0",
@@ -55129,7 +55363,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "Almond": {
           "No Whipped Cream": {
             "Caffeine(mg)": "225",
@@ -55152,246 +55386,12 @@ module.exports = {
             "Whipped Cream": "No Whipped Cream"
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "130",
-            "Calories from fat": "35",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "2",
-            "Size": "Kids",
-            "Sodium(mg)": "90",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "19",
-            "Total Fat(g)": "4",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "180",
-            "Calories from fat": "80",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "5",
-            "Size": "Kids",
-            "Sodium(mg)": "90",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "20",
-            "Total Fat(g)": "9",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Almond": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "90",
-            "Calories from fat": "30",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Almond",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "0",
-            "Size": "Tall",
-            "Sodium(mg)": "90",
-            "Sugars(g)": "12",
-            "Total Carbohydrate(g)": "14",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          }
-        },
-        "Coconut": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "110",
-            "Calories from fat": "40",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "4",
-            "Size": "Kids",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "16",
-            "Total Carbohydrate(g)": "16",
-            "Total Fat(g)": "4.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "150",
-            "Calories from fat": "80",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "7",
-            "Size": "Short",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "17",
-            "Total Carbohydrate(g)": "17",
-            "Total Fat(g)": "9",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Nonfat milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "100",
-            "Calories from fat": "0",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "0",
-            "Size": "Kids",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "19",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "150",
-            "Calories from fat": "45",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "25",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
-            "Size": "Kids",
-            "Sodium(mg)": "85",
-            "Sugars(g)": "20",
-            "Total Carbohydrate(g)": "20",
-            "Total Fat(g)": "5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Soy (United States)": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "130",
-            "Calories from fat": "25",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Soy (United States)",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "0",
-            "Size": "Kids",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "21",
-            "Total Fat(g)": "3",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "180",
-            "Calories from fat": "70",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Soy (United States)",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "3.5",
-            "Size": "Kids",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "20",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "8",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        },
-        "Whole Milk": {
-          "No Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "150",
-            "Calories from fat": "60",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "20",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "3.5",
-            "Size": "Kids",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "19",
-            "Total Fat(g)": "6",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "No Whipped Cream"
-          },
-          "Whipped Cream": {
-            "Caffeine(mg)": "0",
-            "Calories": "200",
-            "Calories from fat": "100",
-            "Category": "kids-drinks-and-other",
-            "Cholesterol(mg)": "35",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "Vanilla Cr\xE8me",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "7",
-            "Size": "Kids",
-            "Sodium(mg)": "85",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "20",
-            "Total Fat(g)": "11",
-            "Trans fat(g)": "0",
-            "Whipped Cream": "Whipped Cream"
-          }
-        }
       }
     }
   },
   "Refreshers": {
     "Pink Drink": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "35\u201345",
@@ -55415,7 +55415,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "45\u201355",
@@ -55439,7 +55439,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "70\u201385",
@@ -55463,7 +55463,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "90\u2013110",
@@ -55489,7 +55489,7 @@ module.exports = {
       }
     },
     "Strawberry Acai Lemonade Starbucks Refreshers\xAE": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "35\u201345",
@@ -55513,7 +55513,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "45\u201355",
@@ -55537,7 +55537,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "70\u201385",
@@ -55561,7 +55561,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "90\u2013110",
@@ -55587,7 +55587,7 @@ module.exports = {
       }
     },
     "Strawberry Acai Starbucks Refreshers\u2122 Beverage": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "35\u201345",
@@ -55611,7 +55611,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "45\u201355",
@@ -55635,7 +55635,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "70\u201385",
@@ -55659,7 +55659,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "90\u2013110",
@@ -55685,7 +55685,7 @@ module.exports = {
       }
     },
     "Very Berry Hibiscus Lemonade Starbucks Refreshers\xAE": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "35\u201345",
@@ -55709,7 +55709,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "45\u201355",
@@ -55733,7 +55733,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "70\u201385",
@@ -55757,7 +55757,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "90\u2013110",
@@ -55783,7 +55783,7 @@ module.exports = {
       }
     },
     "Very Berry Hibiscus Starbucks Refreshers\u2122 Beverage": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "35\u201345",
@@ -55807,7 +55807,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "45\u201355",
@@ -55831,7 +55831,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "5\u201385",
@@ -55855,7 +55855,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "90\u2013110",
@@ -55881,7 +55881,7 @@ module.exports = {
       }
     },
     "Violet Drink": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "35",
@@ -55905,7 +55905,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "45",
@@ -55929,7 +55929,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "70",
@@ -55953,7 +55953,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "90",
@@ -55981,7 +55981,141 @@ module.exports = {
   },
   "Tea": {
     "Chai Tea Latte": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
+          "N/A": {
+            "Caffeine(mg)": "50",
+            "Calories": "120",
+            "Calories from fat": "20",
+            "Category": "tea",
+            "Cholesterol(mg)": "10",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Chai Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "4",
+            "Saturated fat(g)": "1",
+            "Size": "Short",
+            "Sodium(mg)": "55",
+            "Sugars(g)": "21",
+            "Total Carbohydrate(g)": "22",
+            "Total Fat(g)": "2",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Almond": {
+          "N/A": {
+            "Caffeine(mg)": "50",
+            "Calories": "90",
+            "Calories from fat": "15",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Chai Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "55",
+            "Sugars(g)": "17",
+            "Total Carbohydrate(g)": "19",
+            "Total Fat(g)": "2",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Coconut": {
+          "N/A": {
+            "Caffeine(mg)": "50",
+            "Calories": "100",
+            "Calories from fat": "20",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Chai Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "2.5",
+            "Size": "Short",
+            "Sodium(mg)": "50",
+            "Sugars(g)": "19",
+            "Total Carbohydrate(g)": "21",
+            "Total Fat(g)": "2.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Nonfat milk": {
+          "N/A": {
+            "Caffeine(mg)": "50",
+            "Calories": "100",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Chai Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "4",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "50",
+            "Sugars(g)": "21",
+            "Total Carbohydrate(g)": "22",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Soy (United States)": {
+          "N/A": {
+            "Caffeine(mg)": "50",
+            "Calories": "120",
+            "Calories from fat": "15",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Soy (United States)",
+            "Name": "Chai Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "3",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "45",
+            "Sugars(g)": "21",
+            "Total Carbohydrate(g)": "24",
+            "Total Fat(g)": "1.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Whole Milk": {
+          "N/A": {
+            "Caffeine(mg)": "50",
+            "Calories": "130",
+            "Calories from fat": "30",
+            "Category": "tea",
+            "Cholesterol(mg)": "10",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Chai Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "4",
+            "Saturated fat(g)": "2",
+            "Size": "Short",
+            "Sodium(mg)": "55",
+            "Sugars(g)": "21",
+            "Total Carbohydrate(g)": "22",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "70",
@@ -56115,7 +56249,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "95",
@@ -56249,7 +56383,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "120",
@@ -56382,144 +56516,34 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
+      }
+    },
+    "Citrus Defender": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
           "N/A": {
-            "Caffeine(mg)": "50",
-            "Calories": "120",
-            "Calories from fat": "20",
-            "Category": "tea",
-            "Cholesterol(mg)": "10",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "Chai Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "4",
-            "Saturated fat(g)": "1",
-            "Size": "Short",
-            "Sodium(mg)": "55",
-            "Sugars(g)": "21",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "2",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Almond": {
-          "N/A": {
-            "Caffeine(mg)": "50",
-            "Calories": "90",
-            "Calories from fat": "15",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Almond",
-            "Name": "Chai Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "55",
-            "Sugars(g)": "17",
-            "Total Carbohydrate(g)": "19",
-            "Total Fat(g)": "2",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Coconut": {
-          "N/A": {
-            "Caffeine(mg)": "50",
-            "Calories": "100",
-            "Calories from fat": "20",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "Chai Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "2.5",
-            "Size": "Short",
-            "Sodium(mg)": "50",
-            "Sugars(g)": "19",
-            "Total Carbohydrate(g)": "21",
-            "Total Fat(g)": "2.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Nonfat milk": {
-          "N/A": {
-            "Caffeine(mg)": "50",
-            "Calories": "100",
+            "Caffeine(mg)": "40",
+            "Calories": "80",
             "Calories from fat": "0",
             "Category": "tea",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "Chai Tea Latte",
+            "Milk": "",
+            "Name": "Citrus Defender",
             "Portion(fl oz)": "8",
-            "Protein(g)": "4",
+            "Protein(g)": "0",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "50",
-            "Sugars(g)": "21",
-            "Total Carbohydrate(g)": "22",
+            "Sodium(mg)": "10",
+            "Sugars(g)": "17",
+            "Total Carbohydrate(g)": "20",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
-        },
-        "Soy (United States)": {
-          "N/A": {
-            "Caffeine(mg)": "50",
-            "Calories": "120",
-            "Calories from fat": "15",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Soy (United States)",
-            "Name": "Chai Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "45",
-            "Sugars(g)": "21",
-            "Total Carbohydrate(g)": "24",
-            "Total Fat(g)": "1.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Whole Milk": {
-          "N/A": {
-            "Caffeine(mg)": "50",
-            "Calories": "130",
-            "Calories from fat": "30",
-            "Category": "tea",
-            "Cholesterol(mg)": "10",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "Chai Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "4",
-            "Saturated fat(g)": "2",
-            "Size": "Short",
-            "Sodium(mg)": "55",
-            "Sugars(g)": "21",
-            "Total Carbohydrate(g)": "22",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
         }
-      }
-    },
-    "Citrus Defender": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -56543,7 +56567,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -56567,7 +56591,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -56590,34 +56614,34 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
+      }
+    },
+    "Comfort Wellness Brewed Tea": {
+      "01_Short (8 fl. oz.)": {
         "N/A": {
           "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "80",
+            "Caffeine(mg)": "0",
+            "Calories": "0",
             "Calories from fat": "0",
             "Category": "tea",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "",
-            "Name": "Citrus Defender",
+            "Name": "Comfort Wellness Brewed Tea",
             "Portion(fl oz)": "8",
             "Protein(g)": "0",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "10",
-            "Sugars(g)": "17",
-            "Total Carbohydrate(g)": "20",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
         }
-      }
-    },
-    "Comfort Wellness Brewed Tea": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -56641,7 +56665,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -56665,7 +56689,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -56680,30 +56704,6 @@ module.exports = {
             "Protein(g)": "0",
             "Saturated fat(g)": "0",
             "Size": "Venti",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "0",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Comfort Wellness Brewed Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
             "Sodium(mg)": "0",
             "Sugars(g)": "0",
             "Total Carbohydrate(g)": "0",
@@ -56715,7 +56715,31 @@ module.exports = {
       }
     },
     "Defense Wellness Brewed Tea": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "25\u201340",
+            "Calories": "5",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Defense Wellness Brewed Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "1",
+            "Total Carbohydrate(g)": "2",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25\u201340",
@@ -56739,7 +56763,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -56763,7 +56787,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -56781,30 +56805,6 @@ module.exports = {
             "Sodium(mg)": "5",
             "Sugars(g)": "2",
             "Total Carbohydrate(g)": "3",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "25\u201340",
-            "Calories": "5",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Defense Wellness Brewed Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "1",
-            "Total Carbohydrate(g)": "2",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -56813,7 +56813,31 @@ module.exports = {
       }
     },
     "Emperor's Cloud and Mist\xAE Green Tea": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "0\u201315",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Emperor's Cloud and Mist\xAE Green Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0\u201315",
@@ -56837,7 +56861,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15\u201325",
@@ -56861,7 +56885,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15\u201325",
@@ -56876,30 +56900,6 @@ module.exports = {
             "Protein(g)": "0",
             "Saturated fat(g)": "0",
             "Size": "Venti",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "0\u201315",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Emperor's Cloud and Mist\xAE Green Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
             "Sodium(mg)": "0",
             "Sugars(g)": "0",
             "Total Carbohydrate(g)": "0",
@@ -56911,7 +56911,31 @@ module.exports = {
       }
     },
     "Honey Citrus Mint Tea": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "15",
+            "Calories": "70",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Honey Citrus Mint Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "16",
+            "Total Carbohydrate(g)": "18",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15",
@@ -56935,7 +56959,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15",
@@ -56959,7 +56983,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15",
@@ -56982,34 +57006,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "15",
-            "Calories": "70",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Honey Citrus Mint Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "16",
-            "Total Carbohydrate(g)": "18",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       }
     },
     "Iced Blueberry Black Tea": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -57033,7 +57033,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25\u201330",
@@ -57057,7 +57057,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -57081,7 +57081,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "50\u201355",
@@ -57107,7 +57107,7 @@ module.exports = {
       }
     },
     "Iced Blueberry Black Tea Lemonade": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -57131,7 +57131,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25\u201330",
@@ -57155,7 +57155,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -57179,7 +57179,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "50\u201355",
@@ -57205,7 +57205,7 @@ module.exports = {
       }
     },
     "Iced Chai Tea Latte": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "70",
@@ -57339,7 +57339,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "95",
@@ -57473,7 +57473,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "145",
@@ -57609,7 +57609,7 @@ module.exports = {
       }
     },
     "Iced Guava White Tea": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15\u201320",
@@ -57633,7 +57633,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -57657,7 +57657,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "30\u201335",
@@ -57681,7 +57681,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -57707,7 +57707,7 @@ module.exports = {
       }
     },
     "Iced Guava White Tea Lemonade": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15\u201320",
@@ -57731,7 +57731,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -57755,7 +57755,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "30\u201335",
@@ -57779,7 +57779,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -57805,7 +57805,7 @@ module.exports = {
       }
     },
     "Iced Matcha Green Tea Latte": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "55",
@@ -57939,7 +57939,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "80",
@@ -58073,7 +58073,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "Almond": {
           "N/A": {
             "Caffeine(mg)": "110",
@@ -58097,7 +58097,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "110",
@@ -58211,7 +58211,7 @@ module.exports = {
       }
     },
     "Iced Peach Green Tea": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -58235,7 +58235,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25\u201330",
@@ -58259,7 +58259,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -58283,7 +58283,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "50\u201355",
@@ -58309,7 +58309,7 @@ module.exports = {
       }
     },
     "Iced Peach Green Tea Lemonade": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -58333,7 +58333,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "25\u201330",
@@ -58357,7 +58357,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -58381,7 +58381,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "50\u201355",
@@ -58407,7 +58407,7 @@ module.exports = {
       }
     },
     "Iced Teavana\xAE London Fog Tea Latte": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -58541,7 +58541,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -58675,7 +58675,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -58811,7 +58811,31 @@ module.exports = {
       }
     },
     "Jade Citrus Mint Green Tea": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "15\u201325",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Jade Citrus Mint Green Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15\u201325",
@@ -58835,7 +58859,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -58859,7 +58883,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -58874,30 +58898,6 @@ module.exports = {
             "Protein(g)": "0",
             "Saturated fat(g)": "0",
             "Size": "Venti",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "15\u201325",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Jade Citrus Mint Green Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
             "Sodium(mg)": "0",
             "Sugars(g)": "0",
             "Total Carbohydrate(g)": "0",
@@ -58909,7 +58909,31 @@ module.exports = {
       }
     },
     "Jade Citrus Mint\u2122 Brewed Tea": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "15\u201325",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Jade Citrus Mint\u2122 Brewed Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15\u201325",
@@ -58933,7 +58957,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -58957,7 +58981,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -58980,34 +59004,144 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
+      }
+    },
+    "Matcha Green Tea Latte": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
           "N/A": {
-            "Caffeine(mg)": "15\u201325",
-            "Calories": "0",
-            "Calories from fat": "0",
+            "Caffeine(mg)": "30",
+            "Calories": "110",
+            "Calories from fat": "30",
+            "Category": "tea",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Matcha Green Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "2",
+            "Size": "Short",
+            "Sodium(mg)": "80",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "14",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Almond": {
+          "N/A": {
+            "Caffeine(mg)": "30",
+            "Calories": "70",
+            "Calories from fat": "25",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Matcha Green Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "0",
+            "Size": "Tall",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "8",
+            "Total Carbohydrate(g)": "9",
+            "Total Fat(g)": "3",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Coconut": {
+          "N/A": {
+            "Caffeine(mg)": "30",
+            "Calories": "80",
+            "Calories from fat": "35",
             "Category": "tea",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Jade Citrus Mint\u2122 Brewed Tea",
+            "Milk": "Coconut",
+            "Name": "Matcha Green Tea Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "0",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "3.5",
+            "Size": "Short",
+            "Sodium(mg)": "65",
+            "Sugars(g)": "11",
+            "Total Carbohydrate(g)": "11",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Nonfat milk": {
+          "N/A": {
+            "Caffeine(mg)": "30",
+            "Calories": "80",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "5",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Nonfat milk",
+            "Name": "Matcha Green Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
+            "Sodium(mg)": "70",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "14",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
+        },
+        "Soy (United States)": {
+          "N/A": {
+            "Caffeine(mg)": "30",
+            "Calories": "110",
+            "Calories from fat": "25",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Soy (United States)",
+            "Name": "Matcha Green Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "5",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "65",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "17",
+            "Total Fat(g)": "3",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Whole Milk": {
+          "N/A": {
+            "Caffeine(mg)": "30",
+            "Calories": "130",
+            "Calories from fat": "50",
+            "Category": "tea",
+            "Cholesterol(mg)": "15",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Matcha Green Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "6",
+            "Saturated fat(g)": "3",
+            "Size": "Short",
+            "Sodium(mg)": "75",
+            "Sugars(g)": "14",
+            "Total Carbohydrate(g)": "14",
+            "Total Fat(g)": "6",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
         }
-      }
-    },
-    "Matcha Green Tea Latte": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "55",
@@ -59141,7 +59275,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "80",
@@ -59275,7 +59409,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "110",
@@ -59408,144 +59542,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
-          "N/A": {
-            "Caffeine(mg)": "30",
-            "Calories": "110",
-            "Calories from fat": "30",
-            "Category": "tea",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "Matcha Green Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "2",
-            "Size": "Short",
-            "Sodium(mg)": "80",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "14",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Almond": {
-          "N/A": {
-            "Caffeine(mg)": "30",
-            "Calories": "70",
-            "Calories from fat": "25",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Almond",
-            "Name": "Matcha Green Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "0",
-            "Size": "Tall",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "8",
-            "Total Carbohydrate(g)": "9",
-            "Total Fat(g)": "3",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Coconut": {
-          "N/A": {
-            "Caffeine(mg)": "30",
-            "Calories": "80",
-            "Calories from fat": "35",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "Matcha Green Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "3.5",
-            "Size": "Short",
-            "Sodium(mg)": "65",
-            "Sugars(g)": "11",
-            "Total Carbohydrate(g)": "11",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Nonfat milk": {
-          "N/A": {
-            "Caffeine(mg)": "30",
-            "Calories": "80",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "5",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "Matcha Green Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "70",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "14",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Soy (United States)": {
-          "N/A": {
-            "Caffeine(mg)": "30",
-            "Calories": "110",
-            "Calories from fat": "25",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
-            "Milk": "Soy (United States)",
-            "Name": "Matcha Green Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "5",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "65",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "17",
-            "Total Fat(g)": "3",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Whole Milk": {
-          "N/A": {
-            "Caffeine(mg)": "30",
-            "Calories": "130",
-            "Calories from fat": "50",
-            "Category": "tea",
-            "Cholesterol(mg)": "15",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "Matcha Green Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "6",
-            "Saturated fat(g)": "3",
-            "Size": "Short",
-            "Sodium(mg)": "75",
-            "Sugars(g)": "14",
-            "Total Carbohydrate(g)": "14",
-            "Total Fat(g)": "6",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       }
     },
     "Matcha Lemonade": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "55",
@@ -59569,7 +59569,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "80",
@@ -59593,7 +59593,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "110",
@@ -59619,7 +59619,31 @@ module.exports = {
       }
     },
     "Mint Majesty\u2122 Herbal Tea": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "0",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Mint Majesty\u2122 Herbal Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -59643,7 +59667,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -59667,7 +59691,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -59682,30 +59706,6 @@ module.exports = {
             "Protein(g)": "0",
             "Saturated fat(g)": "0",
             "Size": "Venti",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "0",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Mint Majesty\u2122 Herbal Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
             "Sodium(mg)": "0",
             "Sugars(g)": "0",
             "Total Carbohydrate(g)": "0",
@@ -59717,7 +59717,31 @@ module.exports = {
       }
     },
     "Peach Tranquility\xAE Herbal Tea": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "0",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Peach Tranquility\xAE Herbal Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -59741,7 +59765,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -59765,7 +59789,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "0",
@@ -59780,30 +59804,6 @@ module.exports = {
             "Protein(g)": "0",
             "Saturated fat(g)": "0",
             "Size": "Venti",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "0",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Peach Tranquility\xAE Herbal Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
             "Sodium(mg)": "0",
             "Sugars(g)": "0",
             "Total Carbohydrate(g)": "0",
@@ -59815,7 +59815,31 @@ module.exports = {
       }
     },
     "Rev Up Wellness Brewed Tea": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Rev Up Wellness Brewed Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -59839,7 +59863,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -59863,7 +59887,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40",
@@ -59878,30 +59902,6 @@ module.exports = {
             "Protein(g)": "0",
             "Saturated fat(g)": "0",
             "Size": "Venti",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Rev Up Wellness Brewed Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
             "Sodium(mg)": "0",
             "Sugars(g)": "0",
             "Total Carbohydrate(g)": "0",
@@ -59913,7 +59913,31 @@ module.exports = {
       }
     },
     "Royal English Breakfast Tea": {
-      "07_12 fl. oz.": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40+",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Royal English Breakfast Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -59937,7 +59961,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -59961,7 +59985,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -59984,34 +60008,144 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
+      }
+    },
+    "Royal English Breakfast Tea Latte": {
+      "01_Short (8 fl. oz.)": {
+        "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40+",
-            "Calories": "0",
+            "Calories": "80",
+            "Calories from fat": "20",
+            "Category": "tea",
+            "Cholesterol(mg)": "10",
+            "Dietary Fiber(g)": "0",
+            "Milk": "2% Milk",
+            "Name": "Royal English Breakfast Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "4",
+            "Saturated fat(g)": "1.5",
+            "Size": "Short",
+            "Sodium(mg)": "55",
+            "Sugars(g)": "11",
+            "Total Carbohydrate(g)": "11",
+            "Total Fat(g)": "2",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Almond": {
+          "N/A": {
+            "Caffeine(mg)": "40+",
+            "Calories": "50",
+            "Calories from fat": "15",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "1",
+            "Milk": "Almond",
+            "Name": "Royal English Breakfast Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "1",
+            "Saturated fat(g)": "0",
+            "Size": "Tall",
+            "Sodium(mg)": "55",
+            "Sugars(g)": "7",
+            "Total Carbohydrate(g)": "8",
+            "Total Fat(g)": "2",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Coconut": {
+          "N/A": {
+            "Caffeine(mg)": "40+",
+            "Calories": "60",
+            "Calories from fat": "25",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Coconut",
+            "Name": "Royal English Breakfast Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "2.5",
+            "Size": "Short",
+            "Sodium(mg)": "50",
+            "Sugars(g)": "9",
+            "Total Carbohydrate(g)": "9",
+            "Total Fat(g)": "2.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Nonfat milk": {
+          "N/A": {
+            "Caffeine(mg)": "40+",
+            "Calories": "80",
             "Calories from fat": "0",
             "Category": "tea",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Royal English Breakfast Tea",
+            "Milk": "Nonfat milk",
+            "Name": "Royal English Breakfast Tea Latte",
             "Portion(fl oz)": "8",
-            "Protein(g)": "0",
+            "Protein(g)": "4",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
+            "Sodium(mg)": "50",
+            "Sugars(g)": "15",
+            "Total Carbohydrate(g)": "15",
             "Total Fat(g)": "0",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
           }
+        },
+        "Soy (United States)": {
+          "N/A": {
+            "Caffeine(mg)": "40+",
+            "Calories": "90",
+            "Calories from fat": "15",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Soy (United States)",
+            "Name": "Royal English Breakfast Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "3",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "40",
+            "Sugars(g)": "15",
+            "Total Carbohydrate(g)": "16",
+            "Total Fat(g)": "1.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        },
+        "Whole Milk": {
+          "N/A": {
+            "Caffeine(mg)": "40+",
+            "Calories": "110",
+            "Calories from fat": "35",
+            "Category": "tea",
+            "Cholesterol(mg)": "10",
+            "Dietary Fiber(g)": "0",
+            "Milk": "Whole Milk",
+            "Name": "Royal English Breakfast Tea Latte",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "4",
+            "Saturated fat(g)": "2",
+            "Size": "Short",
+            "Sodium(mg)": "50",
+            "Sugars(g)": "15",
+            "Total Carbohydrate(g)": "15",
+            "Total Fat(g)": "3.5",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
         }
-      }
-    },
-    "Royal English Breakfast Tea Latte": {
-      "07_12 fl. oz.": {
+      },
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -60145,7 +60279,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -60279,7 +60413,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -60391,7 +60525,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "Almond": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -60414,25 +60548,223 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
+      }
+    },
+    "Teavana\xAE Chai Tea": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Teavana\xAE Chai Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
       },
-      "07_8 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Teavana\xAE Chai Tea",
+            "Portion(fl oz)": "12",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Tall",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "03_Grande (16 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Teavana\xAE Chai Tea",
+            "Portion(fl oz)": "16",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Grande",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "04_Venti (20 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Teavana\xAE Chai Tea",
+            "Portion(fl oz)": "20",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Venti",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      }
+    },
+    "Teavana\xAE Earl Grey Brewed Tea": {
+      "01_Short (8 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Teavana\xAE Earl Grey Brewed Tea",
+            "Portion(fl oz)": "8",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Short",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "02_Tall (12 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Teavana\xAE Earl Grey Brewed Tea",
+            "Portion(fl oz)": "12",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Tall",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "03_Grande (16 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Teavana\xAE Earl Grey Brewed Tea",
+            "Portion(fl oz)": "16",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Grande",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      },
+      "04_Venti (20 fl. oz.)": {
+        "N/A": {
+          "N/A": {
+            "Caffeine(mg)": "40",
+            "Calories": "0",
+            "Calories from fat": "0",
+            "Category": "tea",
+            "Cholesterol(mg)": "0",
+            "Dietary Fiber(g)": "0",
+            "Milk": "",
+            "Name": "Teavana\xAE Earl Grey Brewed Tea",
+            "Portion(fl oz)": "20",
+            "Protein(g)": "0",
+            "Saturated fat(g)": "0",
+            "Size": "Venti",
+            "Sodium(mg)": "0",
+            "Sugars(g)": "0",
+            "Total Carbohydrate(g)": "0",
+            "Total Fat(g)": "0",
+            "Trans fat(g)": "0",
+            "Whipped Cream": ""
+          }
+        }
+      }
+    },
+    "Teavana\xAE London Fog Tea Latte": {
+      "01_Short (8 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40+",
-            "Calories": "80",
+            "Calories": "90",
             "Calories from fat": "20",
             "Category": "tea",
             "Cholesterol(mg)": "10",
             "Dietary Fiber(g)": "0",
             "Milk": "2% Milk",
-            "Name": "Royal English Breakfast Tea Latte",
+            "Name": "Teavana\xAE London Fog Tea Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "4",
             "Saturated fat(g)": "1.5",
             "Size": "Short",
             "Sodium(mg)": "55",
-            "Sugars(g)": "11",
-            "Total Carbohydrate(g)": "11",
+            "Sugars(g)": "15",
+            "Total Carbohydrate(g)": "15",
             "Total Fat(g)": "2",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -60441,20 +60773,20 @@ module.exports = {
         "Almond": {
           "N/A": {
             "Caffeine(mg)": "40+",
-            "Calories": "50",
+            "Calories": "70",
             "Calories from fat": "15",
             "Category": "tea",
             "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "1",
+            "Dietary Fiber(g)": "0",
             "Milk": "Almond",
-            "Name": "Royal English Breakfast Tea Latte",
+            "Name": "Teavana\xAE London Fog Tea Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "1",
             "Saturated fat(g)": "0",
-            "Size": "Tall",
-            "Sodium(mg)": "55",
-            "Sugars(g)": "7",
-            "Total Carbohydrate(g)": "8",
+            "Size": "Short",
+            "Sodium(mg)": "50",
+            "Sugars(g)": "12",
+            "Total Carbohydrate(g)": "12",
             "Total Fat(g)": "2",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -60463,20 +60795,20 @@ module.exports = {
         "Coconut": {
           "N/A": {
             "Caffeine(mg)": "40+",
-            "Calories": "60",
-            "Calories from fat": "25",
+            "Calories": "80",
+            "Calories from fat": "20",
             "Category": "tea",
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "Coconut",
-            "Name": "Royal English Breakfast Tea Latte",
+            "Name": "Teavana\xAE London Fog Tea Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "0",
-            "Saturated fat(g)": "2.5",
+            "Saturated fat(g)": "2",
             "Size": "Short",
-            "Sodium(mg)": "50",
-            "Sugars(g)": "9",
-            "Total Carbohydrate(g)": "9",
+            "Sodium(mg)": "55",
+            "Sugars(g)": "13",
+            "Total Carbohydrate(g)": "13",
             "Total Fat(g)": "2.5",
             "Trans fat(g)": "0",
             "Whipped Cream": ""
@@ -60491,7 +60823,7 @@ module.exports = {
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "Nonfat milk",
-            "Name": "Royal English Breakfast Tea Latte",
+            "Name": "Teavana\xAE London Fog Tea Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "4",
             "Saturated fat(g)": "0",
@@ -60513,12 +60845,12 @@ module.exports = {
             "Cholesterol(mg)": "0",
             "Dietary Fiber(g)": "0",
             "Milk": "Soy (United States)",
-            "Name": "Royal English Breakfast Tea Latte",
+            "Name": "Teavana\xAE London Fog Tea Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "3",
             "Saturated fat(g)": "0",
             "Size": "Short",
-            "Sodium(mg)": "40",
+            "Sodium(mg)": "45",
             "Sugars(g)": "15",
             "Total Carbohydrate(g)": "16",
             "Total Fat(g)": "1.5",
@@ -60535,7 +60867,7 @@ module.exports = {
             "Cholesterol(mg)": "10",
             "Dietary Fiber(g)": "0",
             "Milk": "Whole Milk",
-            "Name": "Royal English Breakfast Tea Latte",
+            "Name": "Teavana\xAE London Fog Tea Latte",
             "Portion(fl oz)": "8",
             "Protein(g)": "4",
             "Saturated fat(g)": "2",
@@ -60548,206 +60880,8 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      }
-    },
-    "Teavana\xAE Chai Tea": {
-      "07_12 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Teavana\xAE Chai Tea",
-            "Portion(fl oz)": "12",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Tall",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       },
-      "07_16 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Teavana\xAE Chai Tea",
-            "Portion(fl oz)": "16",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Grande",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_20 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Teavana\xAE Chai Tea",
-            "Portion(fl oz)": "20",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Venti",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Teavana\xAE Chai Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      }
-    },
-    "Teavana\xAE Earl Grey Brewed Tea": {
-      "07_12 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Teavana\xAE Earl Grey Brewed Tea",
-            "Portion(fl oz)": "12",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Tall",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_16 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Teavana\xAE Earl Grey Brewed Tea",
-            "Portion(fl oz)": "16",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Grande",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_20 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Teavana\xAE Earl Grey Brewed Tea",
-            "Portion(fl oz)": "20",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Venti",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      },
-      "07_8 fl. oz.": {
-        "N/A": {
-          "N/A": {
-            "Caffeine(mg)": "40",
-            "Calories": "0",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "",
-            "Name": "Teavana\xAE Earl Grey Brewed Tea",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "0",
-            "Sugars(g)": "0",
-            "Total Carbohydrate(g)": "0",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
-      }
-    },
-    "Teavana\xAE London Fog Tea Latte": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -60881,7 +61015,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -61015,7 +61149,7 @@ module.exports = {
           }
         }
       },
-      "07_20 fl. oz.": {
+      "04_Venti (20 fl. oz.)": {
         "2% Milk": {
           "N/A": {
             "Caffeine(mg)": "40+",
@@ -61148,144 +61282,10 @@ module.exports = {
             "Whipped Cream": ""
           }
         }
-      },
-      "07_8 fl. oz.": {
-        "2% Milk": {
-          "N/A": {
-            "Caffeine(mg)": "40+",
-            "Calories": "90",
-            "Calories from fat": "20",
-            "Category": "tea",
-            "Cholesterol(mg)": "10",
-            "Dietary Fiber(g)": "0",
-            "Milk": "2% Milk",
-            "Name": "Teavana\xAE London Fog Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "4",
-            "Saturated fat(g)": "1.5",
-            "Size": "Short",
-            "Sodium(mg)": "55",
-            "Sugars(g)": "15",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "2",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Almond": {
-          "N/A": {
-            "Caffeine(mg)": "40+",
-            "Calories": "70",
-            "Calories from fat": "15",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Almond",
-            "Name": "Teavana\xAE London Fog Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "1",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "50",
-            "Sugars(g)": "12",
-            "Total Carbohydrate(g)": "12",
-            "Total Fat(g)": "2",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Coconut": {
-          "N/A": {
-            "Caffeine(mg)": "40+",
-            "Calories": "80",
-            "Calories from fat": "20",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Coconut",
-            "Name": "Teavana\xAE London Fog Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "0",
-            "Saturated fat(g)": "2",
-            "Size": "Short",
-            "Sodium(mg)": "55",
-            "Sugars(g)": "13",
-            "Total Carbohydrate(g)": "13",
-            "Total Fat(g)": "2.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Nonfat milk": {
-          "N/A": {
-            "Caffeine(mg)": "40+",
-            "Calories": "80",
-            "Calories from fat": "0",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Nonfat milk",
-            "Name": "Teavana\xAE London Fog Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "4",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "50",
-            "Sugars(g)": "15",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "0",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Soy (United States)": {
-          "N/A": {
-            "Caffeine(mg)": "40+",
-            "Calories": "90",
-            "Calories from fat": "15",
-            "Category": "tea",
-            "Cholesterol(mg)": "0",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Soy (United States)",
-            "Name": "Teavana\xAE London Fog Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "3",
-            "Saturated fat(g)": "0",
-            "Size": "Short",
-            "Sodium(mg)": "45",
-            "Sugars(g)": "15",
-            "Total Carbohydrate(g)": "16",
-            "Total Fat(g)": "1.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        },
-        "Whole Milk": {
-          "N/A": {
-            "Caffeine(mg)": "40+",
-            "Calories": "110",
-            "Calories from fat": "35",
-            "Category": "tea",
-            "Cholesterol(mg)": "10",
-            "Dietary Fiber(g)": "0",
-            "Milk": "Whole Milk",
-            "Name": "Teavana\xAE London Fog Tea Latte",
-            "Portion(fl oz)": "8",
-            "Protein(g)": "4",
-            "Saturated fat(g)": "2",
-            "Size": "Short",
-            "Sodium(mg)": "50",
-            "Sugars(g)": "15",
-            "Total Carbohydrate(g)": "15",
-            "Total Fat(g)": "3.5",
-            "Trans fat(g)": "0",
-            "Whipped Cream": ""
-          }
-        }
       }
     },
     "Teavana\xAE Shaken Iced White Tea": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15\u201320",
@@ -61309,7 +61309,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -61333,7 +61333,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "30\u201335",
@@ -61357,7 +61357,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -61383,7 +61383,7 @@ module.exports = {
       }
     },
     "Teavana\xAE Shaken Iced White Tea Lemonade": {
-      "07_12 fl. oz.": {
+      "02_Tall (12 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "15\u201320",
@@ -61407,7 +61407,7 @@ module.exports = {
           }
         }
       },
-      "07_16 fl. oz.": {
+      "03_Grande (16 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "20\u201325",
@@ -61431,7 +61431,7 @@ module.exports = {
           }
         }
       },
-      "07_24 fl. oz.": {
+      "05_Venti Iced (24 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "30\u201335",
@@ -61455,7 +61455,7 @@ module.exports = {
           }
         }
       },
-      "07_30 fl. oz.": {
+      "06_Trenta (30 fl. oz.)": {
         "N/A": {
           "N/A": {
             "Caffeine(mg)": "40\u201345",
@@ -61840,7 +61840,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56647" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57364" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
